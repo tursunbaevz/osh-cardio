@@ -48,8 +48,97 @@
 	<!-- конец слайда -->
 
 
+
+	
+	<!-- блок цен -->
+	<div class="pricing-2">
+
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-md-6 ml-auto mr-auto text-center">
+	                <h2 class="title">Pick the best plan for you</h2>
+	                <ul class="nav nav-pills nav-pills-primary justify-content-center" role="tablist">
+	                    <li class="nav-item">
+	                        <a class="nav-link active" data-toggle="tab" href="#pill1" role="tablist">
+	                            Legal Entity
+	                        </a>
+	                    </li>
+	                    <li class="nav-item">
+	                        <a class="nav-link" data-toggle="tab" href="#pill2" role="tablist">
+	                            Individual
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+
+	        <div class="row">
+
+	            <div class="col-md-4">
+	                <div class="card card-pricing card-plain">
+	                    <div class="card-body">
+	                        <h6 class="category">Enterprise</h6>
+	                        <h1 class="card-title"><small>$</small>59</h1>
+	                        <ul>
+	                            <li><b>10GB</b> Disk Space</li>
+	                            <li><b>100GB</b> Monthly Bandwidth</li>
+	                            <li><b>20</b> Email Accounts</li>
+	                            <li><b>Unlimited</b> subdomains</li>
+	                        </ul>
+	                        <a href="#pablo" class="btn btn-primary btn-round">
+	                            Sign Up
+	                        </a>
+	                    </div>
+	                </div>
+	            </div>
+
+	            <div class="col-md-4">
+	                <div class="card card-pricing card-background card-raised" style="background-image: url('../assets/img/pricing2.jpg')">
+	                    <div class="card-body">
+	                        <h6 class="category text-info">Professional</h6>
+	                        <h1 class="card-title"><small>$</small>29</h1>
+
+	                        <ul>
+	                            <li><b>5GB</b> Disk Space</li>
+	                            <li><b>50GB</b> Monthly Bandwidth</li>
+	                            <li><b>10</b> Email Accounts</li>
+	                            <li><b>Unlimited</b> subdomains</li>
+	                        </ul>
+	                        <a href="#pablo" class="btn btn-neutral btn-round">
+	                            Sign Up
+	                        </a>
+	                    </div>
+	                </div>
+	            </div>
+
+	            <div class="col-md-4">
+	                <div class="card card-pricing card-plain">
+	                    <div class="card-body">
+	                        <h6 class="category">Standard</h6>
+	                        <h1 class="card-title"><small>$</small>17</h1>
+
+	                        <ul>
+	                            <li><b>2GB</b> Disk Space</li>
+	                            <li><b>25GB</b> Monthly Bandwidth</li>
+	                            <li><b>5</b> Email Accounts</li>
+	                            <li><b>Unlimited</b> subdomains</li>
+	                        </ul>
+	                        <a href="#pablo" class="btn btn-primary btn-round">
+	                            Get Started
+	                        </a>
+	                    </div>
+	                </div>
+	            </div>
+
+	        </div>
+
+	    </div>
+	</div>
+	<!-- / -->
+
+
 	<!-- О нас -->
-	<div class="section section-about-us">
+	<!-- <div class="section section-about-us">
 	    <div class="container">
 	        <div class="row">
 	            <div class="col-md-8 ml-auto mr-auto text-center">
@@ -60,21 +149,21 @@
 	        <div class="separator separator-primary"></div>
 	        <div class="section-story-overview">
 	            <div class="row">
-	                <div class="col-md-6">
+	                <div class="col-md-6"> -->
 	                    <!-- First image on the left side -->
-	                    <div class="image-container image-left" style="background-image: url('../assets/img/bg38.jpg')">
+	                    <!-- <div class="image-container image-left" style="background-image: url('../assets/img/bg38.jpg')">
 	                        <p class="blockquote blockquote-primary">"Over the span of the satellite record, Arctic sea ice has been declining significantly, while sea ice in the Antarctichas increased very slightly"
 	                            <br>
 	                            <br>
 	                            <small>-NOAA</small>
 	                        </p>
-	                    </div>
+	                    </div> -->
 	                    <!-- Second image on the left side of the article -->
-	                    <div class="image-container image-left-bottom" style="background-image: url('../assets/img/bg24.jpg')"></div>
+	                  <!--   <div class="image-container image-left-bottom" style="background-image: url('../assets/img/bg24.jpg')"></div>
 	                </div>
-	                <div class="col-md-5">
+	                <div class="col-md-5"> -->
 	                    <!-- First image on the right side, above the article -->
-	                    <div class="image-container image-right" style="background-image: url('../assets/img/bg39.jpg')"></div>
+	                    <!-- <div class="image-container image-right" style="background-image: url('../assets/img/bg39.jpg')"></div>
 	                    <h3>So what does the new record for the lowest level of winter ice actually mean</h3>
 	                    <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
 	                    </p>
@@ -87,7 +176,7 @@
 	            </div>
 	        </div>
 	    </div>
-	</div>
+	</div> -->
 	<!-- /О Нас -->
 
 	<!-- блок отзывов -->
@@ -175,91 +264,6 @@
 	</div>
 	<!--/-->
 
-	<!-- блок цен -->
-	<div class="pricing-2">
-
-	    <div class="container">
-	        <div class="row">
-	            <div class="col-md-6 ml-auto mr-auto text-center">
-	                <h2 class="title">Pick the best plan for you</h2>
-	                <ul class="nav nav-pills nav-pills-primary justify-content-center" role="tablist">
-	                    <li class="nav-item">
-	                        <a class="nav-link active" data-toggle="tab" href="#pill1" role="tablist">
-	                            Legal Entity
-	                        </a>
-	                    </li>
-	                    <li class="nav-item">
-	                        <a class="nav-link" data-toggle="tab" href="#pill2" role="tablist">
-	                            Individual
-	                        </a>
-	                    </li>
-	                </ul>
-	            </div>
-	        </div>
-
-	        <div class="row">
-
-	            <div class="col-md-4">
-	                <div class="card card-pricing card-plain">
-	                    <div class="card-body">
-	                        <h6 class="category">Enterprise</h6>
-	                        <h1 class="card-title"><small>$</small>59</h1>
-	                        <ul>
-	                            <li><b>10GB</b> Disk Space</li>
-	                            <li><b>100GB</b> Monthly Bandwidth</li>
-	                            <li><b>20</b> Email Accounts</li>
-	                            <li><b>Unlimited</b> subdomains</li>
-	                        </ul>
-	                        <a href="#pablo" class="btn btn-primary btn-round">
-	                            Sign Up
-	                        </a>
-	                    </div>
-	                </div>
-	            </div>
-
-	            <div class="col-md-4">
-	                <div class="card card-pricing card-background card-raised" style="background-image: url('../assets/img/pricing2.jpg')">
-	                    <div class="card-body">
-	                        <h6 class="category text-info">Professional</h6>
-	                        <h1 class="card-title"><small>$</small>29</h1>
-
-	                        <ul>
-	                            <li><b>5GB</b> Disk Space</li>
-	                            <li><b>50GB</b> Monthly Bandwidth</li>
-	                            <li><b>10</b> Email Accounts</li>
-	                            <li><b>Unlimited</b> subdomains</li>
-	                        </ul>
-	                        <a href="#pablo" class="btn btn-neutral btn-round">
-	                            Sign Up
-	                        </a>
-	                    </div>
-	                </div>
-	            </div>
-
-	            <div class="col-md-4">
-	                <div class="card card-pricing card-plain">
-	                    <div class="card-body">
-	                        <h6 class="category">Standard</h6>
-	                        <h1 class="card-title"><small>$</small>17</h1>
-
-	                        <ul>
-	                            <li><b>2GB</b> Disk Space</li>
-	                            <li><b>25GB</b> Monthly Bandwidth</li>
-	                            <li><b>5</b> Email Accounts</li>
-	                            <li><b>Unlimited</b> subdomains</li>
-	                        </ul>
-	                        <a href="#pablo" class="btn btn-primary btn-round">
-	                            Get Started
-	                        </a>
-	                    </div>
-	                </div>
-	            </div>
-
-	        </div>
-
-	    </div>
-	</div>
-	<!-- / -->
 
 	<!-- обратная связь -->
 	<div class="section section-contact-us text-center">
