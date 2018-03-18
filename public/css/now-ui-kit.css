@@ -6105,10 +6105,10 @@ Created using IcoMoon - icomoon.io
   color: #FFFFFF; }
 
 [class*="features-"], [class*="team-"], [class*="projects-"], [class*="pricing-"], [class*="testimonials-"], [class*="contactus-"] {
-  padding: 80px 0; }
+  padding: 35px 0; }
 
-.page-header .carousel .carousel-indicators {
-  bottom: 60px; }
+/*.page-header .carousel .carousel-indicators {
+  bottom: 60px; }*/
 .page-header .container {
   color: #FFFFFF; }
 .page-header .title {
