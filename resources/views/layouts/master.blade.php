@@ -82,9 +82,9 @@
 	        	</div>
 	    	</div>
 
-
 	</div>
 	<!-- конец слайда -->
+
 
 			
 		
@@ -373,6 +373,149 @@
 	</div>
 	<!-- / -->
 
+
+
+
+
+
+<div id="map"></div>
+	
+
+
+<script>
+      function initMap() {
+        // Styles a map in night mode.
+        var loc = {lat: 40.5258962, lng: 72.7935735};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 40.525841, lng: 72.7913362},
+          zoom: 17,
+          styles: [
+            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#263c3f'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#6b9a76'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#38414e'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#212a37'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#9ca5b3'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#746855'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#1f2835'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#f3d19c'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#2f3948'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#17263c'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+          ]
+        });
+
+        marker = new google.maps.Marker({
+          map: map,
+          draggable: true,
+          animation: google.maps.Animation.DROP,
+          position: {lat: 40.5258962, lng: 72.7935735},
+          title: 'Ош Кардио'
+        });
+        marker.addListener('click', toggleBounce);
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVNZ20eXXPEUqeTmCFpmmZkoHeVwd9aWQ&callback=initMap"
+    async defer></script>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="map-responsive">
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.7126955167755!2d72.79133621511083!3d40.525840979352544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bdac1a19b4279d%3A0xde6ec4cff99bc6ab!2z0J7RiCDQutCw0YDQtNC40L4!5e0!3m2!1sru!2skg!4v1521469992331" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+</div> -->
+
+
+
+
 	<footer class="footer footer-default " >
 
 
@@ -410,7 +553,7 @@
 </div>
 
 	
-		@yield('content')
+	@yield('content')
 
 	@include ('layouts.footer')
 

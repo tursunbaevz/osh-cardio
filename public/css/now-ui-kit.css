@@ -54,21 +54,36 @@
 
 @media screen and (max-width: 680px) {
 
-.main-div {
-  display: block;
+  .main-div {
+    display: block;
+  }
+
+  .num-div {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .num-div:last-child {
+    border-style: none;
+  }
+
 }
 
-.num-div {
-  border-bottom: 1px solid #ccc;
+
+.carousel-control-prev {
+  z-index: 11;
 }
 
-.num-div:last-child {
-  border-style: none;
+.carousel-control-next {
+  z-index: 11;
 }
 
+#map {
+  height:400px;
+  width:100%;
+  position:absolute;
+  position:relative;
+  overflow:hidden;
 }
-
-
 
 /*!
  =========================================================
