@@ -37,19 +37,19 @@
 				            </ol>
 				            <div class="carousel-inner" role="listbox">
 				          <!--       <div class="carousel-item">
-				                    <img class="d-block" src="/hospital.jpg" alt="First slide">
+				                    <img class="d-block" src="/hospital.jpg" alt="First slide"style="height: 500px;width: 100%;">
 				                    <div class="carousel-caption d-none d-md-block">
 				                        <h5>Текст для слайда №3</h5>
 				                    </div>
 				                </div> -->
 				                <div class="carousel-item active">
-				                    <img class="d-block size-of-img" src="/hospital.jpg" alt="Second slide" style="height: 500px;width: 100%;">
+				                    <img class="d-block size-of-img" src="/hospital.jpg" alt="Second slide" style="height: 500px;width: 100%;" >
 				                    <div class="carousel-caption d-none d-md-block">
 				                        <h5>Текст для слайда №1</h5>
 				                    </div>
 				                </div>
 				           <!--      <div class="carousel-item">
-				                    <img class="d-block" src="/hospital.jpg" alt="Third slide">
+				                    <img class="d-block" src="/hospital.jpg" alt="Third slide" style="height: 500px;width: 100%;">
 				                    <div class="carousel-caption d-none d-md-block">
 				                        <h5>Текст для слайда №2</h5>
 				                    </div>
@@ -91,7 +91,26 @@
 		
 	
 	<!-- наши услуги -->
-	<div class="pricing-2">
+	<div class="pricing-2 ">
+	<div class="main-div center text-style-div" style="margin-top: -10px;">
+		<div class="num-div"><img src="/icons/doctor.svg">
+			<br> Лучшие специалисты
+		</div>	
+
+		<div class="num-div">
+			<img src="/icons/online-shop.svg">
+			<br> Современное оборудование
+		</div>
+
+		<div class="num-div">
+		    <img src="/icons/care.svg"><br> Отличный сервис
+		</div>
+
+		<div class="num-div">
+			<img  src="/icons/ambulance.svg">
+			<br> Выездная кардиобригада
+		</div> 
+	</div>
 
 	    <div class="container">
 	        <div class="row">
@@ -105,7 +124,7 @@
 	        <div class="row">
 
 	            <div class="col-md-3">
-	                <div class="card card-pricing card-background card-raised" style="background-image: url('/u1.jpg')">
+	                <div class="card card-pricing card-background card-raised"  style="background-image: url('/u1.jpg' ">
 	                    <div class="card-body">
 	                        <h6 class="category text-info">Professional</h6>
 	                        <h1 class="card-title"><small>$</small>29</h1>
@@ -236,13 +255,13 @@
 	</div> -->
 	<!-- /О Нас -->
 
-	<!-- блок отзывов -->
-	<div class="testimonials-1 section-image" style="background-image: url('../assets/img/bg19.jpg')">
-
+	<!-- блок краткая инфа -->
+	<div class="testimonials-1 section-image parallax">
 	    <div class="container">
 	        <div class="row">
 	            <div class="col-md-6 ml-auto mr-auto text-center">
-	                <h2 class="title">What is ALPHA?</h2>
+	                <h2 class="title">Краткая Инфа</h2>
+
 	                <h4 class="description text-white">If you’re selected for ALPHA you’ll also get 3 tickets, opportunity to access Investor Office Hours and Mentor Hours and much more all for €850.</h4>
 	            </div>
 	        </div>
@@ -252,7 +271,7 @@
 	                <div class="card card-testimonial">
 	                    <div class="card-avatar">
 	                        <a href="#pablo">
-	                            <img class="img img-raised" src="../assets/img/michael.jpg">
+	                            <img class="img img-raised" src="/ryan.jpg">
 	                        </a>
 	                    </div>
 	                    <div class="card-body">
@@ -274,7 +293,7 @@
 	                <div class="card card-testimonial">
 	                    <div class="card-avatar">
 	                        <a href="#pablo">
-	                            <img class="img img-raised" src="../assets/img/olivia.jpg">
+	                            <img class="img img-raised" src="/eva.jpg">
 	                        </a>
 	                    </div>
 	                    <div class="card-body">
@@ -296,7 +315,7 @@
 	                <div class="card card-testimonial">
 	                    <div class="card-avatar">
 	                        <a href="#pablo">
-	                            <img class="img img-raised" src="../assets/img/james.jpg">
+	                            <img class="img img-raised" src="/avatar.jpg">
 	                        </a>
 	                    </div>
 	                    <div class="card-body">

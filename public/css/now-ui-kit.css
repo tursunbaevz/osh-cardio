@@ -9,6 +9,67 @@
   margin-right: auto;
 }
 
+/* краткая инфа */
+.main-div {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex: auto;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 3px;
+    background: #353c40;
+}
+
+.num-div {
+  z-index: 25;
+}
+
+.center-div {
+  text-align: center;
+}
+
+.text-style-div {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+.text-style-div div {
+  padding: 10px 10px; 
+}
+
+.parallax {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/geny.svg');
+}
+/* ---- */
+
+/* ============= Our media ============= */
+
+@media screen and (max-width: 680px) {
+
+.main-div {
+  display: block;
+}
+
+.num-div {
+  border-bottom: 1px solid #ccc;
+}
+
+.num-div:last-child {
+  border-style: none;
+}
+
+}
+
+
+
 /*!
  =========================================================
  * Now-ui-kit-pro - v1.2.0
@@ -5786,7 +5847,7 @@ Created using IcoMoon - icomoon.io
   left: 0;
   top: 0;
   content: "";
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.26); }
 .section-image .container {
   z-index: 2;
   position: relative; }
