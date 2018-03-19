@@ -36,24 +36,24 @@
 				                <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
 				            </ol>
 				            <div class="carousel-inner" role="listbox">
-				                <div class="carousel-item">
+				          <!--       <div class="carousel-item">
 				                    <img class="d-block" src="/hospital.jpg" alt="First slide">
 				                    <div class="carousel-caption d-none d-md-block">
 				                        <h5>Текст для слайда №3</h5>
 				                    </div>
-				                </div>
+				                </div> -->
 				                <div class="carousel-item active">
-				                    <img class="d-block" src="/hospital.jpg" alt="Second slide">
+				                    <img class="d-block size-of-img" src="/hospital.jpg" alt="Second slide" style="height: 500px;width: 100%;">
 				                    <div class="carousel-caption d-none d-md-block">
 				                        <h5>Текст для слайда №1</h5>
 				                    </div>
 				                </div>
-				                <div class="carousel-item">
+				           <!--      <div class="carousel-item">
 				                    <img class="d-block" src="/hospital.jpg" alt="Third slide">
 				                    <div class="carousel-caption d-none d-md-block">
 				                        <h5>Текст для слайда №2</h5>
 				                    </div>
-				                </div>
+				                </div> -->
 				            </div>
 				            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 				                <i class="now-ui-icons arrows-1_minimal-left"></i>
@@ -104,7 +104,7 @@
 
 	        <div class="row">
 
-	            <div class="col-md-4">
+	            <div class="col-md-3">
 	                <div class="card card-pricing card-background card-raised" style="background-image: url('/u1.jpg')">
 	                    <div class="card-body">
 	                        <h6 class="category text-info">Professional</h6>
@@ -124,7 +124,7 @@
 
 
 
-	            <div class="col-md-4">
+	            <div class="col-md-3">
 	                <div class="card card-pricing card-background card-raised" style="background-image: url('/u1.jpg')">
 	                    <div class="card-body">
 	                        <h6 class="category text-info">Professional</h6>
@@ -142,7 +142,26 @@
 
 
 
-	            <div class="col-md-4">
+	            <div class="col-md-3">
+	                <div class="card card-pricing card-background card-raised" style="background-image: url('/u1.jpg')">
+	                    <div class="card-body">
+	                        <h6 class="category text-info">Professional</h6>
+	                        <h1 class="card-title"><small>$</small>29</h1>
+
+	                          <ul>
+	                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officiis tempora iste. Excepturi soluta iste tenetur omnis aut quaerat officiis, nisi autem odit ea repellat necessitatibus maiores nobis accusamus magni.</li>
+	                        </ul>
+	                        <a href="#pablo" class="btn btn-neutral btn-round">
+	                            подробнее
+	                        </a>
+	                    </div>
+	                </div>
+	            </div>
+
+
+
+
+	            <div class="col-md-3">
 	                <div class="card card-pricing card-background card-raised" style="background-image: url('/u1.jpg')">
 	                    <div class="card-body">
 	                        <h6 class="category text-info">Professional</h6>
@@ -161,7 +180,7 @@
 				<!-- кнопка все услуги -->
 			        <div class="all-services">
 						<div class="service-button">
-			                <a href="#" class="btn btn-primary btn-all-services" style="border-radius: 30px !important;">
+			                <a href="#" class="btn btn-primary btn-block btn-lg btn-all-services" style="border-radius: 30px !important;">
 			              	  ВСЕ УСЛУГИ
 			                </a>
 			            </div>
