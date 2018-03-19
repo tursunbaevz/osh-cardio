@@ -25,7 +25,7 @@
 <div class="wrapper">
 	<div class="page-header page-header-small">
 		<div class="page-header">
-		
+
 			<!-- слайдер -->
 				<div class="row justify-content-center" style="height: 100%">
 
@@ -39,19 +39,19 @@
 				                <div class="carousel-item">
 				                    <img class="d-block" src="/hospital.jpg" alt="First slide">
 				                    <div class="carousel-caption d-none d-md-block">
-				                        <h5>Nature, United States</h5>
+				                        <h5>Текст для слайда №3</h5>
 				                    </div>
 				                </div>
 				                <div class="carousel-item active">
 				                    <img class="d-block" src="/hospital.jpg" alt="Second slide">
 				                    <div class="carousel-caption d-none d-md-block">
-				                        <h5>Somewhere Beyond, United States</h5>
+				                        <h5>Текст для слайда №1</h5>
 				                    </div>
 				                </div>
 				                <div class="carousel-item">
 				                    <img class="d-block" src="/hospital.jpg" alt="Third slide">
 				                    <div class="carousel-caption d-none d-md-block">
-				                        <h5>Yellowstone National Park, United States</h5>
+				                        <h5>Текст для слайда №2</h5>
 				                    </div>
 				                </div>
 				            </div>
@@ -67,8 +67,7 @@
 
 		</div>
 
-
-		<!--     <div class="content-center">
+		    <div class="content-center">
 		        <h1 class="title">This is our great company.</h1>
 		        <div class="text-center">
 		            <a href="#pablo" class="btn btn-primary btn-icon  btn-round">
@@ -81,12 +80,15 @@
 		                <i class="fa fa-google-plus"></i>
 		            </a>
 	        	</div>
-	    	</div> -->
+	    	</div>
+
+
 	</div>
 	<!-- конец слайда -->
 
-
-
+			
+		
+		
 	
 	<!-- наши услуги -->
 	<div class="pricing-2">
@@ -155,7 +157,17 @@
 	                    </div>
 	                </div>
 	            </div>
-
+		
+				<!-- кнопка все услуги -->
+			        <div class="all-services">
+						<div class="service-button">
+			                <a href="#" class="btn btn-primary btn-all-services" style="border-radius: 30px !important;">
+			              	  ВСЕ УСЛУГИ
+			                </a>
+			            </div>
+		        	</div>	
+				<!-- / -->
+			
 	        </div>
 
 	    </div>
