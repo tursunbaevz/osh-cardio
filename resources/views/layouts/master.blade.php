@@ -24,9 +24,7 @@
 <!-- наш слайд -->
 <div class="wrapper">
 	<div class="page-header page-header-small">
-		<div class="page-header">
-
-		</div>
+	
 
 		    <div class="content-center">
 		        <h1 class="title">This is our great company.</h1>
@@ -44,7 +42,7 @@
 	    	</div>
 
 	</div>
-	<!-- конец слайда -->
+<!-- конец слайда -->
 
 
 			
@@ -53,25 +51,26 @@
 	
 	<!-- наши услуги -->
 	<div class="pricing-2 ">
-	<div class="main-div center text-style-div" style="margin-top: -10px;">
-		<div class="num-div"><img src="/icons/doctor.svg">
-			<br> Лучшие специалисты
-		</div>	
+		<div class="main-div center text-style-div" style="margin-top: -10px;">
+				<div class="num-div">
+					<img src="/icons/doctor.svg">
+					<br> Лучшие специалисты
+				</div>	
 
-		<div class="num-div">
-			<img src="/icons/online-shop.svg">
-			<br> Современное оборудование
+				<div class="num-div">
+					<img src="/icons/online-shop.svg">
+					<br> Современное оборудование
+				</div>
+
+				<div class="num-div">
+				    <img src="/icons/care.svg"><br> Отличный сервис
+				</div>
+
+				<div class="num-div">
+					<img  src="/icons/ambulance.svg">
+					<br> Выездная кардиобригада
+				</div> 
 		</div>
-
-		<div class="num-div">
-		    <img src="/icons/care.svg"><br> Отличный сервис
-		</div>
-
-		<div class="num-div">
-			<img  src="/icons/ambulance.svg">
-			<br> Выездная кардиобригада
-		</div> 
-	</div>
 
 	    <div class="container">
 	        <div class="row">
@@ -156,17 +155,17 @@
 	                    </div>
 	                </div>
 	            </div>
-		
-				<!-- кнопка все услуги -->
-			        <div class="all-services">
-						<div class="service-button">
-			                <a href="#" class="btn btn-primary btn-block btn-lg btn-all-services" style="border-radius: 30px !important;">
-			              	  ВСЕ УСЛУГИ
-			                </a>
-			            </div>
-		        	</div>	
-				<!-- / -->
 			
+				<!-- кнопка все услуги -->
+				<div class="block-service-center ">
+					<div class="service-button justify-content-center">
+		                <a href="#" class="btn btn-primary btn-block btn-lg btn-all-services" style="border-radius: 30px !important; width: 300px;">
+		              	  ВСЕ УСЛУГИ
+		                </a>
+	        	    </div>	
+		        </div>
+				<!-- / -->
+
 	        </div>
 
 	    </div>

@@ -1,14 +1,14 @@
-f
+
 
 
 /*----------------------our styles-----------------------*/
-.all-services
-{
-  padding: 20px 40px;
-  margin-left: auto;
-  margin-right: auto;
+.block-service-center {
+    height: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 40px;
 }
-
+   
 /* краткая инфа */
 .main-div {
     display: -webkit-flex;
@@ -68,14 +68,6 @@ f
 
 }
 
-
-.carousel-control-prev {
-  z-index: 11;
-}
-
-.carousel-control-next {
-  z-index: 11;
-}
 
 #map {
   height:330px;
