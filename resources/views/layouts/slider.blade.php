@@ -20,10 +20,10 @@
                     What image sizes should you use? This can help - https://codepen.io/JacobLett/pen/NjramL
                      -->
                      <picture>
-                      <source srcset="hospital-2.jpg" media="(min-width: 1400px)">
-                      <source srcset="hospital-2.jpg" media="(min-width: 769px)">
-                       <source srcset="hospital-2-mobile.jpg" media="(min-width: 577px)">
-                      <img srcset="hospital-2-mobile.jpg" alt="responsive image" class="d-block img-fluid">
+                      <source srcset="/hospital-2.jpg" media="(min-width: 1400px)">
+                      <source srcset="/hospital-2.jpg" media="(min-width: 769px)">
+                       <source srcset="/hospital-2-mobile.jpg" media="(min-width: 577px)">
+                      <img srcset="/hospital-2-mobile.jpg" alt="responsive image" class="d-block img-fluid">
                     </picture>
 
                     <div class="carousel-caption">
@@ -38,11 +38,11 @@
             <!-- /.carousel-item -->
             <div class="carousel-item">
                 <a href="#">
-                     <picture>
-                      <source srcset="hospital.jpg" media="(min-width: 1400px)">
-                      <source srcset="hospital.jpg" media="(min-width: 769px)">
-                       <source srcset="hospital-mobile.jpg" media="(min-width: 577px)">
-                      <img srcset="hospital-mobile.jpg" alt="responsive image" class="d-block img-fluid">
+                    <picture>
+                      <source srcset="/hospital.jpg" media="(min-width: 1400px)">
+                      <source srcset="/hospital.jpg" media="(min-width: 769px)">
+                       <source srcset="/hospital-mobile.jpg" media="(min-width: 577px)">
+                      <img srcset="/hospital-mobile.jpg" alt="responsive image" class="d-block img-fluid">
                     </picture>
 
                     <div class="carousel-caption justify-content-center align-items-center">
@@ -58,10 +58,10 @@
             <div class="carousel-item">
                 <a href="#">
                      <picture>
-                      <source srcset="hospital-2.jpg" media="(min-width: 1400px)">
-                      <source srcset="hospital-2.jpg" media="(min-width: 769px)">
-                       <source srcset="hospital-2-mobile.jpg" media="(min-width: 577px)">
-                      <img srcset="hospital-2-mobile.jpg" alt="responsive image" class="d-block img-fluid">
+                      <source srcset="/hospital-2.jpg" media="(min-width: 1400px)">
+                      <source srcset="/hospital-2.jpg" media="(min-width: 769px)">
+                       <source srcset="/hospital-2-mobile.jpg" media="(min-width: 577px)">
+                      <img srcset="/hospital-2-mobile.jpg" alt="responsive image" class="d-block img-fluid">
                     </picture>
 
                     <div class="carousel-caption justify-content-center align-items-center">

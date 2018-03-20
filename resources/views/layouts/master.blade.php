@@ -28,7 +28,7 @@
 
 <!-- наш слайд -->
 	<div class="carousel-relative">
-		@include('layouts.slider');
+		@include('layouts.slider')
 	</div>
 <!-- конец слайда -->
 
