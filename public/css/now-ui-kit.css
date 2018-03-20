@@ -1,4 +1,4 @@
-
+f
 
 
 /*----------------------our styles-----------------------*/
@@ -5862,7 +5862,7 @@ Created using IcoMoon - icomoon.io
   left: 0;
   top: 0;
   content: "";
-  background-color: rgba(0, 0, 0, 0.26); }
+  background-color: rgba(0, 0, 0, 0.46); }
 .section-image .container {
   z-index: 2;
   position: relative; }
@@ -6081,8 +6081,7 @@ Created using IcoMoon - icomoon.io
   color: #9A9A9A; }
 [data-background-color]:not([data-background-color="gray"]) .card:not(.card-plain) .card-title, [data-background-color]:not([data-background-color="gray"]) .card:not(.card-plain) .card-title {
   color: initial; }
-[data-background-color]:not([data-background-color="gray"]) .carousel .carousel-inner {
-  box-shadow: none; }
+
 [data-background-color]:not([data-background-color="gray"]) .title, [data-background-color]:not([data-background-color="gray"]) .social-description h2, [data-background-color]:not([data-background-color="gray"]) p, [data-background-color]:not([data-background-color="gray"]) p.blockquote, [data-background-color]:not([data-background-color="gray"]) p.blockquote small, [data-background-color]:not([data-background-color="gray"]) h1, [data-background-color]:not([data-background-color="gray"]) h2, [data-background-color]:not([data-background-color="gray"]) h3, [data-background-color]:not([data-background-color="gray"]) h4, [data-background-color]:not([data-background-color="gray"]) h5, [data-background-color]:not([data-background-color="gray"]) h6, [data-background-color]:not([data-background-color="gray"]) a:not(.btn):not(.dropdown-item):not(.card-link), [data-background-color]:not([data-background-color="gray"]) .icons-container i, [data-background-color]:not([data-background-color="gray"]).card-pricing ul li, [data-background-color]:not([data-background-color="gray"]) .info.info-horizontal .icon i, [data-background-color]:not([data-background-color="gray"]) .card-pricing.card-plain ul li {
   color: #FFFFFF; }
 [data-background-color]:not([data-background-color="gray"]).card a:not(.btn):not(.dropdown-item) {

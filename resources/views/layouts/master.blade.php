@@ -26,45 +26,6 @@
 	<div class="page-header page-header-small">
 		<div class="page-header">
 
-			<!-- слайдер -->
-				<div class="row justify-content-center" style="height: 100%">
-
-				        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-				            <ol class="carousel-indicators">
-				                <li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
-				                <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
-				                <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
-				            </ol>
-				            <div class="carousel-inner" role="listbox">
-				          <!--       <div class="carousel-item">
-				                    <img class="d-block" src="/hospital.jpg" alt="First slide"style="height: 500px;width: 100%;">
-				                    <div class="carousel-caption d-none d-md-block">
-				                        <h5>Текст для слайда №3</h5>
-				                    </div>
-				                </div> -->
-				                <div class="carousel-item active">
-				                    <img class="d-block size-of-img" src="/hospital.jpg" alt="Second slide" style="height: 500px;width: 100%;" >
-				                    <div class="carousel-caption d-none d-md-block">
-				                        <h5>Текст для слайда №1</h5>
-				                    </div>
-				                </div>
-				           <!--      <div class="carousel-item">
-				                    <img class="d-block" src="/hospital.jpg" alt="Third slide" style="height: 500px;width: 100%;">
-				                    <div class="carousel-caption d-none d-md-block">
-				                        <h5>Текст для слайда №2</h5>
-				                    </div>
-				                </div> -->
-				            </div>
-				            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-				                <i class="now-ui-icons arrows-1_minimal-left"></i>
-				            </a>
-				            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-				                <i class="now-ui-icons arrows-1_minimal-right"></i>
-				            </a>
-				        </div>
-				</div>
-			<!-- / -->
-
 		</div>
 
 		    <div class="content-center">
