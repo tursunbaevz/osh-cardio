@@ -24,6 +24,8 @@
 <div class="wrapper">
 
 
+
+
 <!-- наш слайд -->
 	<div class="carousel-relative">
 		@include('layouts.slider');
