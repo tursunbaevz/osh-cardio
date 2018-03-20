@@ -22,6 +22,7 @@
     <body class="landing-page" >
     	@include ('layouts.nav')
 <div class="wrapper">
+
 <!-- наш слайд -->
 	<div id="demo" class="carousel" data-ride="carousel">
 		<!-- Indicators -->
@@ -47,6 +48,10 @@
 			<span class="carousel-control-next-icon"></span>
 		</a>
 
+
+<!-- наш слайд -->
+	<div class="carousel-relative">
+		@include('layouts.slider');
 	</div>
 <!-- конец слайда -->
 

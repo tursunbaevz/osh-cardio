@@ -1,6 +1,3 @@
-
-
-
 /*----------------------our styles-----------------------*/
 .block-service-center {
     height: 110px;
@@ -48,6 +45,48 @@
     background-size: cover;
     background-image: url('/geny.svg');
 }
+
+
+.carousel-relative {
+  position: relative;
+  max-width: 1920px;
+  margin: auto;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.full-img {
+  background-image: url('/hospital.jpg');
+}
+
+/*----------------------Slider's styles-----------------------*/
+
+/*
+Removes white gap between slides - chagnge to base color of slide images
+*/
+.carousel {
+  background:#007aeb;
+}
+
+/*
+Forces image to be 100% width and not max width of 100%
+*/
+.carousel-item .img-fluid {
+  width:100%;
+}
+
+/* 
+anchors are inline so you need ot make them block to go full width
+*/
+.carousel-item a {
+  display: block;
+  width:100%;
+}
+
+
+
 /* ---- */
 
 /* ============= Our media ============= */
@@ -66,8 +105,14 @@
     border-style: none;
   }
 
+
 }
 
+@media screen and (max-width: 680px) {
+  .mobile-img {
+    background-image: url('/hospital-mobile.jpg');
+  }
+}
 
 #map {
   height:330px;
