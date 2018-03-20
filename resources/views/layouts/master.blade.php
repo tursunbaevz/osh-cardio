@@ -24,7 +24,6 @@
 <div class="wrapper">
 <!-- наш слайд -->
 	<div id="demo" class="carousel" data-ride="carousel">
-
 		<!-- Indicators -->
 		<ul class="carousel-indicators">
 			<li data-target="#demo" data-slide-to="0" class="active"></li>

@@ -3071,7 +3071,7 @@ h1 small, .h1 small {
 
 h2, .h2 {
   font-size: 2.5em;
-  margin-bottom: 50px; }
+}
 
 h3, .h3 {
   font-size: 1.825em;
@@ -4926,7 +4926,7 @@ Created using IcoMoon - icomoon.io
 .carousel .card {
   max-width: 650px;
   margin: 60px auto;
-  display: block; }
+}
 
 .card {
   border: 0;
