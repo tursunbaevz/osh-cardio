@@ -1,3 +1,55 @@
+.bg-blue {
+  background-color: #0971B2 !important; }
+
+.btn-red {
+  background-color: #C62828 !important;
+  color: #FFFFFF; }
+
+.icon-red {
+  color: #C62828 !important;
+}
+
+.icon-small {
+  color: #C62828 !important;
+  background-color: #FFFFFF !important;
+}
+
+.footer-text{
+  color: #fff;
+}
+
+.contact-us-block {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  width: 100%;
+  padding: 0;
+}
+
+
+
+.bg-1 {
+  background-color: #64B5F6;
+}
+.bg-2 {
+  background-color: #009688;
+}
+
+.icon-size {
+  font-size: 32px;
+}
+
+
+
+.form-item-size {
+  margin: 20px 0;
+  position: relative;
+}
+
+
+
+
+
+
 /*----------------------our styles-----------------------*/
 .block-service-center {
     height: 110px;
@@ -5414,7 +5466,7 @@ Created using IcoMoon - icomoon.io
   padding: 1.125rem 0;
   text-align: center; }
 .footer.footer-default {
-  background-color: #f2f2f2; }
+  background-color: #0971B2; }
 .footer.footer-white {
   background-color: #FFFFFF; }
 .footer nav {

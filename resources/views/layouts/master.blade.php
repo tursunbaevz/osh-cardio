@@ -42,21 +42,21 @@
 		<div class="main-div center text-style-div" style="margin-top: -10px;">
 				<div class="num-div">
 					<img src="/icons/doctor.svg">
-					<br> Лучшие специалисты
+					<br> Лучшие<br>специалисты
 				</div>	
 
 				<div class="num-div">
 					<img src="/icons/online-shop.svg">
-					<br> Современное оборудование
+					<br> Современное<br>оборудование
 				</div>
 
 				<div class="num-div">
-				    <img src="/icons/care.svg"><br> Отличный сервис
+				    <img src="/icons/care.svg"><br> Отличный<br>сервис
 				</div>
 
 				<div class="num-div">
 					<img  src="/icons/ambulance.svg">
-					<br> Выездная кардиобригада
+					<br> Выездная<br>кардиобригада
 				</div> 
 		</div>
 
@@ -81,7 +81,7 @@
 	                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officiis tempora iste. Excepturi soluta iste tenetur omnis aut quaerat officiis, nisi autem odit ea repellat necessitatibus maiores nobis accusamus magni.</li>
 	                      
 	                        </ul>
-	                        <a href="#pablo" class="btn btn-neutral btn-round">
+	                        <a href="#pablo" class="btn icon-small btn-round">
 	                            подробнее 
 	                        </a>
 	                    </div>
@@ -100,7 +100,7 @@
 		                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officiis tempora iste. Excepturi soluta iste tenetur omnis aut quaerat officiis, nisi autem odit ea repellat necessitatibus maiores nobis accusamus magni.</li>
 		                      
 		                        </ul>
-	                        <a href="#pablo" class="btn btn-neutral btn-round">
+	                        <a href="#pablo" class="btn icon-small btn-round">
 	                            подробнее
 	                        </a>
 	                    </div>
@@ -118,7 +118,7 @@
 	                          <ul>
 	                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officiis tempora iste. Excepturi soluta iste tenetur omnis aut quaerat officiis, nisi autem odit ea repellat necessitatibus maiores nobis accusamus magni.</li>
 	                        </ul>
-	                        <a href="#pablo" class="btn btn-neutral btn-round">
+	                        <a href="#pablo" class="btn icon-small btn-round">
 	                            подробнее
 	                        </a>
 	                    </div>
@@ -137,7 +137,7 @@
 	                          <ul>
 	                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officiis tempora iste. Excepturi soluta iste tenetur omnis aut quaerat officiis, nisi autem odit ea repellat necessitatibus maiores nobis accusamus magni.</li>
 	                        </ul>
-	                        <a href="#pablo" class="btn btn-neutral btn-round">
+	                        <a href="#pablo" class="btn icon-small btn-round">
 	                            подробнее
 	                        </a>
 	                    </div>
@@ -147,7 +147,7 @@
 				<!-- кнопка все услуги -->
 				<div class="block-service-center ">
 					<div class="service-button justify-content-center">
-		                <a href="#" class="btn btn-primary btn-block btn-lg btn-all-services" style="border-radius: 30px !important; width: 300px;">
+		                <a href="#" class="btn btn-red btn-block btn-lg btn-all-services" style="border-radius: 30px !important; width: 300px;">
 		              	  ВСЕ УСЛУГИ
 		                </a>
 	        	    </div>	
@@ -227,7 +227,7 @@
 	                            The networking at Web Summit is like no other European tech conference.
 	                        </p>
 	                    </div>
-	                    <div class="icon icon-primary">
+	                    <div class="icon icon-red">
 	                        <i class="fa fa-quote-right"></i>
 	                    </div>
 	                    <div class="card-footer">
@@ -249,7 +249,7 @@
 	                            The connections you make at Web Summit are unparalleled, we met users all over the world.
 	                        </p>
 	                    </div>
-	                    <div class="icon icon-primary">
+	                    <div class="icon icon-red">
 	                        <i class="fa fa-quote-right"></i>
 	                    </div>
 	                    <div class="card-footer">
@@ -271,7 +271,7 @@
 	                            Web Summit will increase your appetite, your inspiration, and your network.
 	                        </p>
 	                    </div>
-	                    <div class="icon icon-primary">
+	                    <div class="icon icon-red">
 	                        <i class="fa fa-quote-right"></i>
 	                    </div>
 	                    <div class="card-footer">
@@ -290,35 +290,103 @@
 
 
 	<!-- обратная связь -->
-	<div class="section section-contact-us text-center">
-	    <div class="container">
-	        <h2 class="title">Want to work with us?</h2>
-	        <p class="description">Your project is very important to us.</p>
-	        <div class="row">
-	            <div class="col-lg-6 text-center ml-auto mr-auto col-md-8">
-	              <div class="input-group input-lg">
-	                <div class="input-group-prepend">
-	                  <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
-	                </div>
-	                <input type="text" class="form-control" placeholder="First Name...">
-	              </div>
 
-	              <div class="input-group input-lg">
-	                <div class="input-group-prepend">
-	                  <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
-	                </div>
-	                <input type="text" class="form-control" placeholder="Email Here...">
-	              </div>
-	                <div class="textarea-container">
-	                    <textarea class="form-control" name="name" rows="4" cols="80" placeholder="Type a message..."></textarea>
-	                </div>
-	                <div class="send-button">
-	                    <a href="#pablo" class="btn btn-primary btn-round btn-block btn-lg">Send Message</a>
-	                </div>
-	            </div>
+
+	<div class="section section-contact-us text-center">
+
+    <div class="container">
+        <div class="card card-pricing card-raised contact-us-block" style="background: #fff;">
+            <div class="card-body" style="padding: 0">
+
+
+		    <div class="container">
+	    	<div class="row">
+
+		    	<div class="col bg-2">
+		        <h2 class="title">Want to work with us?</h2>
+		        <p class="description">Your project is very important to us.</p>
+		        <div class="row">
+		            <div class="col-lg-10 text-center ml-auto mr-auto">
+
+						<div class="input-group input-lg justify-content-center">
+						 <div class="icon-size input-group-prepend form-item-size">
+						  	<i class="now-ui-icons tech_mobile"></i>
+						  	<p style="font-size: 14px">Lorem ipsum dolor sit amet</p>
+						 </div>
+						</div>
+
+
+
+						<div class="input-group input-lg justify-content-center">
+						 <div class="icon-size input-group-prepend form-item-size">
+						  	<i class="now-ui-icons ui-1_email-85"></i>
+						  	<p style="font-size: 14px">Lorem ipsum dolor sit amet</p>
+						 </div>
+						</div>
+
+						<div class="input-group input-lg justify-content-center">
+						 <div class="icon-size input-group-prepend form-item-size">
+						  	<i class="now-ui-icons location_pin"></i>
+						  	<p style="font-size: 14px">Lorem ipsum dolor sit amet</p>
+						 </div>
+						</div>
+
+		            </div>
+		        </div>
+		        </div>
+
+
+
+
+				<div class="col">
+					
+				<h2 class="title">Want to work with us?</h2>
+		        <p class="description">Your project is very important to us.</p>
+		        <div class="row">
+		            <div class="col-lg-12 text-center ml-auto mr-auto col-md-8">
+		              <div class="input-group input-lg">
+		                <div class="input-group-prepend">
+		                  <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+		                </div>
+		                <input type="text" class="form-control" placeholder="First Name...">
+		              </div>
+
+		              <div class="input-group input-lg">
+		                <div class="input-group-prepend">
+		                  <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
+		                </div>
+		                <input type="text" class="form-control" placeholder="Email Here...">
+		              </div>
+		                <div class="textarea-container">
+		                    <textarea class="form-control" name="name" rows="4" cols="80" placeholder="Type a message..."></textarea>
+		                </div>
+		                <div class="send-button">
+		                    <a href="#pablo" class="btn btn-red btn-round btn-block btn-lg" style="margin: 30px 0">Send Message</a>
+		                </div>
+		            </div>
+		        </div>
+				</div>
+
+
+
 	        </div>
 	    </div>
-	</div>
+	                    
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+</div>
 	<!-- / -->
 
 
@@ -330,11 +398,11 @@
 		<!-- / -->
 
 
+	<!-- FOOTER -->
+	<footer class="footer footer-default" style="margin-top: 5px;">
 
-	<footer class="footer footer-default " >
 
-
-	    <div class="container">
+	    <div class="container footer-text">
 	        <nav>
 	            <ul>
 	                <li>
@@ -360,12 +428,9 @@
 	</footer>
 
 </div>
-
+<!-- / -->
 	
 	@yield('content')
-
-	@include ('layouts.footer')
-
 
     </body>
 
