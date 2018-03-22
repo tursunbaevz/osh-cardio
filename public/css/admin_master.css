@@ -1,0 +1,23 @@
+body {
+	margin: 0;
+	padding: 0px;
+	list-style: none;
+    
+}
+
+.side-bar-admin {
+	position: absolute;
+    width: 250px;
+    height: 100%;
+    background-color: #343a40;
+}
+
+.nav-itemform-inline a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-itemform-inline a:hover {
+  text-decoration: none;
+  color: #fff;
+}

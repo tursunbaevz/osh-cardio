@@ -220,13 +220,21 @@ function initMap() {
             }
           ]
         });
-
+        
         marker = new google.maps.Marker({
           map: map,
           draggable: true,
           animation: google.maps.Animation.DROP,
           position: {lat: 40.5258962, lng: 72.7935735},
-          title: 'Ош Кардио'
+          title: 'Ош Кардио',
         });
         marker.addListener('click', toggleBounce);
+        
+        function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+          marker.setAnimation(null);
+        } else {
+          marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+      }
 }
