@@ -303,36 +303,38 @@
 	    	<div class="row">
 
 		    	<div class="col bg-2">
-		        <h2 class="title">Want to work with us?</h2>
-		        <p class="description">Your project is very important to us.</p>
-		        <div class="row">
-		            <div class="col-lg-10 text-center ml-auto mr-auto">
+		       
+		            
+					<div class="align-form">
+		        		 <h2 class="title">Наши контакты</h2>
 
-						<div class="input-group input-lg justify-content-center">
+						<div class="align" style="padding: 0 58px;">
+
+						<div class="input-group input-lg">
 						 <div class="icon-size input-group-prepend form-item-size">
 						  	<i class="now-ui-icons tech_mobile"></i>
-						  	<p style="font-size: 14px">Lorem ipsum dolor sit amet</p>
+						  	<a href="tel:+996777777777">+996-777-777-777</a>
 						 </div>
 						</div>
 
-
-
-						<div class="input-group input-lg justify-content-center">
+						<div class="input-group input-lg">
 						 <div class="icon-size input-group-prepend form-item-size">
 						  	<i class="now-ui-icons ui-1_email-85"></i>
-						  	<p style="font-size: 14px">Lorem ipsum dolor sit amet</p>
+						  	<a href="mailto:info@oshcardio.kg">info@oshcardio.kg</a>
 						 </div>
 						</div>
 
-						<div class="input-group input-lg justify-content-center">
+						<div class="input-group input-lg";>
 						 <div class="icon-size input-group-prepend form-item-size">
 						  	<i class="now-ui-icons location_pin"></i>
-						  	<p style="font-size: 14px">Lorem ipsum dolor sit amet</p>
+						  	<p style="font-size: 14px">г.Ош, ул.Моминова 11</p>
 						 </div>
 						</div>
 
-		            </div>
-		        </div>
+
+						</div>
+		         </div>
+		        
 		        </div>
 
 
@@ -340,28 +342,28 @@
 
 				<div class="col">
 					
-				<h2 class="title">Want to work with us?</h2>
-		        <p class="description">Your project is very important to us.</p>
+				<h2 class="title">Остались вопросы?</h2>
+		        <p class="description">Напишите нам и наш специалист свяжется с вами в блишайшее время</p>
 		        <div class="row">
 		            <div class="col-lg-12 text-center ml-auto mr-auto col-md-8">
-		              <div class="input-group input-lg">
+		              <div class="input-group input-lg input-pad">
 		                <div class="input-group-prepend">
 		                  <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
 		                </div>
 		                <input type="text" class="form-control" placeholder="First Name...">
 		              </div>
 
-		              <div class="input-group input-lg">
+		              <div class="input-group input-lg input-pad">
 		                <div class="input-group-prepend">
 		                  <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
 		                </div>
 		                <input type="text" class="form-control" placeholder="Email Here...">
 		              </div>
-		                <div class="textarea-container">
+		                <div class="textarea-container input-pad">
 		                    <textarea class="form-control" name="name" rows="4" cols="80" placeholder="Type a message..."></textarea>
 		                </div>
 		                <div class="send-button">
-		                    <a href="#pablo" class="btn btn-red btn-round btn-block btn-lg" style="margin: 30px 0">Send Message</a>
+		                    <a href="#pablo" class="btn btn-red btn-round btn-block btn-lg justify-content-center" style="margin: 30px 0; display: flex;">Send Message</a>
 		                </div>
 		            </div>
 		        </div>

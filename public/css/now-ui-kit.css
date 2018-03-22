@@ -1,3 +1,8 @@
+
+
+
+
+
 .bg-blue {
   background-color: #0971B2 !important; }
 
@@ -25,8 +30,6 @@
   padding: 0;
 }
 
-
-
 .bg-1 {
   background-color: #64B5F6;
 }
@@ -35,19 +38,29 @@
 }
 
 .icon-size {
-  font-size: 32px;
+  font-size: 36px;
 }
-
-
-
-.form-item-size {
-  margin: 20px 0;
-  position: relative;
-}
-
-
-
-
+  .icon-size > p {
+    margin: 5px 0 auto 15px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px !important;
+  }  
+  .icon-size > a {
+    margin: 5px 0 0 15px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF !important;
+    border-bottom: 0px solid #fff !important;
+  
+  }
+  .form-item-size {
+    margin: 10px 0;
+    position: relative;
+  }
+    .align-form {
+      padding: 80px 0;
+    }
 
 
 /*----------------------our styles-----------------------*/
@@ -165,6 +178,20 @@ anchors are inline so you need ot make them block to go full width
     background-image: url('/hospital-mobile.jpg');
   }
 }
+
+
+@media screen and (max-width: 991px){
+.input-pad {
+    padding: 0px !important;
+  }
+}
+  @media screen and (max-width: 767px){
+    .input-pad {
+        padding: 0 40px !important;
+      }
+
+  }
+
 
 #map {
   height:330px;
