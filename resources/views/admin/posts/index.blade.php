@@ -17,7 +17,7 @@
 		</div>
 	</div>
 </div>
-
+{{--
 	@foreach($posts as $post)
 
 		{{ $post->title }}
@@ -27,3 +27,4 @@
 
 
 @endsection
+--}}
