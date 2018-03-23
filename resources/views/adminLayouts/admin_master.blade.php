@@ -10,8 +10,12 @@
 	@include('adminLayouts.admin_nav')
 
 	<section class="side-bar-admin">
-		<div>	
-
+		<div class="links">	
+			<ul>
+				<li><a href="{{ url('/adminpanel/dashboard/posts') }}">Новости</a></li>
+				<li><a href="{{ url('/adminpanel/dashboard/albums') }}">Альбомы</a></li>
+				<li><a href="{{ url('/adminpanel/dashboard/services') }}">Услуги</a></li>
+			</ul>
 		</div>
 	</section>
 

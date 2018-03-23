@@ -125,9 +125,6 @@
 	                </div>
 	            </div>
 
-
-
-
 	            <div class="col-md-3">
 	                <div class="card card-pricing card-background card-raised" style="background-image: url('/u1.jpg')">
 	                    <div class="card-body">
@@ -145,10 +142,10 @@
 	            </div>
 			
 				<!-- кнопка все услуги -->
-				<div class="block-service-center ">
-					<div class="service-button justify-content-center">
-		                <a href="#" class="btn btn-red btn-block btn-lg btn-all-services" style="border-radius: 30px !important; width: 300px;">
-		              	  ВСЕ УСЛУГИ
+				<div class="block-service-center">
+					<div class="justify-content-center">
+		                <a href="#" class="btn btn-primary btn-block btn-lg btn-round ">
+		              	  	ВСЕ УСЛУГИ
 		                </a>
 	        	    </div>	
 		        </div>
@@ -292,103 +289,69 @@
 	<!-- обратная связь -->
 
 
-	<div class="section section-contact-us text-center">
-
-    <div class="container">
-        <div class="card card-pricing card-raised contact-us-block" style="background: #fff;">
-            <div class="card-body" style="padding: 0">
-
-
+	<div class="section">
+		<div class="pricing-2">
 		    <div class="container">
-	    	<div class="row">
-
-		    	<div class="col bg-2">
-		       
-		            
-					<div class="align-form">
-		        		 <h2 class="title">Наши контакты</h2>
-
-						<div class="align" style="padding: 0 58px;">
-
-						<div class="input-group input-lg">
-						 <div class="icon-size input-group-prepend form-item-size">
-						  	<i class="now-ui-icons tech_mobile"></i>
-						  	<a href="tel:+996777777777">+996-777-777-777</a>
-						 </div>
-						</div>
-
-						<div class="input-group input-lg">
-						 <div class="icon-size input-group-prepend form-item-size">
-						  	<i class="now-ui-icons ui-1_email-85"></i>
-						  	<a href="mailto:info@oshcardio.kg">info@oshcardio.kg</a>
-						 </div>
-						</div>
-
-						<div class="input-group input-lg";>
-						 <div class="icon-size input-group-prepend form-item-size">
-						  	<i class="now-ui-icons location_pin"></i>
-						  	<p style="font-size: 14px">г.Ош, ул.Моминова 11</p>
-						 </div>
-						</div>
-
-
-						</div>
-		         </div>
-		        
-		        </div>
-
-
-
-
-				<div class="col">
-					
-				<h2 class="title">Остались вопросы?</h2>
-		        <p class="description">Напишите нам и наш специалист свяжется с вами в блишайшее время</p>
 		        <div class="row">
-		            <div class="col-lg-12 text-center ml-auto mr-auto col-md-8">
-		              <div class="input-group input-lg input-pad">
-		                <div class="input-group-prepend">
-		                  <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
-		                </div>
-		                <input type="text" class="form-control" placeholder="First Name...">
-		              </div>
+		            <div class="col-md-6">
+		                <div class="card card-pricing  card-raised bg-2">
+		                    <div class="card-body">
+		                    <h2 class="title" style="text-align: center;">Свяжитесь с нами</h2>
+		                    <br>
+		                        <div class="row">
+						            <div class="col-lg-8 text-center ml-auto mr-auto col-md-8">
+						              <div class="input-group input-lg">
+						                <div class="input-group-prepend">
+						                  <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+						                </div>
+						                <input type="text" class="form-control" placeholder="Имя...">
+						              </div>
 
-		              <div class="input-group input-lg input-pad">
-		                <div class="input-group-prepend">
-		                  <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
+						              <div class="input-group input-lg">
+						                <div class="input-group-prepend">
+						                  <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
+						                </div>
+						                <input type="text" class="form-control" placeholder="Email...">
+						              </div>
+						                <div class="textarea-container">
+						                    <textarea class="form-control" name="name" rows="4" cols="80" placeholder="Ваше сообщение..."></textarea>
+						                </div>
+						                <div class="send-button">
+						                    <a href="/" class="btn btn-primary btn-red btn-round btn-block btn-lg">Отправить</a>
+						                </div>
+						            </div>
+						        </div>
+		                    
+		                    </div>
 		                </div>
-		                <input type="text" class="form-control" placeholder="Email Here...">
-		              </div>
-		                <div class="textarea-container input-pad">
-		                    <textarea class="form-control" name="name" rows="4" cols="80" placeholder="Type a message..."></textarea>
-		                </div>
-		                <div class="send-button">
-		                    <a href="#pablo" class="btn btn-red btn-round btn-block btn-lg justify-content-center" style="margin: 30px 0; display: flex;">Send Message</a>
+		            </div>
+
+				<!-- second part -->
+
+		            <div class="col-md-6">
+		            	<div class="card-pricing">
+		                	<div class="card-body">
+		                        <ul>
+							  		<li>
+						  				<i class="now-ui-icons tech_mobile"></i><a href="tel:+996777777777">+996-777-777-777</a>
+	                        			
+		                            </li>
+		                            <li>
+		                            	<i class="now-ui-icons location_pin"></i>
+		                            	<a href="mailto:info@oshcardio.kg"> г.Ош, ул.Моминова 11</a>
+		                            </li>
+		                            <li>
+		                            	<i class="now-ui-icons ui-1_email-85"></i>
+		                            	<a href="mailto:info@oshcardio.kg">info@oshcardio.kg</a>
+		                            </li>
+		                        </ul>	                     
+		                    </div>
 		                </div>
 		            </div>
 		        </div>
-				</div>
-
-
-
-	        </div>
-	    </div>
-	                    
-
-
-
-
-
-
-
-
-
-
-        </div>
-    </div>
-</div>
-
-</div>
+		    </div>
+		</div>
+	</div>
 	<!-- / -->
 
 

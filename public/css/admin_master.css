@@ -1,8 +1,10 @@
 body {
 	margin: 0;
 	padding: 0px;
-	list-style: none;
-    
+}
+
+li {
+  list-style: none;
 }
 
 .side-bar-admin {
@@ -20,4 +22,17 @@ body {
 .nav-itemform-inline a:hover {
   text-decoration: none;
   color: #fff;
+}
+
+.links ul li {
+  margin-top: 15px;
+}
+
+.links ul li a {
+  color: #eae4e4;
+}
+
+.links ul li a:hover {
+  color: #fff;
+  text-decoration: none;
 }
