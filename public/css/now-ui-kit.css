@@ -1,14 +1,11 @@
 
+/*----------------------our styles-----------------------*/
 
+/* contact-us-form */
 
-
-
-.bg-blue {
-  background-color: #0971B2 !important; }
-
-.btn-red {
-  background-color: #C62828 !important;
-  color: #FFFFFF; }
+.card-body ul li a {
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+}
 
 .icon-red {
   color: #C62828 !important;
@@ -19,56 +16,20 @@
   background-color: #FFFFFF !important;
 }
 
-.footer-text{
-  color: #fff;
-}
-
-.contact-us-block {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  width: 100%;
-  padding: 0;
-}
-
-.bg-1 {
-  background-color: #64B5F6;
-}
-.bg-2 {
-  background-color: #009688;
-}
-
 .icon-size {
   font-size: 36px;
 }
-  .icon-size > p {
-    margin: 5px 0 auto 15px;
-    color: #FFFFFF;
-    font-weight: 400;
-    font-size: 18px !important;
-  }  
-  .icon-size > a {
-    margin: 5px 0 0 15px;
-    font-size: 18px;
-    font-weight: 400;
-    color: #FFFFFF !important;
-    border-bottom: 0px solid #fff !important;
-  
-  }
-  .form-item-size {
-    margin: 10px 0;
-    position: relative;
-  }
-    .align-form {
-      padding: 80px 0;
-    }
 
-
-/*----------------------our styles-----------------------*/
 .block-service-center {
     height: 110px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px 40px;
+}
+
+
+.card-pricing ul li a:hover {
+  text-decoration: none;
 }
    
 /* краткая инфа */
@@ -111,7 +72,6 @@
     background-image: url('/geny.svg');
 }
 
-
 .carousel-relative {
   position: relative;
   max-width: 1920px;
@@ -124,6 +84,13 @@
 
 .full-img {
   background-image: url('/hospital.jpg');
+}
+
+
+/* footer */
+
+.footer-text{
+  color: #fff;
 }
 
 /*----------------------Slider's styles-----------------------*/
@@ -150,9 +117,23 @@ anchors are inline so you need ot make them block to go full width
   width:100%;
 }
 
-
+@media screen and (max-width: 680px) {
+  .mobile-img {
+    background-image: url('/hospital-mobile.jpg');
+  }
+}
 
 /* ---- */
+
+
+/* map */
+#map {
+  height:330px;
+  width:100%;
+  position:absolute;
+  position:relative;
+  overflow:hidden;
+}
 
 /* ============= Our media ============= */
 
@@ -171,34 +152,6 @@ anchors are inline so you need ot make them block to go full width
   }
 
 
-}
-
-@media screen and (max-width: 680px) {
-  .mobile-img {
-    background-image: url('/hospital-mobile.jpg');
-  }
-}
-
-
-@media screen and (max-width: 991px){
-.input-pad {
-    padding: 0px !important;
-  }
-}
-  @media screen and (max-width: 767px){
-    .input-pad {
-        padding: 0 40px !important;
-      }
-
-  }
-
-
-#map {
-  height:330px;
-  width:100%;
-  position:absolute;
-  position:relative;
-  overflow:hidden;
 }
 
 /*!
@@ -2396,10 +2349,10 @@ input.datetimepicker[data-color="yellow"] + .bootstrap-datetimepicker-widget tab
   color: #367dff; }
 
 .btn-primary {
-  background-color: #f96332;
+  background-color: #C62828;
   color: #FFFFFF; }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:focus, .btn-primary.active:hover, .show > .btn-primary.dropdown-toggle, .show > .btn-primary.dropdown-toggle:focus, .show > .btn-primary.dropdown-toggle:hover {
-  background-color: #fa7a50;
+  background-color: #d41b1b;
   color: #FFFFFF;
   box-shadow: none; }
 .btn-primary:not([data-action]):hover {
@@ -3180,9 +3133,9 @@ small {
   font-size: 60%; }
 
 a {
-  color: #f96332; }
+  color: #18191b8c; }
 a:hover, a:focus {
-  color: #f96332; }
+  color: #000; }
 
 h1, .h1 {
   font-size: 3.5em;
@@ -3581,8 +3534,8 @@ body {
 .bg-warning {
   background-color: #FFB236 !important; }
 
-.bg-white {
-  background-color: #FFFFFF !important; }
+.bg-blue {
+  background-color: #0971B2 !important; }
 
 .dropdown-menu {
   border: 0;
@@ -5334,12 +5287,13 @@ Created using IcoMoon - icomoon.io
   list-style: none;
   padding: 0;
   max-width: 240px;
-  margin: 10px auto; }
+  margin: 20px auto; }
 .card-pricing ul li {
   color: #888888;
   text-align: center;
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(136, 136, 136, 0.3); }
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(136, 136, 136, 0.3); 
+  font-size: 16px;}
 .card-pricing ul li:last-child {
   border: 0; }
 .card-pricing ul li b {
@@ -5348,7 +5302,7 @@ Created using IcoMoon - icomoon.io
   top: 3px;
   right: 3px;
   position: relative;
-  font-size: 20px; }
+  font-size: 22px; }
 .card-pricing.card-background ul li {
   color: #FFFFFF;
   border-color: rgba(255, 255, 255, 0.3); }
@@ -5924,7 +5878,8 @@ Created using IcoMoon - icomoon.io
   margin-bottom: 70px; }
 
 .section {
-  padding: 70px 0;
+  padding: 20px 0;
+  margin-bottom: -20px;
   position: relative;
   background: #FFFFFF; }
 .section .row + .category {
