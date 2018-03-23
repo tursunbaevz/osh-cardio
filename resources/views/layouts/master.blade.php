@@ -71,27 +71,7 @@
 
 	        <div class="row">
 
-	            <div class="col-md-3">
-	                <div class="card card-pricing card-background card-raised"  style="background-image: url('/u1.jpg' ">
-	                    <div class="card-body">
-	                        <h6 class="category text-info">Professional</h6>
-	                        <h1 class="card-title"><small>$</small>29</h1>
-
-	                        <ul>
-	                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officiis tempora iste. Excepturi soluta iste tenetur omnis aut quaerat officiis, nisi autem odit ea repellat necessitatibus maiores nobis accusamus magni.</li>
-	                      
-	                        </ul>
-	                        <a href="#pablo" class="btn icon-small btn-round">
-	                            подробнее 
-	                        </a>
-	                    </div>
-	                </div>
-	            </div>
-
-
-
-
-	            <div class="col-md-3">
+	            <div class="col-md-4">
 	                <div class="card card-pricing card-background card-raised" style="background-image: url('/u1.jpg')">
 	                    <div class="card-body">
 	                        <h6 class="category text-info">Professional</h6>
@@ -109,7 +89,7 @@
 
 
 
-	            <div class="col-md-3">
+	            <div class="col-md-4">
 	                <div class="card card-pricing card-background card-raised" style="background-image: url('/u1.jpg')">
 	                    <div class="card-body">
 	                        <h6 class="category text-info">Professional</h6>
@@ -125,7 +105,7 @@
 	                </div>
 	            </div>
 
-	            <div class="col-md-3">
+	            <div class="col-md-4">
 	                <div class="card card-pricing card-background card-raised" style="background-image: url('/u1.jpg')">
 	                    <div class="card-body">
 	                        <h6 class="category text-info">Professional</h6>
