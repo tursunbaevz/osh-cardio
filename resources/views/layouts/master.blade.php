@@ -72,10 +72,10 @@
 	        <div class="row">
 
 	            <div class="col-md-4">
-	                <div class="card card-pricing card-background card-raised" style="background-image: url('/u1.jpg')">
+	                <div class="card card-pricing card-background card-raised" style="background-image: url('/ангио-услуга-блок.jpg')">
 	                    <div class="card-body">
-	                        <h6 class="category text-info">Professional</h6>
-	                        <h1 class="card-title"><small>$</small>29</h1>
+	                        <h4 class="category text-info">Ангиография</h4>
+	                        
 	   							<ul>
 		                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officiis tempora iste. Excepturi soluta iste tenetur omnis aut quaerat officiis, nisi autem odit ea repellat necessitatibus maiores nobis accusamus magni.</li>
 		                      
@@ -92,9 +92,7 @@
 	            <div class="col-md-4">
 	                <div class="card card-pricing card-background card-raised" style="background-image: url('/u1.jpg')">
 	                    <div class="card-body">
-	                        <h6 class="category text-info">Professional</h6>
-	                        <h1 class="card-title"><small>$</small>29</h1>
-
+	                        <h4 class="category text-info">Professional</h4>
 	                          <ul>
 	                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officiis tempora iste. Excepturi soluta iste tenetur omnis aut quaerat officiis, nisi autem odit ea repellat necessitatibus maiores nobis accusamus magni.</li>
 	                        </ul>
@@ -108,9 +106,7 @@
 	            <div class="col-md-4">
 	                <div class="card card-pricing card-background card-raised" style="background-image: url('/u1.jpg')">
 	                    <div class="card-body">
-	                        <h6 class="category text-info">Professional</h6>
-	                        <h1 class="card-title"><small>$</small>29</h1>
-
+	                        <h4 class="category text-info">Professional</h4>
 	                          <ul>
 	                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officiis tempora iste. Excepturi soluta iste tenetur omnis aut quaerat officiis, nisi autem odit ea repellat necessitatibus maiores nobis accusamus magni.</li>
 	                        </ul>
