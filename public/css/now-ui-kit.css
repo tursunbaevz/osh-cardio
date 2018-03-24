@@ -24,7 +24,7 @@
     height: 110px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 40px;
+    padding: 30px;
 }
 
 
@@ -3182,7 +3182,8 @@ p {
 
 .title {
   font-weight: 700;
-  padding-top: 30px; }
+  padding-top: 30px;
+  padding-bottom: 30px; }
 .title.title-up {
   text-transform: uppercase; }
 .title.title-up a {
@@ -5314,7 +5315,7 @@ Created using IcoMoon - icomoon.io
   padding-top: 1.25rem;
   padding-bottom: 1.25rem; }
 .card-pricing.card-background:after {
-  background-color: rgba(0, 0, 0, 0.65); }
+  background-color: rgba(31, 31, 31, 0.34); }
 
 .card-form-horizontal .card-body {
   padding-left: 15px;
