@@ -72,50 +72,48 @@
 	        <div class="row">
 
 	            <div class="col-md-4">
-	                <div class="card card-pricing card-background card-raised" style="background-image: url('/ангио-услуга-блок.jpg')">
+	                <div class="card card-pricing card-background card-raised" style="background-image: url('/block1-angio.jpg')">
+	                    <div class="card-body">    
+	                        <div class="more-services" style="margin-top: 100px;">
+	                        	<h3 class="category text-info center-block-btn">Ангиография<br>Стентирование</h3>
+	                        	<a href="#pablo" class="btn icon-small btn-round m-style">
+	                           		подробнее
+	                        	</a>
+	                        </div>                   
+	                    </div>
+	                </div>
+	            </div>
+
+	          
+
+	            <div class="col-md-4">
+	                <div class="card card-pricing card-background card-raised" style="background-image: url('/block2-op.jpg')">
 	                    <div class="card-body">
-	                        <h4 class="category text-info">Ангиография</h4>
 	                        
-	   							<ul>
-		                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officiis tempora iste. Excepturi soluta iste tenetur omnis aut quaerat officiis, nisi autem odit ea repellat necessitatibus maiores nobis accusamus magni.</li>
-		                      
-		                        </ul>
-	                        <a href="#pablo" class="btn icon-small btn-round">
-	                            подробнее
-	                        </a>
+	                        <div class="more-services">
+	                        	<h3 class="category text-info center-block-btn">Операции <br> на сердце</h3>
+	                        	<a href="#pablo" class="btn icon-small btn-round m-style">
+	                            	подробнее
+	                        	</a>
+	                        </div>
+	                        
 	                    </div>
 	                </div>
 	            </div>
 
-
-
-	            <div class="col-md-4">
-	                <div class="card card-pricing card-background card-raised" style="background-image: url('/u1.jpg')">
+  				<div class="col-md-4">
+	                <div class="card card-pricing card-background card-raised" style="background-image: url('/block3-stac.jpg')">
 	                    <div class="card-body">
-	                        <h4 class="category text-info">Professional</h4>
-	                          <ul>
-	                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officiis tempora iste. Excepturi soluta iste tenetur omnis aut quaerat officiis, nisi autem odit ea repellat necessitatibus maiores nobis accusamus magni.</li>
-	                        </ul>
-	                        <a href="#pablo" class="btn icon-small btn-round">
-	                            подробнее
-	                        </a>
+	                    	<div class="more-services">
+		                        <h3 class="category text-info center-block-btn">Стационарные <br> лечения</h3>
+		                        <a href="#pablo" class="btn icon-small btn-round m-style">
+		                            подробнее
+		                        </a>
+		                    </div>
 	                    </div>
 	                </div>
 	            </div>
-
-	            <div class="col-md-4">
-	                <div class="card card-pricing card-background card-raised" style="background-image: url('/u1.jpg')">
-	                    <div class="card-body">
-	                        <h4 class="category text-info">Professional</h4>
-	                          <ul>
-	                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officiis tempora iste. Excepturi soluta iste tenetur omnis aut quaerat officiis, nisi autem odit ea repellat necessitatibus maiores nobis accusamus magni.</li>
-	                        </ul>
-	                        <a href="#pablo" class="btn icon-small btn-round">
-	                            подробнее
-	                        </a>
-	                    </div>
-	                </div>
-	            </div>
+	         
 			
 				<!-- кнопка все услуги -->
 				<div class="block-service-center">
@@ -192,7 +190,7 @@
 	                <div class="card card-testimonial">
 	                    <div class="card-avatar">
 	                        <a href="#pablo">
-	                            <img class="img img-raised" src="/ryan.jpg">
+	                            <img class="img img-raised" src="/a-1.jpg">
 	                        </a>
 	                    </div>
 	                    <div class="card-body">
@@ -214,7 +212,7 @@
 	                <div class="card card-testimonial">
 	                    <div class="card-avatar">
 	                        <a href="#pablo">
-	                            <img class="img img-raised" src="/eva.jpg">
+	                            <img class="img img-raised" src="/a-3.jpg">
 	                        </a>
 	                    </div>
 	                    <div class="card-body">
@@ -236,7 +234,7 @@
 	                <div class="card card-testimonial">
 	                    <div class="card-avatar">
 	                        <a href="#pablo">
-	                            <img class="img img-raised" src="/avatar.jpg">
+	                            <img class="img img-raised" src="/a-2.jpg">
 	                        </a>
 	                    </div>
 	                    <div class="card-body">
@@ -264,8 +262,7 @@
 
 	<!-- обратная связь -->
 
-
-	<div class="section">
+	<div class="section background-parallax" style="background: url('/pic-1.jpg');">
 		<div class="pricing-2">
 		    <div class="container">
 		        <div class="row">
@@ -304,9 +301,9 @@
 
 				<!-- second part -->
 
-		            <div class="col-md-6">
+		            <div class="col-md-6" >
 		            	<div class="card-pricing">
-		                	<div class="card-body">
+		                	<div class="card-body" style="margin-top: 60px;">
 		                        <ul>
 							  		<li>
 						  				<i class="now-ui-icons tech_mobile"></i><a href="tel:+996777777777">+996-777-777-777</a>

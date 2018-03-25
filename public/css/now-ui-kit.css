@@ -20,6 +20,15 @@
   font-size: 36px;
 }
 
+.background-parallax {    
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-position: top !important;
+  background-size: cover !important;
+} 
+
+/* наши услуги */
+
 .block-service-center {
     height: 110px;
     margin-left: auto;
@@ -27,6 +36,18 @@
     padding: 30px;
 }
 
+.center-block-btn {
+  margin-top: 100px;
+  margin-bottom: 5px
+}
+
+.m-style {
+  margin: 7px 0 !important;
+}
+
+.more-services {
+  margin-top: 100px;
+}
 
 .card-pricing ul li a:hover {
   text-decoration: none;
@@ -117,12 +138,6 @@ anchors are inline so you need ot make them block to go full width
   width:100%;
 }
 
-@media screen and (max-width: 680px) {
-  .mobile-img {
-    background-image: url('/hospital-mobile.jpg');
-  }
-}
-
 /* ---- */
 
 
@@ -137,7 +152,22 @@ anchors are inline so you need ot make them block to go full width
 
 /* ============= Our media ============= */
 
+/*
+@media screen and (max-width: 768px) {
+  .text-info {
+    font-size: 23px;
+  }
+  
+}*/
+
+
+
 @media screen and (max-width: 680px) {
+
+
+  .mobile-img {
+    background-image: url('/hospital-mobile.jpg');
+  }
 
   .main-div {
     display: block;
@@ -3197,7 +3227,6 @@ p {
   font-weight: 300; }
 
 .category {
-  text-transform: capitalize;
   font-weight: 700;
   color: #9A9A9A; }
 
@@ -7572,6 +7601,9 @@ Created using IcoMoon - icomoon.io
   .footer:not(.footer-big) .copyright {
     float: right; } }
 @media screen and (min-width: 768px) {
+  .text-info {
+    font-size: 20px;
+  }
   .image-container.image-right {
     top: 80px;
     margin-left: -100px;
