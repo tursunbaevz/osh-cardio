@@ -328,7 +328,11 @@
 	<!-- / -->
 
 		<!-- GoogleMap -->
-		<div id="map"></div>
+		<div id="map">
+			<div class="test" style="width: 300px; height: 300px; background-color: #000; z-index: 2222; position: absolute;">
+				
+			</div>
+		</div>
 		<!-- / -->
 
 

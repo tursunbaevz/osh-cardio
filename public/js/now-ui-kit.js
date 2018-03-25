@@ -60,7 +60,7 @@ $(document).ready(function(){
     scroll_distance = $navbar.attr('color-on-scroll') || 500;
 
     // Check if we have the class "navbar-color-on-scroll" then add the function to remove the class "navbar-transparent" so it will transform to a plain color.
-    if($('.navbar[color-on-scroll]').length != 0){
+    if($('.navbar[color-on-scroll]').length != 0 || $('.logo[color-on-scroll]').length != 0){
         nowuiKit.checkScrollForTransparentNavbar();
         $(window).on('scroll', nowuiKit.checkScrollForTransparentNavbar)
     }
@@ -190,11 +190,15 @@ nowuiKit = {
                 if(transparent) {
                     transparent = false;
                     $('.navbar[color-on-scroll]').removeClass('navbar-transparent');
+                    $('.logo[color-on-scroll]').removeClass('black-shadow');
+                    $('.logo[color-on-scroll]').addClass('white-shadow');
                 }
             } else {
                 if( !transparent ) {
                     transparent = true;
                     $('.navbar[color-on-scroll]').addClass('navbar-transparent');
+                    $('.logo[color-on-scroll]').removeClass('white-shadow');
+                    $('.logo[color-on-scroll]').addClass('black-shadow');
                 }
             }
     }, 17),

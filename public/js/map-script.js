@@ -1,6 +1,6 @@
 function initMap() {
         // Styles a map in night mode.
-        var loc = {lat: 40.5258962, lng: 72.7935735};
+        
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 40.525841, lng: 72.7913362},
           zoom: 16,
@@ -225,7 +225,7 @@ function initMap() {
           map: map,
           draggable: true,
           animation: google.maps.Animation.DROP,
-          position: {lat: 40.5258962, lng: 72.7935735},
+          position: {lat: 40.52607156687872, lng: 72.79363865056126},
           title: 'Ош Кардио',
         });
         marker.addListener('click', toggleBounce);
@@ -238,3 +238,4 @@ function initMap() {
         }
       }
 }
+
