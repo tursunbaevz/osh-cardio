@@ -27,7 +27,7 @@
 
                 
  <div class="navbar-translate">
-        <img src="/logo_text.svg" alt="logo" class="logo black-shadow" color-on-scroll="400">
+        <img src="/img/logo_text.svg" alt="logo" class="logo black-shadow" color-on-scroll="400">
  
          <a class="navbar-brand" href="#" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom">
          </a>

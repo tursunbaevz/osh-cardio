@@ -72,7 +72,7 @@
 	        <div class="row">
 
 	            <div class="col-md-4">
-	                <div class="card card-pricing card-background card-raised" style="background-image: url('/block1-angio.jpg')">
+	                <div class="card card-pricing card-background card-raised" style="background-image: url('/img/block1-angio.jpg')">
 	                    <div class="card-body">    
 	                        <div class="more-services" style="margin-top: 100px;">
 	                        	<h3 class="category text-info center-block-btn">Ангиография<br>Стентирование</h3>
@@ -87,7 +87,7 @@
 	          
 
 	            <div class="col-md-4">
-	                <div class="card card-pricing card-background card-raised" style="background-image: url('/block2-op.jpg')">
+	                <div class="card card-pricing card-background card-raised" style="background-image: url('/img/block2-op.jpg')">
 	                    <div class="card-body">
 	                        
 	                        <div class="more-services">
@@ -102,7 +102,7 @@
 	            </div>
 
   				<div class="col-md-4">
-	                <div class="card card-pricing card-background card-raised" style="background-image: url('/block3-stac.jpg')">
+	                <div class="card card-pricing card-background card-raised" style="background-image: url('/img/block3-stac.jpg')">
 	                    <div class="card-body">
 	                    	<div class="more-services">
 		                        <h3 class="category text-info center-block-btn">Стационарные <br> лечения</h3>
@@ -190,7 +190,7 @@
 	                <div class="card card-testimonial">
 	                    <div class="card-avatar">
 	                        <a href="#pablo">
-	                            <img class="img img-raised" src="/a-1.jpg">
+	                            <img class="img img-raised" src="/img/a-1.jpg">
 	                        </a>
 	                    </div>
 	                    <div class="card-body">
@@ -212,7 +212,7 @@
 	                <div class="card card-testimonial">
 	                    <div class="card-avatar">
 	                        <a href="#pablo">
-	                            <img class="img img-raised" src="/a-3.jpg">
+	                            <img class="img img-raised" src="/img/a-3.jpg">
 	                        </a>
 	                    </div>
 	                    <div class="card-body">
@@ -234,7 +234,7 @@
 	                <div class="card card-testimonial">
 	                    <div class="card-avatar">
 	                        <a href="#pablo">
-	                            <img class="img img-raised" src="/a-2.jpg">
+	                            <img class="img img-raised" src="/img/a-2.jpg">
 	                        </a>
 	                    </div>
 	                    <div class="card-body">
@@ -262,7 +262,7 @@
 
 	<!-- обратная связь -->
 
-	<div class="section background-parallax" style="background: url('/pic-1.jpg');">
+	<div class="section background-parallax" style="background: url('/img/pic-1.jpg');">
 		<div class="pricing-2">
 		    <div class="container">
 		        <div class="row">
