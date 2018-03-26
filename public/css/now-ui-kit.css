@@ -72,7 +72,7 @@
 .background-parallax {    
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
-  background-position: top !important;
+  background-position: bottom !important;
   background-size: cover !important;
 } 
 
