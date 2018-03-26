@@ -75,7 +75,7 @@
 	                <div class="card card-pricing card-background card-raised" style="background-image: url('/img/block1-angio.jpg')">
 	                    <div class="card-body">    
 	                        <div class="more-services" style="margin-top: 100px;">
-	                        	<h3 class="category text-info center-block-btn">Ангиография<br>Стентирование</h3>
+	                        	<h3 class="category text-info center-block-btn">АНГИОГРАФИЯ<br>СТЕНТИРОВАНИЕ</h3>
 	                        	<a href="#pablo" class="btn icon-small btn-round m-style">
 	                           		подробнее
 	                        	</a>
@@ -91,7 +91,7 @@
 	                    <div class="card-body">
 	                        
 	                        <div class="more-services">
-	                        	<h3 class="category text-info center-block-btn">Операции <br> на сердце</h3>
+	                        	<h3 class="category text-info center-block-btn">ОПЕРАЦИИ<br>НА СЕРДЦЕ</h3>
 	                        	<a href="#pablo" class="btn icon-small btn-round m-style">
 	                            	подробнее
 	                        	</a>
@@ -105,7 +105,7 @@
 	                <div class="card card-pricing card-background card-raised" style="background-image: url('/img/block3-stac.jpg')">
 	                    <div class="card-body">
 	                    	<div class="more-services">
-		                        <h3 class="category text-info center-block-btn">Стационарное <br> лечение</h3>
+		                        <h3 class="category text-info center-block-btn">СТАЦИОНАРНОЕ<br>ЛЕЧЕНИЕ</h3>
 		                        <a href="#pablo" class="btn icon-small btn-round m-style">
 		                            подробнее
 		                        </a>

@@ -20,10 +20,10 @@
                     What image sizes should you use? This can help - https://codepen.io/JacobLett/pen/NjramL
                      -->
                      <picture>
-                      <source srcset="/img/hospital-2.jpg" media="(min-width: 1400px)">
-                      <source srcset="/img/hospital-2.jpg" media="(min-width: 769px)">
-                       <source srcset="/img/hospital-2-mobile.jpg" media="(min-width: 577px)">
-                      <img srcset="/img/hospital-2-mobile.jpg" alt="responsive image" class="d-block img-fluid">
+                      <source srcset="/img/slide1.jpg" media="(min-width: 1400px)">
+                      <source srcset="/img/slide1.jpg" media="(min-width: 769px)">
+                       <source srcset="/img/slide1_mob.jpg" media="(min-width: 577px)">
+                      <img srcset="/img/slide1_mob.jpg" alt="responsive image" class="d-block img-fluid">
                     </picture>
 
                     <div class="carousel-caption">
@@ -36,7 +36,7 @@
                 </a>
             </div>
             <!-- /.carousel-item -->
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
                 <a href="#">
                     <picture>
                       <source srcset="/img/hospital.jpg" media="(min-width: 1400px)">
@@ -54,7 +54,7 @@
                     </div>
                 </a>
             </div>
-            <!-- /.carousel-item -->
+            /.carousel-item
             <div class="carousel-item">
                 <a href="#">
                      <picture>
@@ -72,7 +72,7 @@
                         </div>
                     </div>
                 </a>
-            </div>
+            </div> -->
             <!-- /.carousel-item -->
         </div>
         <!-- /.carousel-inner -->
