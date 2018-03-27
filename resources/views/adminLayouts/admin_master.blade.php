@@ -36,7 +36,7 @@
 					 </div>
 
 					 <div class="col-2">
-						<div class="btn-group-vertical">
+						<div class="btn-group-vertical btn-center">
 							<button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px">Редактировать</button>
 
 							<button type="button" class="btn btn-danger btn-sm">Удалить</button>
@@ -55,7 +55,7 @@
 					 </div>
 
 					 <div class="col-2">
-						<div class="btn-group-vertical">
+						<div class="btn-group-vertical btn-center">
 							<button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px">Редактировать</button>
 
 							<button type="button" class="btn btn-danger btn-sm">Удалить</button>
@@ -73,7 +73,7 @@
 					 </div>
 
 					 <div class="col-2">
-						<div class="btn-group-vertical">
+						<div class="btn-group-vertical btn-center">
 							<button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px">Редактировать</button>
 
 							<button type="button" class="btn btn-danger btn-sm">Удалить</button>

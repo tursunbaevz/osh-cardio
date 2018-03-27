@@ -24,3 +24,9 @@ hr {
 .float-right {
   margin-right: 2em;
 }
+
+.btn-center {
+position: relative;
+top: 50%;
+transform: translateY(-50%);
+}
