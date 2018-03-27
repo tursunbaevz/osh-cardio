@@ -1,38 +1,26 @@
-body {
-	margin: 0;
-	padding: 0px;
+html, body {
+  height: 100%;
 }
 
 li {
-  list-style: none;
+  list-style-type: none;
 }
 
-.side-bar-admin {
-	position: absolute;
-    width: 250px;
-    height: 100%;
-    background-color: #343a40;
+.container-fluid, .full-height{
+  height: 100%;
 }
 
-.nav-itemform-inline a {
-  text-decoration: none;
-  color: #fff;
+hr {
+  background-color: #000;
 }
 
-.nav-itemform-inline a:hover {
-  text-decoration: none;
-  color: #fff;
+
+.float-btn:after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
-.links ul li {
-  margin-top: 15px;
-}
-
-.links ul li a {
-  color: #eae4e4;
-}
-
-.links ul li a:hover {
-  color: #fff;
-  text-decoration: none;
+.float-right {
+  margin-right: 2em;
 }
