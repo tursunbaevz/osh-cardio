@@ -3,9 +3,9 @@
 <html>
     <head>
     <meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	
-<title>Ош Кардио</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<title>Медицинский Центр «Ош-Кардио» имени Алиева Мамата</title>
 
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
 
@@ -33,10 +33,6 @@
 <!-- конец слайда -->
 
 
-			
-		
-		
-	
 	<!-- наши услуги -->
 	<div class="pricing-2 ">
 		<div class="main-div center text-style-div" style="margin-top: -10px;">
@@ -135,10 +131,13 @@
 	<div class="testimonials-1 section-image parallax">
 	    <div class="container">
 	        <div class="row">
-	            <div class="col-md-6 ml-auto mr-auto text-center">
-	                <h2 class="title">Краткая Инфа</h2>
+	            <div class="col-md-8 ml-auto mr-auto text-center">
+	                <h2 class="title">Медицинский Центр <span style="color: #f23d31;">«Ош-Кардио»</span> имени Алиева Мамата</h2>
 
-	                <h4 class="description text-white">If you’re selected for ALPHA you’ll also get 3 tickets, opportunity to access Investor Office Hours and Mentor Hours and much more all for €850.</h4>
+	                <h4 class="description">		            
+						Ультрасовременная частная гибридная клиника, отвечающая международным стандартам в организации медицинской помощи 
+						в области Кардиологического вмешательства и по уровню предоставляемого сервиса.
+					</h4>
 	            </div>
 	        </div>
 
@@ -152,15 +151,18 @@
 	                    </div>
 	                    <div class="card-body">
 	                        <p class="card-description">
-	                            The networking at Web Summit is like no other European tech conference.
+	                            Учредитель Медицинского Центра	
+								Генеральный директор
+								ОсОО <b>«Фирма МПА»</b>
+								«Главная цель современного бизнеса – социальные инвестиции»
 	                        </p>
 	                    </div>
 	                    <div class="icon icon-red">
 	                        <i class="fa fa-quote-right"></i>
 	                    </div>
 	                    <div class="card-footer">
-	                        <h4 class="card-title">Michael Elijah</h4>
-	                        <p class="category">@michaelelijah</p>
+	                        <h4 class="card-title">Алиев Алмазбек <br> Маматович</h4>
+	                        <p class="category">@link</p>
 	                    </div>
 	                </div>
 	            </div>
@@ -174,15 +176,17 @@
 	                    </div>
 	                    <div class="card-body">
 	                        <p class="card-description">
-	                            The connections you make at Web Summit are unparalleled, we met users all over the world.
+								Директор Медицинского Центра
+								Кандидат медицинских наук
+								Отличник здравоохранения Кыргызской Республики
 	                        </p>
 	                    </div>
 	                    <div class="icon icon-red">
 	                        <i class="fa fa-quote-right"></i>
 	                    </div>
 	                    <div class="card-footer">
-	                        <h4 class="card-title">Olivia Harper</h4>
-	                        <p class="category">@oliviaharper</p>
+	                        <h4 class="card-title">Турсунбаев Мухаметалим Сатканкулович</h4>
+	                        <p class="category">@link</p>
 	                    </div>
 	                </div>
 	            </div>
@@ -196,15 +200,17 @@
 	                    </div>
 	                    <div class="card-body">
 	                        <p class="card-description">
-	                            Web Summit will increase your appetite, your inspiration, and your network.
+	                            Заместитель директора – главный врач Медицинского центра
+								Врач-кардиолог
+								высшей категории
 	                        </p>
 	                    </div>
 	                    <div class="icon icon-red">
 	                        <i class="fa fa-quote-right"></i>
 	                    </div>
 	                    <div class="card-footer">
-	                        <h4 class="card-title">James Logan</h4>
-	                        <p class="category">@jameslogan</p>
+	                        <h4 class="card-title">Максутов Жыргалбек <br> Раимжанович</h4>
+	                        <p class="category">@link</p>
 	                    </div>
 	                </div>
 	            </div>

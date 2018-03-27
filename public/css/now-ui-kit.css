@@ -38,6 +38,10 @@
       max-height: 40px;
       margin-left: 0px;
     }
+    .title, .description{
+      font-size: 0.9em;
+    }
+
 
   }
 
@@ -200,13 +204,7 @@ anchors are inline so you need ot make them block to go full width
 
 /* ============= Our media ============= */
 
-/*
-@media screen and (max-width: 768px) {
-  .text-info {
-    font-size: 23px;
-  }
-  
-}*/
+
 
 
 
@@ -247,7 +245,7 @@ anchors are inline so you need ot make them block to go full width
 
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
- */
+ 
 /*     brand Colors              */
 /*      light colors         */
 /* ========================================================================
@@ -3226,7 +3224,7 @@ h1 small, .h1 small {
   opacity: .8; }
 
 h2, .h2 {
-  font-size: 2.5em;
+  font-size: 2.4em;
 }
 
 h3, .h3 {
@@ -3235,7 +3233,7 @@ h3, .h3 {
   line-height: 1.4em; }
 
 h4, .h4 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   line-height: 1.45em;
   margin-top: 30px;
   margin-bottom: 15px; }
@@ -3271,9 +3269,9 @@ p {
 .title + .category {
   margin-top: -25px; }
 
-.description, .card-description, .footer-big p {
+.card-description, .footer-big p {
   color: #9A9A9A;
-  font-weight: 300; }
+  font-weight: 400; }
 
 .category {
   font-weight: 700;
@@ -5984,14 +5982,14 @@ Created using IcoMoon - icomoon.io
   position: relative;
   width: 100%; }
 .section-image .title, .section-image .card-plain .card-title {
-  color: #FFFFFF; }
+  color: #0773a2; }
 .section-image .nav-pills .nav-link {
   background-color: #FFFFFF; }
 .section-image .nav-pills .nav-link:hover, .section-image .nav-pills .nav-link:focus {
   background-color: #FFFFFF; }
 .section-image .info-title, .section-image .info.info-horizontal .icon i, .section-image .card-pricing.card-plain ul li {
   color: #FFFFFF; }
-.section-image .description, .section-image .info .icon:not(.icon-circle) {
+.section-image  .section-image .info .icon:not(.icon-circle) {
   color: rgba(255, 255, 255, 0.8); }
 .section-image .card:not(.card-plain) .info-title {
   color: #2c2c2c; }
@@ -6012,7 +6010,7 @@ Created using IcoMoon - icomoon.io
   left: 0;
   top: 0;
   content: "";
-  background-color: rgba(0, 0, 0, 0.46); }
+  background-color: rgba(208, 208, 208, 0.46); }
 .section-image .container {
   z-index: 2;
   position: relative; }
@@ -7650,15 +7648,20 @@ Created using IcoMoon - icomoon.io
   .footer:not(.footer-big) .copyright {
     float: right; } }
 @media screen and (min-width: 768px) {
-  .text-info {
-    font-size: 17px;
-  }
+  .text-info {font-size: 17px;}
+
+  .title{font-size: 1.5em;} 
+  .description{font-size: 1.1em; color: #1b1919 !important;}
+  .card-title{font-size: 1em;}
+  .card-description{font-size: 1em;}
+
   .image-container.image-right {
     top: 80px;
     margin-left: -100px;
     margin-bottom: 130px; }
   .image-container.image-left {
-    margin-right: -100px; } }
+    margin-right: -100px; } 
+}
 @media screen and (max-width: 768px) {
   .image-container.image-left {
     margin-bottom: 260px; }
