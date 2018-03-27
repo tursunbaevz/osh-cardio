@@ -1,11 +1,11 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
     <meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
-<title>Landing Page - Now UI Kit Pro by Creative Tim | Premium Bootstrap 4 UI Kit</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+<title>Ош Кардио</title>
 
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
 
