@@ -3,6 +3,8 @@
 
 Route::get('/', 'MainController@index');
 
+Route::get('/layout', 'MainController@layout');
+
 
 Auth::routes();
 

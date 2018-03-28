@@ -15,6 +15,10 @@ class MainController extends Controller
 		return view('main.index');
 	}
 
+	public function layout(){
+		return view('layouts.layout');
+	}
+
 
 }
 
