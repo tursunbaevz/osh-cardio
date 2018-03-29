@@ -42,4 +42,11 @@
 </body>
 
 <script src="/js/bootstrap.min.js"></script>
+<script src="{{ asset('/js/ckeditor/ckeditor.js') }}"
+type="text/javascript" charset="utf-8" ></script>
+<script>
+        var editor = CKEDITOR.replace( 'editor1',{
+                 filebrowserBrowseUrl : '/elfinder/ckeditor' 
+        } );
+</script>
 </html>

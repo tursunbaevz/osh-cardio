@@ -12,10 +12,10 @@
 	    <input name="title" type="text" class="form-control" placeholder="Введите заголовок">
 	  </div>
 	
-	  <textarea name="body" cols="30" rows="10" class="form-control"></textarea><br>
+	  <textarea  id="editor1" name="body" cols="30" rows="10" class="form-control"></textarea><br>
 
 	  <button type="submit" class="btn btn-primary">Создать</button>
 	</form>
 	</div>
-
+	
 @endsection
