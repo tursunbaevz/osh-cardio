@@ -10,7 +10,7 @@ return array(
     | The dir where to store the images (relative from public)
     |
     */
-    'dir' => ['files'],
+    'dir' => ['img'],
 
     /*
     |--------------------------------------------------------------------------
@@ -92,7 +92,7 @@ return array(
          'roots'  => array(
             array(
                'driver' => 'LocalFileSystem',
-               'path'   => public_path().'/img',
+               'path'   => public_path().'/upload',
                'URL'    => 'http://test.loc/upload'
             ),
         )
