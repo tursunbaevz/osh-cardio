@@ -23,7 +23,8 @@
 			
 			<div class="col"><br>
 				<div class="float-btn">
-				   <button type="button" class="float-right btn btn-success btn-lg pull-right">Новый пост</button>
+					<a href="{{'/adminpanel/dashboard/posts/create'}}">
+				   <button type="button" class="float-right btn btn-success btn-lg pull-right">Новый пост</button></a>
 				</div><br><br>
 
 
@@ -34,7 +35,6 @@
 
 				</div>
 				{{--/--}}
-
 
 				</div>
 			</div>
