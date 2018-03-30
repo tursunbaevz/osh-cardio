@@ -25,7 +25,5 @@ class MainController extends Controller
 		return view('posts.show', compact('show'));
 	}
 
-
-
 }
 

@@ -6,6 +6,14 @@ li {
   list-style-type: none;
 }
 
+.nav a {
+  color: #dcdcdc;
+}
+
+.nav a:hover {
+  color: #fff;
+}
+
 hr {
   background-color: #000;
 }

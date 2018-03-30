@@ -14,7 +14,7 @@
 			<div class="row full-height">
 			<div class="col-2" style="background-color: #000;">
 				<nav class="nav flex-column" style="margin-top: 20px">
-				  <a class="nav-link active" href="#">Active</a>
+				  <a class="nav-link active" href="{{ '/adminpanel/dashboard/posts' }}">Новости</a>
 				  <a class="nav-link" href="#">Link</a>
 				  <a class="nav-link" href="#">Link</a>
 				  <a class="nav-link disabled" href="#">Disabled</a>
