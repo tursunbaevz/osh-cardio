@@ -1,4 +1,15 @@
 /*----------------------our styles-----------------------*/
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 5.5rem;
+  min-height: 100%;
+}
 
 /*--------logo--------*/
 .logo{
@@ -166,6 +177,16 @@
   color: #fff;
 }
 
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
 /*----------------------Slider's styles-----------------------*/
 
 /*
@@ -201,6 +222,8 @@ anchors are inline so you need ot make them block to go full width
   position:relative;
   overflow:hidden;
 }
+
+
 
 /* ============= Our media ============= */
 

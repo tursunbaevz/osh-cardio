@@ -1,6 +1,5 @@
-<footer class="footer footer-default"">
 
-
+<footer class="footer footer-default bottom">
 	<div class="container footer-text">
 	    <nav>
 	        <ul>
