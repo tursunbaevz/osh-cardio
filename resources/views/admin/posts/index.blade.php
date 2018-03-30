@@ -1,6 +1,7 @@
 @extends('adminLayouts.admin_master')
 
 @section('content')
+	<h1 class="title">Новости</h1>
 	<div class="col-12">
 		<div class="float-btn">
 			<a href="{{'/adminpanel/dashboard/posts/create'}}">
@@ -22,7 +23,7 @@
 					<button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px">Редактировать</button>
 				   		{{ Form::open(array('url' => '/adminpanel/dashboard/posts/' . $post->id)) }}
 		                    {{ Form::hidden('_method', 'DELETE') }}
-		                    {{ Form::submit('Удалить этот пост', array('class' => 'btn btn-danger btn-sm')) }}
+		                    {{ Form::submit('Удалить', array('class' => 'btn btn-danger btn-sm')) }}
 		                {{ Form::close() }}
 				</div>
 			</div>

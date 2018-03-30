@@ -113,9 +113,9 @@
 	    <div class="container">
 	        <div class="row">
 	            <div class="col-md-8 ml-auto mr-auto text-center">
-	                <h2 class="title">Медицинский Центр <span style="color: #f23d31;">«Ош-Кардио»</span> имени Алиева Мамата</h2>
+	                <h2 class="title-info">Медицинский Центр <span style="color: #f23d31;">«Ош-Кардио»</span> имени Алиева Мамата</h2>
 
-	                <h4 class="description">		            
+	                <h4 class="description-info">		            
 						Ультрасовременная частная гибридная клиника, отвечающая международным стандартам в организации медицинской помощи 
 						в области Кардиологического вмешательства и по уровню предоставляемого сервиса.
 					</h4>

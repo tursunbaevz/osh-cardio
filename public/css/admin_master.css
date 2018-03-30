@@ -14,6 +14,11 @@ li {
   color: #fff;
 }
 
+.title {
+  padding-left: 106px; /* use this class for all title  */
+  color: #0971B2; 
+}
+
 hr {
   background-color: #000;
 }

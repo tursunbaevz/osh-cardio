@@ -29,6 +29,7 @@ body {
     }
 
 
+
   @media screen and (max-width: 1366px) {
     .logo{
       max-height: 45px;
@@ -36,6 +37,21 @@ body {
     }
 
   }  
+
+
+
+  @media screen and (max-width: 767px) { 
+    .title-info {
+      color: #0773a2;
+      font-weight: 700;
+      font-size: 1.8em;
+    }
+
+    .description-info {
+      font-size: 1em;
+    }
+
+  }
 
   @media screen and (max-width: 600px) {
     .logo{
@@ -111,6 +127,20 @@ body {
 }
    
 /* краткая инфа */
+
+
+  .title-info {
+    color: #0773a2;
+    font-weight: 700;
+    font-size: 2.3em;
+  }
+
+  .description-info {
+    font-size: 1.4em;
+    margin-bottom: 50px;
+  }
+
+
 .main-div {
     display: -webkit-flex;
     display: -moz-flex;
@@ -4563,7 +4593,8 @@ Created using IcoMoon - icomoon.io
   line-height: 3.5;
   font-size: 1.9em; }
 .info-horizontal .description {
-  overflow: hidden; }
+  overflow: hidden;
+ }
 
 .icon.icon-primary {
   color: #f96332; }

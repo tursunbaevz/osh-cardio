@@ -1,14 +1,13 @@
 @extends('adminLayouts.admin_master')
 
 @section('content')
-
 	<div class="col" style="margin: auto;">
 	<form method="POST" action="/adminpanel/dashboard/posts">
 
 	  {{csrf_field()}}
 
 	  <div class="form-group">
-	    <label>Заголовок</label>
+	    <br>
 	    <input name="title" type="text" class="form-control" placeholder="Введите заголовок">
 	  </div>
 	
