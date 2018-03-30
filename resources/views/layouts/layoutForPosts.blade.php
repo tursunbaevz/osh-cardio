@@ -20,29 +20,19 @@
 
 <body class="landing-page" >
 
-	@include ('layouts.nav')
-
-	<div class="wrapper">
-
+	{{-- NAVBAR --}}
+	@include ('layouts.navForPosts')
 
 
-
-
-				{{-- content --}}
-
-				@yield('content')
-
-				{{-- / --}}
+		{{-- content --}}
+		@yield('content')
 
 
 
+	{{-- FOOTER --}}
+	@include('layouts.footer')
 
-
-	<!-- FOOTER -->
-		@include('layouts.footer')
-	<!-- / -->
-
-    </body>
+</body>
 
 
     <!--   Core JS Files   -->

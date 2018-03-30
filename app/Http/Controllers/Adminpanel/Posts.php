@@ -19,7 +19,6 @@ class Posts extends Controller
 
      public function store(){
      	Post::create(request(['title', 'body']));
-
      	return redirect('/adminpanel/dashboard/posts');
      }
 

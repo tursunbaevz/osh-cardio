@@ -1,6 +1,6 @@
 <!-- Navbar -->
 
-<nav class="navbar navbar-expand-lg bg-blue fixed-top navbar-transparent" color-on-scroll="400">
+<nav class="navbar navbar-expand-lg bg-blue fixed-top nav-posts">
 
 
     <div class="container"> 
@@ -28,8 +28,8 @@
                 
  <div class="navbar-translate">
         <a href="/" style="text-decoration: none;">
-        <img src="/img/logo_text.svg" alt="logo" class="logo black-shadow" color-on-scroll="400"></a>
- 
+            <img src="/img/logo_text.svg" alt="logo" class="logo white-shadow">
+        </a>
          <a class="navbar-brand" href="#" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom">
          </a>
          

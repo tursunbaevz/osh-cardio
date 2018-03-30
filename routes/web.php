@@ -1,10 +1,8 @@
 <?php
 
-
 Route::get('/', 'MainController@index');
-
-Route::get('/layout', 'MainController@layout');
-
+Route::get('/posts', 'MainController@postsList');
+Route::get('/posts/{id}', 'MainController@eachPost');
 
 Auth::routes();
 
