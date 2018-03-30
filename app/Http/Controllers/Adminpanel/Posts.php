@@ -28,7 +28,6 @@ class Posts extends Controller
         $post = Post::find($id);
         $post->delete();
 
-
         return redirect('/adminpanel/dashboard/posts');
      }
 }

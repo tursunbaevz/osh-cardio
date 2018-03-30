@@ -12,7 +12,7 @@
 		<div class="col-2">
 		<div class="btn-group-vertical btn-center">
 			<button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px">Редактировать</button>
-		    {{ Form::open(array('url' => '/adminpanel/dashboard/posts/' . $post->id)) }}
+		   		{{ Form::open(array('url' => '/adminpanel/dashboard/posts/' . $post->id)) }}
                     {{ Form::hidden('_method', 'DELETE') }}
                     {{ Form::submit('Удалить этот пост', array('class' => 'btn btn-danger btn-sm')) }}
                 {{ Form::close() }}
