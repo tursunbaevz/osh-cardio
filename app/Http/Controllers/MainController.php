@@ -16,7 +16,7 @@ class MainController extends Controller
 	}
 
 	public function postsList(){
-		$posts = Post::all();
+		$posts = Post::orderBy('created_at', 'desc')->paginate(10);
 		return view('posts.postsList', compact('posts'));
 	}
 

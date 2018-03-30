@@ -252,6 +252,12 @@ anchors are inline so you need ot make them block to go full width
   position:relative;
   overflow:hidden;
 }
+/*-------/-------*/
+
+.pagination > ul {
+  margin: auto;
+  color: #000 !important;
+}
 
 
 
@@ -3217,8 +3223,8 @@ textarea.form-control:focus, textarea.form-control:active {
   color: #E3E3E3;
   box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2); }
 .pagination .page-item.active > .page-link, .pagination .page-item.active > .page-link:focus, .pagination .page-item.active > .page-link:hover {
-  background-color: #888888;
-  border-color: #888888;
+  background-color: #e62324;
+  border-color: #e62324;
   color: #FFFFFF; }
 .pagination .page-item.disabled > .page-link {
   opacity: .5;
