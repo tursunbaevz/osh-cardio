@@ -22,4 +22,14 @@ class Posts extends Controller
 
      	return redirect('/adminpanel/dashboard/posts');
      }
+
+
+     public function destroy($id)
+     {
+        $post = Post::find($id);
+        $post->delete();
+
+
+        return redirect('/adminpanel/dashboard/posts');
+     }
 }

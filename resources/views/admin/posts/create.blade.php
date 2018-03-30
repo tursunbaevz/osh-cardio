@@ -2,7 +2,7 @@
 
 @section('content')
 
-	<div class="col-8" style="margin: auto;">
+	<div class="col" style="margin: auto;">
 	<form method="POST" action="/adminpanel/dashboard/posts">
 
 	  {{csrf_field()}}
