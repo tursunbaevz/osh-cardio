@@ -22,11 +22,6 @@
 			</div>
 			
 			<div class="col"><br>
-				<div class="float-btn">
-					<a href="{{'/adminpanel/dashboard/posts/create'}}">
-				   <button type="button" class="float-right btn btn-success btn-lg pull-right">Новый пост</button></a>
-				</div><br><br>
-
 
 				{{-- EACH POST --}}
 				<div class="row">
