@@ -21,4 +21,13 @@ class Posts extends Controller
      	Post::create(request(['title', 'body']));
      	return redirect('/adminpanel/dashboard/posts');
      }
+
+
+     public function destroy($id)
+     {
+        $post = Post::find($id);
+        $post->delete();
+
+        return redirect('/adminpanel/dashboard/posts');
+     }
 }
