@@ -20,9 +20,9 @@ class MainController extends Controller
 		return view('main.postsList', compact('posts'));
 	}
 
-	public function eachPost($id){
-		$eachPost = Post::find($id);
-		return view('main.eachPost', compact('eachPost'));
+	public function show($id){
+		$show = Post::find($id);
+		return view('main.show', compact('show'));
 	}
 
 

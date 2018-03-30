@@ -20,10 +20,6 @@
 
 <body class="landing-page" >
 
-	@include ('layouts.nav')
-
-	<div class="wrapper">
-
 
 
 
