@@ -12,17 +12,17 @@ class MainController extends Controller
 
 
 	public function index(){
-		return view('main.index');
+		return view('index');
 	}
 
 	public function postsList(){
 		$posts = Post::all();
-		return view('main.postsList', compact('posts'));
+		return view('posts.postsList', compact('posts'));
 	}
 
 	public function show($id){
 		$show = Post::find($id);
-		return view('main.show', compact('show'));
+		return view('posts.show', compact('show'));
 	}
 
 
