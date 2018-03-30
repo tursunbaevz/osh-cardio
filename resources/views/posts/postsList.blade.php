@@ -10,8 +10,11 @@
 				<a href="/posts/{{$post->id}}" style="color: #000">
 					<h3>{{$post->title}}</h3>
 				</a>
-				<p>{!! str_limit($post->body, 180) !!}</p>	
+				<p>{!! str_limit($post->body, 180) !!}</p>
 			@endforeach
+				<div class="pagination">
+					{{$posts->links()}}	
+				</div>
 			</div>
 		</div>
 	</div>
