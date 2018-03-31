@@ -17,16 +17,16 @@ body {
   margin-left: 50px;
 }
 
-    .black-shadow {
-        /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
-        -webkit-filter: drop-shadow( 3px 3px 5px #000 ); 
-                filter: drop-shadow( 3px 3px 5px #000 );
-    }
-    .white-shadow {
-        /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
-        -webkit-filter: drop-shadow( 0px -2px 4px #fff ); 
-                filter: drop-shadow( 0px -2px 4px #fff );
-    }
+  .black-shadow {
+      /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
+      -webkit-filter: drop-shadow( 3px 3px 5px #000 ); 
+              filter: drop-shadow( 3px 3px 5px #000 );
+  }
+  .white-shadow {
+      /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
+      -webkit-filter: drop-shadow( 0px -2px 4px #fff ); 
+              filter: drop-shadow( 0px -2px 4px #fff );
+  }
 
 
 
@@ -40,37 +40,26 @@ body {
 
 
 
-  @media screen and (max-width: 767px) { 
-    .title-info {
-      color: #0773a2;
-      font-weight: 700;
-      font-size: 1.8em;
-    }
-
-    .description-info {
-      font-size: 1em;
-    }
-
-  }
-
   @media screen and (max-width: 600px) {
     .logo{
       max-height: 45px;
       margin-left: 0px;
     }
 
-  }   
+  }  
+
   @media screen and (max-width: 450px) {
     .logo{
       max-height: 40px;
       margin-left: 0px;
     }
     .title, .description{
-      font-size: 0.9em;
+      font-size: 1.9em;
     }
 
 
   }
+
 
 /*-----/------*/
 
@@ -128,17 +117,17 @@ body {
    
 /* краткая инфа */
 
-
-  .title-info {
+.title-info {
     color: #0773a2;
     font-weight: 700;
     font-size: 2.3em;
   }
 
-  .description-info {
-    font-size: 1.4em;
-    margin-bottom: 50px;
-  }
+.description-info {
+  font-size: 1.4em;
+  margin-bottom: 50px;
+}
+
 
 
 .main-div {
@@ -1850,7 +1839,9 @@ select.bs-select-hidden, select.selectpicker {
 
 @media (min-width: 768px) {
   .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
-    width: 38em; } }
+    width: 38em; }
+
+     }
 @media (min-width: 992px) {
   .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
     width: 38em; } }
@@ -7709,9 +7700,6 @@ Created using IcoMoon - icomoon.io
     float: right; } }
 @media screen and (min-width: 768px) {
   .text-info {font-size: 17px;}
-
-  .title{font-size: 1.5em;} 
-  .description{font-size: 1.1em; color: #1b1919 !important;}
   .card-title{font-size: 1em;}
   .card-description{font-size: 1em;}
 
@@ -7723,6 +7711,22 @@ Created using IcoMoon - icomoon.io
     margin-right: -100px; } 
 }
 @media screen and (max-width: 768px) {
+
+  .card-description {
+    font-size: 0.9em;
+  }
+
+  .title-info {
+    color: #0773a2;
+    font-weight: 700;
+    font-size: 1.5em;
+  } 
+
+  .description-info {
+    font-size: 1em;
+  }
+
+
   .image-container.image-left {
     margin-bottom: 260px; }
   .image-container.image-left p.blockquote {
@@ -7771,6 +7775,17 @@ Created using IcoMoon - icomoon.io
     top: 50%;
     transform: translateY(-50%); } }
 @media screen and (max-width: 576px) {
+
+  .title-info {
+      color: #0773a2;
+      font-weight: 700;
+      font-size: 1.1em;
+    } 
+
+    .description-info {
+      font-size: 0.9em;
+    }
+
   .navbar[class*='navbar-toggleable-'] .container {
     margin-left: 0;
     margin-right: 0; }
