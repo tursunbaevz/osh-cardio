@@ -28,6 +28,31 @@ class Posts extends Controller
      	return redirect('/adminpanel/dashboard/posts');
      }
 
+     public function edit($id)
+     {
+
+        $post = Post::find($id);
+        return view('admin/posts.edit', compact('post'));
+
+     }
+
+
+    public function update(Request $request, $id)
+     {  
+        $post = Post::find($id);
+        
+        $this->validate(request(), [
+            'title' => 'required',
+            'body' => 'required'
+        ]);
+
+        
+        $post->title = $request->get('title');
+        $post->body = $request->get('body');
+        $post->save();
+        return redirect('/adminpanel/dashboard/posts')->with('success','Post has been updated');
+
+     }
 
      public function destroy($id)
      {

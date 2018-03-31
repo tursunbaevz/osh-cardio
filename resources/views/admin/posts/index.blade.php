@@ -20,7 +20,15 @@
 
 			<div class="col-4">
 				<div class="btn-group-vertical btn-center">
-					<button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 5px">Редактировать</button>
+				
+						{{--  edit  --}}
+					 	{{ Form::open(array('url' => '/adminpanel/dashboard/posts/edit/' . $post->id)) }}
+		                    {{ Form::hidden('_method', 'Post') }}
+		                    {{ Form::submit('Редактировать', array('class' => 'btn btn-primary btn-sm')) }}
+		                {{ Form::close() }}
+
+
+		                {{-- delete --}}
 				   		{{ Form::open(array('url' => '/adminpanel/dashboard/posts/' . $post->id)) }}
 		                    {{ Form::hidden('_method', 'DELETE') }}
 		                    {{ Form::submit('Удалить', array('class' => 'btn btn-danger btn-sm')) }}
