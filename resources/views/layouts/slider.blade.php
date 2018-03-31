@@ -3,7 +3,7 @@
     C A R O U S E L
     ####################################################
     -->
-    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="80000">
         <ol class="carousel-indicators">
             <li data-target="#carousel" data-slide-to="0" class="active"></li>
             <li data-target="#carousel" data-slide-to="1"></li>
@@ -12,50 +12,42 @@
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
                 <a href="#">
-                    <!-- 
-                    If you need more browser support use https://scottjehl.github.io/picturefill/
-                    If a picture looks blurry on a retina device you can add a high resolution like this
-                    <source srcset="img/blog-post-1000x600-2.jpg, blog-post-1000x600-2@2x.jpg 2x" media="(min-width: 768px)">
-
-                    What image sizes should you use? This can help - https://codepen.io/JacobLett/pen/NjramL
-                     -->
                      <picture>
-                      <source srcset="/img/slide1.jpg" media="(min-width: 1400px)">
-                      <source srcset="/img/slide1.jpg" media="(min-width: 769px)">
-                       <source srcset="/img/slide1_mob.jpg" media="(min-width: 577px)">
-                      <img srcset="/img/slide1_mob.jpg" alt="responsive image" class="d-block img-fluid">
+                      <source srcset="/img/slide2.jpg" media="(min-width: 1400px)">
+                      <source srcset="/img/slide2.jpg" media="(min-width: 769px)">
+                       <source srcset="/img/slide2_mob.jpg" media="(min-width: 577px)">
+                      <img srcset="/img/slide2_mob.jpg" alt="responsive image" class="d-block img-fluid">
                     </picture>
 
-                    <div class="carousel-caption">
+                    <div class="carousel-caption" style="color: #e62324; bottom: 164px !important;">
                         <div>
-                            <h2>Digital Craftsmanship</h2>
-                            <p>We meticously build each site to get results</p>
-                            <span class="btn btn-sm btn-outline-secondary">Learn More</span>
+                           <!--  <h2>Ритм Вашего сердца под нашим контролем!</h2> -->
+                            <!-- <span class="btn btn-sm btn-outline-secondary">Learn More</span> -->
                         </div>
                     </div>
                 </a>
             </div>
             <!-- /.carousel-item -->
-            <!-- <div class="carousel-item">
+            <div class="carousel-item">
                 <a href="#">
                     <picture>
-                      <source srcset="/img/hospital.jpg" media="(min-width: 1400px)">
-                      <source srcset="/img/hospital.jpg" media="(min-width: 769px)">
-                       <source srcset="/img/hospital-mobile.jpg" media="(min-width: 577px)">
-                      <img srcset="/img/hospital-mobile.jpg" alt="responsive image" class="d-block img-fluid">
+                      <source srcset="/img/slide1-2.jpg" media="(min-width: 1400px)">
+                      <source srcset="/img/slide1-2.jpg" media="(min-width: 769px)">
+                       <source srcset="/img/slide1_mob.jpg" media="(min-width: 577px)">
+                      <img srcset="/img/slide1_mob.jpg" alt="responsive image" class="d-block img-fluid">
                     </picture>
 
                     <div class="carousel-caption justify-content-center align-items-center">
                         <div>
-                            <h2>Every project begins with a sketch</h2>
-                            <p>We work as an extension of your business to explore solutions</p>
-                            <span class="btn btn-sm btn-outline-secondary">Our Process</span>
+                           <!--  <h2>Ритм Вашего сердца под нашим контролем! </h2>
+                            <p>We work as an extension of your business to explore solutions</p> -->
+                            <!-- <span class="btn btn-sm btn-outline-secondary">Our Process</span> -->
                         </div>
                     </div>
                 </a>
             </div>
-            /.carousel-item
-            <div class="carousel-item">
+           <!--  /.carousel-item -->
+           <!--  <div class="carousel-item">
                 <a href="#">
                      <picture>
                       <source srcset="/img/hospital-2.jpg" media="(min-width: 1400px)">
