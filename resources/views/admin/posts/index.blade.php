@@ -22,10 +22,9 @@
 				<div class="btn-group-vertical btn-center">
 				
 						{{--  edit  --}}
-					 	{{ Form::open(array('url' => '/adminpanel/dashboard/posts/edit/' . $post->id)) }}
-		                    {{ Form::hidden('_method', 'Post') }}
-		                    {{ Form::submit('Редактировать', array('class' => 'btn btn-primary btn-sm')) }}
-		                {{ Form::close() }}
+					<button>
+					 	<a href="{{action('Adminpanel\Posts@edit', $post->id)}}" class="btn btn-primary">Edit</a>
+        			</button>
 
 
 		                {{-- delete --}}

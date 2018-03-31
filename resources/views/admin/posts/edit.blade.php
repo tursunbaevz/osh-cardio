@@ -2,7 +2,7 @@
 
 @section('content')
 	<div class="col" style="margin: auto;">
-	<form method="POST" action="{{action('PostsController@update', $post)}}">
+	<form method="POST" action="{{action('Adminpanel\Posts@update', $post)}}">
 
 	  {{csrf_field()}}
 
