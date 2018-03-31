@@ -13,11 +13,10 @@
                 <span class="button-bar"></span>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{'/posts'}}">Все посты</a>
-                <a class="dropdown-item" href="{{'/posts'}}">Все посты</a>
-                <a class="dropdown-item" href="{{'/posts'}}">Все посты</a>
-                <a class="dropdown-item" href="{{'/posts'}}">Все посты</a>
-                <a class="dropdown-item" href="{{'/posts'}}">Все посты</a>
+                <a class="dropdown-item" href="{{'/posts'}}">Новости</a>
+                <a class="dropdown-item" href="{{'/posts'}}">Новости</a>
+                <a class="dropdown-item" href="{{'/posts'}}">Новости</a>
+                <a class="dropdown-item" href="{{'/posts'}}">Новости</a>
             </div>
         </div>
 
