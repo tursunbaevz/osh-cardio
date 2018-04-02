@@ -13,7 +13,7 @@
 				 Дата: <span>{{ ($post->created_at)->diffForHumans() }}</span>
 				<p>{!! str_limit($post->body, 500) !!}</p>
 			@endforeach
-				<div class="pagination">
+				<div class="pagination" style="margin: 50px auto;">
 					{{$posts->links()}}	
 				</div>
 			</div>

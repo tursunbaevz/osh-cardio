@@ -9,12 +9,12 @@ use App\Post;
 class Posts extends Controller
 {
      public function index(){
-     	$posts = Post::all();
+      $posts = Post::all();
         return view('admin/posts.index', compact('posts'));
      }
 
      public function create(){
-     	return view('admin/posts.create');
+      return view('admin/posts.create');
      }
 
      public function store(){
@@ -24,8 +24,8 @@ class Posts extends Controller
             'body' => 'required'
         ]);
 
-     	Post::create(request(['title', 'body']));
-     	return redirect('/adminpanel/dashboard/posts');
+      Post::create(request(['title', 'body']));
+      return redirect('/adminpanel/dashboard/posts');
      }
 
      public function edit($id)
@@ -64,4 +64,5 @@ class Posts extends Controller
 
         // return redirect('/adminpanel/dashboard/posts');
      }
+
 }

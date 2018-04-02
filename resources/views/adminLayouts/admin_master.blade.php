@@ -13,16 +13,8 @@
 	@include('adminLayouts.admin_nav')
 
 		<div class="container-fluid">
-			<div class="row full-height">
-			<div class="col-2" style="background-color: #2C3E50;">
-				<nav class="nav flex-column" style="margin-top: 20px">
-				  <a class="nav-link active" href="{{ '/adminpanel/dashboard/posts' }}">Новости</a>
-				  <a class="nav-link" href="#">Link</a>
-				  <a class="nav-link" href="#">Link</a>
-				</nav>
-			</div>
 			
-			<div class="col"><br>
+			<div class="col-10" style="margin: auto;"><br>
 
 				{{-- EACH POST --}}
 				<div class="row">
