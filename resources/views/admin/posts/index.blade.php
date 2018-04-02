@@ -8,7 +8,7 @@
 		<table class="table table-hover table-style" id="post_table">
 		  <thead>
 		    <tr class="table-active">
-		     	<th scope="col">ID</th>
+		     	<th scope="col">#</th>
 		     	<th scope="col">Наименование</th>
 		     	<th scope="col">Текст</th>
 		        <th scope="col">дата создания</th>
@@ -22,10 +22,11 @@
 		  </thead>
 
 		  <tbody>
+		  	{{ $i = 1 }}
 			@foreach($posts as $post)
 			    
 			    <tr>
-			      	<th scope="row">{{$post->id}}</th>
+			      	<th scope="row">{{ $i }} </th>
 			      	<td>{!! str_limit($post->title, 25) !!}</td>
 			      	<td>{!! str_limit($post->body, 50) !!}</td>
 			      	<td>{{ ($post->created_at)->diffForHumans() }}</td>
@@ -38,7 +39,7 @@
 						</a>
 			      	</td>
 			    </tr>
-
+			    {{ $i++ }}
 			@endforeach
 		  </tbody>
 		</table>
