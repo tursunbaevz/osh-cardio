@@ -9,7 +9,7 @@ use App\Post;
 class Posts extends Controller
 {
      public function index(){
-      $posts = Post::all();
+        $posts = Post::all();
         return view('admin/posts.index', compact('posts'));
      }
 

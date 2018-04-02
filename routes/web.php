@@ -3,7 +3,6 @@
 Route::get('/', 'MainController@index');
 Route::get('/posts', 'MainController@postsList');
 Route::get('/posts/{id}', 'MainController@show');
-
 Auth::routes();
 
 

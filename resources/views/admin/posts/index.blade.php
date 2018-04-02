@@ -29,7 +29,8 @@
 			      	<td>{!! str_limit($post->title, 25) !!}</td>
 			      	<td>{!! str_limit($post->body, 50) !!}</td>
 			      	<td>{{ ($post->created_at)->diffForHumans() }}</td>
-			      	<td style="width: 120px;"><a href="{{action('Adminpanel\Posts@edit', $post->id)}}"		 		class="btn btn-primary">
+			      	<td style="width: 120px;"><a href="{{action('Adminpanel\Posts@edit', $post->id)}}"		 		
+			      		class="btn btn-primary">
 			      			<i class="fas fa-edit"></i>
 			      		</a> 
 

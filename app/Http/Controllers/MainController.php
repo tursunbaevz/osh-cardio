@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Main;
 use App\Post;
+use Carbon\Carbon;
 
 class MainController extends Controller
 {
@@ -16,7 +17,7 @@ class MainController extends Controller
 	}
 
 	public function postsList(){
-		$posts = Post::orderBy('created_at', 'desc')->paginate(5);
+		$posts = Post::orderBy('created_at', 'DESC')->paginate(5);
 		return view('posts.postsList', compact('posts'));
 	}
 

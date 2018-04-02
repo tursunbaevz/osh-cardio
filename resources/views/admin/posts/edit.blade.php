@@ -13,7 +13,7 @@
 	
 	  <textarea id="editor1" name="body"  cols="30" rows="10" class="form-control">{{ $post->body }}</textarea><br>
 
-	  <button type="submit" class="btn btn-primary">Редакторовать</button>
+	  <button type="submit" class="btn btn-primary">Редактировать</button>
 	
 
 	@if(count($errors))
