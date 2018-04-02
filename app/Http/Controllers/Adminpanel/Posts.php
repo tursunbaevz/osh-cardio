@@ -54,11 +54,14 @@ class Posts extends Controller
 
      }
 
-     public function destroy($id)
-     {
-        $post = Post::find($id);
-        $post->delete();
+    public function destroy(Request $request)
+    {
 
-        return redirect('/adminpanel/dashboard/posts');
+        if(isset($request->id)){
+              $post = Post::findOrFail($request->id);
+              $post->delete();
+        }
+
+        // return redirect('/adminpanel/dashboard/posts');
      }
 }

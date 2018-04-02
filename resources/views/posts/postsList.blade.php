@@ -10,7 +10,8 @@
 				<a href="/posts/{{$post->id}}" style="color: #000">
 					<h3>{{$post->title}}</h3>
 				</a>
-				<p>{!! str_limit($post->body, 250) !!}</p>
+				 Дата: <span>{{ ($post->created_at)->diffForHumans() }}</span>
+				<p>{!! str_limit($post->body, 500) !!}</p>
 			@endforeach
 				<div class="pagination">
 					{{$posts->links()}}	

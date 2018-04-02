@@ -2,40 +2,74 @@
 
 @section('content')
 	<h1 class="title">Новости</h1>
-	<div class="col-12">
-		<div class="float-btn">
-			<a href="{{'/adminpanel/dashboard/posts/create'}}">
-		   <button type="button" class="float-right btn btn-success btn-lg pull-right">Новый пост</button></a>
-		</div>
-	</div>	
-
-		
-
-		@foreach($posts as $post)
-
-			<div class="col-6 new-post-btn" style="margin:auto;"><br><br>
-				<h3>{{$post->title}}</h3>
-				<p>{!! str_limit($post->body, 180) !!}</p>
-			</div>
-
-			<div class="col-4">
-				<div class="btn-group-vertical btn-center">
-				
-						{{--  edit  --}}
-					<button>
-					 	<a href="{{action('Adminpanel\Posts@edit', $post->id)}}" class="btn btn-primary">Edit</a>
-        			</button>
 
 
-		                {{-- delete --}}
-				   		{{ Form::open(array('url' => '/adminpanel/dashboard/posts/' . $post->id)) }}
-		                    {{ Form::hidden('_method', 'DELETE') }}
-		                    {{ Form::submit('Удалить', array('class' => 'btn btn-danger btn-sm')) }}
-		                {{ Form::close() }}
+
+		<table class="table table-hover table-style" id="post_table">
+		  <thead>
+		    <tr>
+		     	<th scope="col">ID</th>
+		     	<th scope="col">Наименование</th>
+		     	<th scope="col">Текст</th>
+		        <th scope="col">дата создания</th>
+		        <th scope="col"><div class="float-btn">
+				<a href="{{'/adminpanel/dashboard/posts/create'}}" class="btn btn-success">
+			   		<i class="fas fa-plus" aria-hidden="true"></i></a>
 				</div>
-			</div>
+			    </th>
+		
+		    </tr>
+		  </thead>
 
-		@endforeach
+		  <tbody>
+			@foreach($posts as $post)
+			    
+			    <tr>
+			      	<th scope="row">{{$post->id}}</th>
+			      	<td>{!! str_limit($post->title, 25) !!}</td>
+			      	<td>{!! str_limit($post->body, 50) !!}</td>
+			      	<td>{{ ($post->created_at)->diffForHumans() }}</td>
+			      	<td style="width: 120px;"><a href="{{action('Adminpanel\Posts@edit', $post->id)}}"		 		class="btn btn-primary">
+			      			<i class="fas fa-edit"></i>
+			      		</a> 
+
+						<a class="btn btn-danger deletebtn" data-post="{{ $post->id }}">
+							<i class="fas fa-minus"></i>
+						</a>
+			      	</td>
+			    </tr>
+
+			@endforeach
+		  </tbody>
+		</table>
 	
-	</div>
 @endsection
+
+
+@section('script')
+
+	<script type="text/javascript">
+		$(document).on('click', '.deletebtn', function(ev){
+		    let postid = $(this).attr("data-post");
+		    $.ajax({
+	            method: 'DELETE',
+	            url: '{{ route('post.delete') }}',
+	            dataType: 'json',
+	            data: {id:postid,"_token": "{{ csrf_token() }}"},
+
+	           	success: function (data) {
+	                alert(data);
+	           	},
+
+	            error: function (data) {
+	                alert(data);
+	            }
+    		});
+		});
+
+	</script>
+
+@endsection
+
+
+

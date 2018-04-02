@@ -6,17 +6,27 @@ li {
   list-style-type: none;
 }
 
-.nav a {
-  color: #dcdcdc;
-}
 
-.nav a:hover {
+
+.navbar a,
+li a,
+.nav a,
+ul li a {
   color: #fff;
 }
 
+.navbar a:hover,
+li a:hover,
+.nav a:hover,
+ul li a:hover {
+  color: #20c997;
+  text-decoration: none;
+}
+
+
 .title {
-  padding-left: 106px; /* use this class for all title  */
-  color: #0971B2; 
+  padding-left: 2%; /* use this class for all title  */
+  color: #34495E; 
 }
 
 hr {
@@ -34,11 +44,29 @@ hr {
     clear: both;
 }
 
+.table thead th {
+  text-align: center;
+}
+
+.table tbody td {
+  text-align: center;
+}
+
 .float-right {
   margin-right: 2em;
+  margin-bottom: 20px;
 }
 
 /* post style */
+
+.btn-danger {
+  color: #ffffff !important;
+}
+
+.table-style {
+  width: 96% !important;
+  margin-left: 20px;
+}
 
 .btn-center {
 position: relative;
