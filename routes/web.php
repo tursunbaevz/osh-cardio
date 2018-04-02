@@ -12,7 +12,7 @@ Route::group(['middleware' => 'can:accessAdminpanel'], function() {
     Route::post('/adminpanel/dashboard/posts', 'Adminpanel\Posts@store');
     Route::post('/adminpanel/dashboard/posts/update/{post}', 'Adminpanel\Posts@update');
     Route::get('/adminpanel/dashboard/posts/edit/{post}', 'Adminpanel\Posts@edit');
-    Route::delete('/adminpanel/dashboard/posts', 'Adminpanel\Posts@destroy')->name('post.delete');
+    Route::delete('/adminpanel/dashboard/posts/', 'Adminpanel\Posts@destroy')->name('post.delete');
     // future adminpanel routes also should belong to the group
 });
 

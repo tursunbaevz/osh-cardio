@@ -58,11 +58,11 @@ class Posts extends Controller
     {
 
         if(isset($request->id)){
-              $post = Post::findOrFail($request->id);
-              $post->delete();
+            $post = Post::findOrFail($request->id);
+            $post->delete();
         }
+              
 
-        // return redirect('/adminpanel/dashboard/posts');
      }
 
 }
