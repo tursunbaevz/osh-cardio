@@ -50,23 +50,19 @@
 @section('script')
 
 	<script type="text/javascript">
-		$(document).on('click', '.deletebtn', function(ev){
-		    let postid = $(this).attr("data-post");
-		    $.ajax({
-	            method: 'DELETE',
-	            url: '{{ route('post.delete') }}',
-	            dataType: 'json',
-	            data: {id:postid,"_token": "{{ csrf_token() }}"},
+	 $(document).on('click', '.deletebtn', function(ev){
+        let postid = $(this).attr("data-post");
+        $.ajax({
+            method: 'DELETE',
+            url: '{{ route('post.delete') }}',
+            dataType: 'json',
+            data: {id:postid,"_token": "{{ csrf_token() }}"},
 
-	           	success: function (data) {
-	                alert(data);
-	           	},
-
-	            error: function (data) {
-	                alert(data);
-	            }
-    		});
-		});
+            success: function (data) {
+                window.location.reload();
+            },
+        });
+    });
 
 	</script>
 
