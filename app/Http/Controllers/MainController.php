@@ -11,7 +11,6 @@ use Carbon\Carbon;
 class MainController extends Controller
 {
 
-
 	public function index(){
 		return view('index');
 	}
@@ -24,6 +23,11 @@ class MainController extends Controller
 	public function show($id){
 		$show = Post::find($id);
 		return view('posts.show', compact('show'));
+	}
+
+	public function postgrid(){
+		$posts = Post::orderBy('created_at', 'DESC')->paginate(5);
+		return view('posts.gridTest', compact('posts'));
 	}
 
 }
