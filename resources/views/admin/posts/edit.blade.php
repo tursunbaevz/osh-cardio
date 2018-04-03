@@ -8,6 +8,7 @@
 
 	  <div class="form-group">
 	    <br>
+	    
 	    <input name="title" value="{{$post->title}}" type="text" class="form-control" placeholder="Введите заголовок">
 	  </div>
 	
