@@ -22,7 +22,7 @@
 		  </thead>
 
 		  <tbody>
-		  	{{ $i = 1 }}
+		  	<?php $i = 1; ?>
 			@foreach($posts as $post)
 			    
 			    <tr>
@@ -30,8 +30,7 @@
 			      	<td>{!! str_limit($post->title, 25) !!}</td>
 			      	<td>{!! str_limit($post->body, 50) !!}</td>
 			      	<td>{{ ($post->created_at)->diffForHumans() }}</td>
-			      	<td style="width: 120px;"><a href="{{action('Adminpanel\Posts@edit', $post->id)}}"		 		
-			      		class="btn btn-primary">
+			      	<td style="width: 120px;"><a href="{{action('Adminpanel\Posts@edit', $post->id)}}"		 		class="btn btn-primary">
 			      			<i class="fas fa-edit"></i>
 			      		</a> 
 
@@ -60,9 +59,9 @@
             data: {id:postid,"_token": "{{ csrf_token() }}"},
 
             success: function (data) {
-                window.location.reload();
             },
         });
+        window.location.reload('/adminpanel/dashboard/posts');
     });
 
 	</script>
