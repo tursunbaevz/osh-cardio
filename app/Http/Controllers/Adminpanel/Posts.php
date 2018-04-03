@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Adminpanel;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Input;
 use App\Http\Controllers\Controller;
 use App\Post;
 
@@ -55,23 +54,15 @@ class Posts extends Controller
 
      }
 
-    public function destroy(Request $request){
+    public function destroy(Request $request)
+    {
 
         if(isset($request->id)){
             $post = Post::findOrFail($request->id);
             $post->delete();
         }
-    }
+              
 
-
-    public function upload(){
-
-        if(Input::hasFile('file')){
-
-            echo 'Uploaded';
-            $file = Input::file('file');
-            $file->move('img/thumbnail', $file->md5(uniqid()));
-        }
-    }
+     }
 
 }

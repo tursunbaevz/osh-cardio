@@ -7,7 +7,6 @@
     "require": {
         "php": "^7.1.3",
         "barryvdh/laravel-elfinder": "^0.3.12",
-        "bkwld/croppa": "^4.7",
         "fideloper/proxy": "^4.0",
         "jenssegers/date": "^3.3",
         "laravel/framework": "5.6.*",

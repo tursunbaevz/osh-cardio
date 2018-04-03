@@ -23,6 +23,6 @@
 	        &copy; <script>document.write(new Date().getFullYear())</script>, Created by <a href="#">WebStudio(TODO)</a>
 	    </div>
 	</div>
-</footer>
-
+	</footer>
+</div>
 <!-- / -->

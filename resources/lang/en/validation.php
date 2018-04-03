@@ -103,7 +103,6 @@ return [
     'custom' => [
         'attribute-name' => [
             'rule-name' => 'custom-message',
-            'title' => array('required' => 'We need to know your e-mail address!',),
         ],
     ],
 
