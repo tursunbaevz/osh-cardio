@@ -286,10 +286,10 @@
 				    @foreach($posts as $post)
 						<div class="item">
 							<div class="card" style="width: 18rem;">
-							  <img class="card-img-top" src="..." alt="Card image cap">
+							  <img class="card-img-top" src="{{asset('img/thumbnail/news/'.$post->imageNews)}}" alt="Card image cap">
 							  <div class="card-body">
 							    <h5 class="card-title">{!! str_limit($post->title, 20)   !!}</h5>
-							    <p class="card-text">{!!   str_limit($post->body, 200)   !!}</p>
+							    <p class="card-text">{!!   str_limit($post->body, 150)   !!}</p>
 							    <a href="#" class="btn btn-primary">Go somewhere</a>
 							  </div>
 							</div>

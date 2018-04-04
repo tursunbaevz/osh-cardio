@@ -40,12 +40,20 @@ class Posts extends Controller
         $post->body = $request->body;
 
         if($request->hasFile('feautured_image')){
-            $image = $request->file('feautured_image');
-            $filename = time() . '.' . $image->getClientOriginalExtension();
-            $location = public_path('img/thumbnail/' . $filename);
-            Image::make($image)->fit(200, 250)->save($location);
+            $image_posts = $request->file('feautured_image');
+            $image_news = $request->file('feautured_image');
 
-            $post->image = $filename;
+            $filename_posts = time() . '.' . $image_posts->getClientOriginalExtension();
+            $filename_news = time() . '.' . $image_news->getClientOriginalExtension();
+
+            $location_posts = public_path('img/thumbnail/' . $filename_posts);
+            $location_news = public_path('img/thumbnail/news/' . $filename_news);
+
+            Image::make($image_posts)->fit(200, 278)->save($location_posts);
+            Image::make($image_news)->fit(286, 180)->save($location_news);
+
+            $post->image = $filename_posts;
+            $post->imageNews = $filename_news;
         }
 
         $post->save();
