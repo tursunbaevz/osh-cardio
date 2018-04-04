@@ -20,12 +20,6 @@ class Posts extends Controller
      }
 
 
-
-
-
-
-
-
      public function store(Request $request){
 
         $this->validate(request(), [
@@ -58,17 +52,8 @@ class Posts extends Controller
 
         $post->save();
 
-        //Post::create(request(['title','body']));
-
-
       return redirect('/adminpanel/dashboard/posts');
      }
-
-
-
-
-
-
 
 
      public function edit($id)
@@ -101,8 +86,23 @@ class Posts extends Controller
 
         if(isset($request->id)){
             $post = Post::findOrFail($request->id);
+            unlink(public_path('img/thumbnail/' . $post->image));
+            unlink(public_path('img/thumbnail/news/' . $post->imageNews));
             $post->delete();
         }
     }
 
 }
+
+
+/* public function fileUpload(Request $request){
+    if($request->hasFile('photo')){
+        $photo = $request->file('photo');
+        $filename = time() . '.' . $photo->getClientOriginalExtension();
+        Image::make($photo)->resize(300, 300)->save( public_path('/uploads/consultants/images/' . $filename ) );
+
+        DB::table('consultants')
+            ->where('photo', $photo)
+            ->update(['photo' => $filename]);
+    }
+} */
