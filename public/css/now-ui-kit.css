@@ -61,6 +61,16 @@ body {
   }
 
 
+/*news slider*/
+
+.card-centered {
+  text-align: center;
+  margin-top: 35px;
+}
+
+/*------------*/
+
+
 /*-----/------*/
 
 
@@ -212,7 +222,7 @@ footer {
 Removes white gap between slides - chagnge to base color of slide images
 */
 .carousel {
-  background:#007aeb;
+  background:#ccc;
 }
 
 /*

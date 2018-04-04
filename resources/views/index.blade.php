@@ -271,15 +271,57 @@
 	</div>
 	<!-- / -->
 
-		<!-- GoogleMap -->
-		<div id="map">
-			<div class="test" style="width: 300px; height: 300px; background-color: #000; z-index: 2222; position: absolute;">
-				
+	<!-- GoogleMap -->
+	<div id="map">
+		<div class="test" style="width: 300px; height: 300px; background-color: #000; z-index: 2222; position: absolute;">	
+		</div>
+	</div>
+	<!-- / -->
+
+
+	
+
+
+	<!--  news carousel  -->
+	<div class="container">
+		<div class="row card-centered">
+		    <div class="col-sm-4">		
+				<div class="card card-pricing" style="width: 20rem;">
+				  <img class="card-img-top" src="">
+				  <div class="card-body">
+				    <h5 class="card-title">Card title</h5>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				    <a href="#" class="btn btn-primary">Go somewhere</a>
+				  </div>
+				</div>
+		    </div> 
+
+		    <div class="col-sm-4">		
+				<div class="card card-pricing" style="width: 20rem;">
+				  <img class="card-img-top" src="">
+				  <div class="card-body">
+				    <h5 class="card-title">Card title</h5>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				    <a href="#" class="btn btn-primary">Go somewhere</a>
+				  </div>
+				</div>
+			</div>
+
+		    <div class="col-sm-4">		
+				<div class="card card-pricing" style="width: 20rem;">
+				  <img class="card-img-top" src="..." alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">Card title</h5>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				    <a href="#" class="btn btn-primary">Go somewhere</a>
+				  </div>
+				</div>
 			</div>
 		</div>
-		<!-- / -->
+	</div>
 
-
-
+	<!-- / -->	
 
 @endsection
+
+

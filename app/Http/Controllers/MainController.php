@@ -11,6 +11,9 @@ use Carbon\Carbon;
 class MainController extends Controller
 {
 
+	public function test(){
+		return view('test');
+	}
 
 	public function index(){
 		return view('index');
@@ -25,6 +28,8 @@ class MainController extends Controller
 		$show = Post::find($id);
 		return view('posts.show', compact('show'));
 	}
+
+
 
 }
 

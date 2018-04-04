@@ -22,7 +22,7 @@
 		  </thead>
 
 		  <tbody>
-		  	<?php $i = 1; ?>
+		    <?php $i = 1; ?>
 			@foreach($posts as $post)
 			    
 			    <tr>
@@ -38,8 +38,9 @@
 							<i class="fas fa-minus"></i>
 						</a>
 			      	</td>
+			      	<td style="display: none;"> {{ $i++ }}</td>
 			    </tr>
-			    {{ $i++ }}
+			   
 			@endforeach
 		  </tbody>
 		</table>

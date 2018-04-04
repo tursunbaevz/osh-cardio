@@ -18,22 +18,20 @@
 	<!-- CSS Files -->
 	<link href="/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="/css/now-ui-kit.css" rel="stylesheet" />
+	<link href="/css/thumb-slider.css" rel="stylesheet" />
+	
+	
  </head>
+
 
 <body class="landing-page" >
 
 
+	{{-- content --}}
 
+	@yield('content')
 
-
-				{{-- content --}}
-
-				@yield('content')
-
-				{{-- / --}}
-
-
-
+	{{-- / --}}
 
 
 	<!-- FOOTER -->
@@ -46,16 +44,16 @@
     <!--   Core JS Files   -->
 
 <script src="/js/jquery.3.2.1.min.js"></script>
-<script src="/js/moments.min.js"></script>
 <script src="/js/popper.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
+<script src="/js/jasny-bootstrap.min.js"></script>
+<script src="/js/now-ui-kit.js" type="text/javascript"></script>
+<script src="/js/moments.min.js"></script>
 <script src="/js/bootstrap-switch.js"></script>
 <script src="/js/bootstrap-tagsinput.js"></script>
 <script src="/js/bootstrap-selectpicker.js" type="text/javascript"></script>
-<script src="/js/jasny-bootstrap.min.js"></script>
 <script src="/js/nouislider.min.js" type="text/javascript"></script>
 <script src="/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
-<script src="/js/now-ui-kit.js" type="text/javascript"></script>
 <script src="/js/map-script.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVNZ20eXXPEUqeTmCFpmmZkoHeVwd9aWQ&callback=initMap"
 async defer></script>
