@@ -1,7 +1,7 @@
 <?php
 
 
-class UserTableSeeder extends Acmeseeder {
+class UserTableSeeder extends AcmeSeeder {
 
 	protected $table = 'users';
 
@@ -9,11 +9,8 @@ class UserTableSeeder extends Acmeseeder {
 
 		return [
 
-			['name' => 'Hehe', 'email' => 'hehe@example.com', 'password' => Hash::make('password')]
+			['name' => 'Hehe', 'email' => 'hehe@example.com', 'password' => Hash::make('password'), 'role' => 'admin']
 
 		];
 	}
-
-	
-
 }

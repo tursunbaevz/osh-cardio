@@ -1,15 +1,15 @@
 <?php
 
-abstract class Acmeseeder extends Seeder {
+abstract class AcmeSeeder extends DatabaseSeeder {
 
 	public function run() {
 		if(!isset($this->table)) {
-			throw new Exeption('no table!')
+			throw new Exeption('no table!');
 		}
 
 
 		if(method_exists(get_class(), 'getData')) {
-			throw new Exeption('no data!')
+			throw new Exeption('no data!');
 		}
 
 
