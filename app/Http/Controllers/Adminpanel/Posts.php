@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use App\Http\Controllers\Controller;
 use App\Post;
+use Image;
 
 class Posts extends Controller
 {
@@ -18,16 +19,49 @@ class Posts extends Controller
       return view('admin/posts.create');
      }
 
-     public function store(){
+
+
+
+
+
+
+
+     public function store(Request $request){
 
         $this->validate(request(), [
             'title' => 'required',
             'body' => 'required'
         ]);
 
-      Post::create(request(['title', 'body']));
+
+        $post = new Post;
+
+        $post->title = $request->title;
+        $post->body = $request->body;
+
+        if($request->hasFile('feautured_image')){
+            $image = $request->file('feautured_image');
+            $filename = time() . '.' . $image->getClientOriginalExtension();
+            $location = public_path('img/thumbnail/' . $filename);
+            Image::make($image)->fit(200, 250)->save($location);
+
+            $post->image = $filename;
+        }
+
+        $post->save();
+
+        //Post::create(request(['title','body']));
+
+
       return redirect('/adminpanel/dashboard/posts');
      }
+
+
+
+
+
+
+
 
      public function edit($id)
      {
@@ -60,17 +94,6 @@ class Posts extends Controller
         if(isset($request->id)){
             $post = Post::findOrFail($request->id);
             $post->delete();
-        }
-    }
-
-
-    public function upload(){
-
-        if(Input::hasFile('file')){
-
-            echo 'Uploaded';
-            $file = Input::file('file');
-            $file->move('img/thumbnail', $file->md5(uniqid()));
         }
     }
 
