@@ -6,11 +6,15 @@
 }
 
 
-/*.owl-carousel .item{
-	background: #fff;
-	box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
-	width: 250px;
-	height: 300px;
-	text-align: center;
-}*/
+.owl-carousel .item{
+    border: 0;
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    min-height: 300px;
+}
 

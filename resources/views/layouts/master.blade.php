@@ -21,6 +21,8 @@
 
 	<link rel="stylesheet" type="text/css" href="/css/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="/css/owl-slider.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="/js/owl.carousel.js"></script>
 	
 	
  </head>
@@ -29,20 +31,15 @@
 <body class="landing-page" >
 
 
-	{{-- content --}}
-
 	@yield('content')
 	@yield('script')
-
-	{{-- / --}}
 
 
 	<!-- FOOTER -->
 		@include('layouts.footer')
 	<!-- / -->
 
-<script src="/js/jquery.3.2.1.min.js"></script>
-<script type="text/javascript" src="/js/owl.carousel.js"></script>
+
 <script src="/js/popper.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/jasny-bootstrap.min.js"></script>

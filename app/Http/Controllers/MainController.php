@@ -16,7 +16,7 @@ class MainController extends Controller
 	}
 
 	public function index(){
-		$posts = Post::all();
+		$posts = Post::orderBy('id', 'desc')->take(8)->get();
 		return view('index', compact('posts'));
 
 	}
