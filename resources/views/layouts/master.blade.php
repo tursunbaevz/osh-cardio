@@ -18,7 +18,9 @@
 	<!-- CSS Files -->
 	<link href="/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="/css/now-ui-kit.css" rel="stylesheet" />
-	<link href="/css/thumb-slider.css" rel="stylesheet" />
+
+	<link rel="stylesheet" type="text/css" href="/css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="/css/owl-slider.css">
 	
 	
  </head>
@@ -30,6 +32,7 @@
 	{{-- content --}}
 
 	@yield('content')
+	@yield('script')
 
 	{{-- / --}}
 
@@ -38,12 +41,8 @@
 		@include('layouts.footer')
 	<!-- / -->
 
-    </body>
-
-
-    <!--   Core JS Files   -->
-
 <script src="/js/jquery.3.2.1.min.js"></script>
+<script type="text/javascript" src="/js/owl.carousel.js"></script>
 <script src="/js/popper.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/jasny-bootstrap.min.js"></script>
@@ -57,5 +56,11 @@
 <script src="/js/map-script.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVNZ20eXXPEUqeTmCFpmmZkoHeVwd9aWQ&callback=initMap"
 async defer></script>
+    </body>
+
+
+    <!--   Core JS Files   -->
+
+
 </html>
 		

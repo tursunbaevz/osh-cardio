@@ -276,52 +276,51 @@
 		<div class="test" style="width: 300px; height: 300px; background-color: #000; z-index: 2222; position: absolute;">	
 		</div>
 	</div>
-	<!-- / -->
-
-
-	
-
-
-	<!--  news carousel  -->
+	<!-- / -->	
+		
+	   
 	<div class="container">
-		<div class="row card-centered">
-		    <div class="col-sm-4">		
-				<div class="card card-pricing" style="width: 20rem;">
-				  <img class="card-img-top" src="">
-				  <div class="card-body">
-				    <h5 class="card-title">Card title</h5>
-				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				    <a href="#" class="btn btn-primary">Go somewhere</a>
-				  </div>
-				</div>
-		    </div> 
-
-		    <div class="col-sm-4">		
-				<div class="card card-pricing" style="width: 20rem;">
-				  <img class="card-img-top" src="">
-				  <div class="card-body">
-				    <h5 class="card-title">Card title</h5>
-				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				    <a href="#" class="btn btn-primary">Go somewhere</a>
-				  </div>
-				</div>
-			</div>
-
-		    <div class="col-sm-4">		
-				<div class="card card-pricing" style="width: 20rem;">
-				  <img class="card-img-top" src="..." alt="Card image cap">
-				  <div class="card-body">
-				    <h5 class="card-title">Card title</h5>
-				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				    <a href="#" class="btn btn-primary">Go somewhere</a>
-				  </div>
+		<div class="row">
+			<div class="slider">
+				<div class="owl-carousel" id="slider">
+				    @foreach($posts as $post)
+						<div class="item">
+							<div class="card" style="width: 18rem;">
+							  <img class="card-img-top" src="..." alt="Card image cap">
+							  <div class="card-body">
+							    <h5 class="card-title">{!! str_limit($post->title, 20)   !!}</h5>
+							    <p class="card-text">{!!   str_limit($post->body, 200)   !!}</p>
+							    <a href="#" class="btn btn-primary">Go somewhere</a>
+							  </div>
+							</div>
+						</div>
+					@endforeach
 				</div>
 			</div>
 		</div>
 	</div>
 
+
 	<!-- / -->	
 
 @endsection
 
+
+@section('script')
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/js/owl.carousel.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$('#slider').owlCarousel({
+			margin: 30,
+			items: 4,
+		});
+	});
+
+
+</script>
+
+
+@endsection
 
