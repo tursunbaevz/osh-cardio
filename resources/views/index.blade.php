@@ -284,6 +284,7 @@
 			<div class="slider">
 				<div class="owl-carousel" id="slider">
 				    @foreach($posts as $post)
+<<<<<<< HEAD
 				    <div class="item  card" style="width: 18rem;">
 
 				
@@ -292,6 +293,18 @@
 								<p class="s-text">{!! str_limit($post->body, 200)  !!}</p>
 	   			
 					</div>
+=======
+						<div class="item">
+							<div class="card" style="width: 18rem;">
+							  <img class="card-img-top" src="{{asset('img/thumbnail/news/'.$post->imageNews)}}" alt="Card image cap">
+							  <div class="card-body">
+							    <h5 class="card-title">{!! str_limit($post->title, 20)   !!}</h5>
+							    <p class="card-text">{!!   str_limit($post->body, 150)   !!}</p>
+							    <a href="#" class="btn btn-primary">Go somewhere</a>
+							  </div>
+							</div>
+						</div>
+>>>>>>> 7a41102a71538036027c88fc1981c398941a172f
 					@endforeach
 				</div>
 			</div>
