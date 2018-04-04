@@ -284,21 +284,27 @@
 			<div class="slider">
 				<div class="owl-carousel" id="slider">
 				    @foreach($posts as $post)
-						<div class="item">
-							<div class="card" style="width: 18rem;">
-							  <img class="card-img-top" src="..." alt="Card image cap">
-							  <div class="card-body">
-							    <h5 class="card-title">{!! str_limit($post->title, 20)   !!}</h5>
-							    <p class="card-text">{!!   str_limit($post->body, 200)   !!}</p>
-							    <a href="#" class="btn btn-primary">Go somewhere</a>
-							  </div>
-							</div>
-						</div>
+				    <div class="item  card" style="width: 18rem;">
+
+				
+		
+								<h4 class="s-title">{!! str_limit($post->title, 20)	!!}</h4>
+								<p class="s-text">{!! str_limit($post->body, 200)  !!}</p>
+	   			
+					</div>
 					@endforeach
 				</div>
 			</div>
 		</div>
 	</div>
+
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
 
 
 	<!-- / -->	
