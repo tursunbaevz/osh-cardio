@@ -1,6 +1,5 @@
 <?php
 
-
 class UserTableSeeder extends AcmeSeeder {
 
 	protected $table = 'users';
