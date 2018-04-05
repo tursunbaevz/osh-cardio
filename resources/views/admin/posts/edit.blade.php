@@ -2,7 +2,7 @@
 
 @section('content')
 	<div class="col" style="margin: auto;">
-	<form method="POST" action="{{action('Adminpanel\Posts@update', $post)}}">
+	<form method="POST" action="{{action('Adminpanel\Posts@update', $post)}}" enctype="multipart/form-data">
 
 	  {{csrf_field()}}
 
@@ -12,7 +12,8 @@
 	  </div>
 	
 	  <textarea id="editor1" name="body"  cols="30" rows="10" class="form-control">{{ $post->body }}</textarea><br>
-
+	  <label for="feautured_image">Картинка поста</label> <br>
+	  <input type="file" name="feautured_image" id="feautured_image"><br><br>
 	  <button type="submit" class="btn btn-primary">Редактировать</button>
 	
 

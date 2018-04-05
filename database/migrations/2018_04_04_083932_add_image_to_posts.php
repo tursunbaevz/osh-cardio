@@ -15,6 +15,7 @@ class AddImageToPosts extends Migration
     {
         Schema::table('posts', function (Blueprint $table) {
             $table->string('image')->nullable();
+            $table->string('imageGrid')->nullable();
             $table->string('imageNews')->nullable();
         });
     }
@@ -28,6 +29,7 @@ class AddImageToPosts extends Migration
     {
         Schema::table('posts', function (Blueprint $table) {
             $table->dropColumn('image'); 
+            $table->dropColumn('imageGrid'); 
             $table->dropColumn('imageNews'); 
         });
     }
