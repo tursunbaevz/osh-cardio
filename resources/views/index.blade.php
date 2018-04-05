@@ -281,6 +281,7 @@
 	   
 	<div class="container">
 		<div class="row">
+
 			<div class="slider">
 				<div class="owl-carousel owl-theme" id="slider">
 				    @foreach($posts as $post)
@@ -307,11 +308,30 @@
 @section('script')
 
 <script type="text/javascript">
-	
 	$(document).ready(function(){
-		$('#slider').owlCarousel({
+		owl = $('#slider').owlCarousel({
 			margin: 10,
-			items: 4,
+			items: 6,
+			autoplay:true,
+		    autoplayTimeout:3000,
+		    autoplayHoverPause:true,
+		    loop: true,
+		    responsive:{
+		        0:{
+		            items:1,
+		            nav:false
+		        },
+		        600:{
+		            items:3,
+		            nav:false
+		        },
+		        1000:{
+		            items:5,
+		            nav:false,
+		            loop:false
+		        }
+    		}
+
 		});
 	});
 
