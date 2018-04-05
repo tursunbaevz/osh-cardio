@@ -311,11 +311,10 @@
 	$(document).ready(function(){
 		owl = $('#slider').owlCarousel({
 			margin: 10,
-			items: 6,
+			items: 4,
 			autoplay:true,
 		    autoplayTimeout:3000,
 		    autoplayHoverPause:true,
-		    loop: true,
 		    responsive:{
 		        0:{
 		            items:1,
@@ -326,7 +325,7 @@
 		            nav:false
 		        },
 		        1000:{
-		            items:5,
+		            items:4,
 		            nav:false,
 		            loop:false
 		        }
@@ -334,7 +333,6 @@
 
 		});
 	});
-
 
 
 </script>

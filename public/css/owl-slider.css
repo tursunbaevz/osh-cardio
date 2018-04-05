@@ -18,3 +18,30 @@
     min-height: 300px;
 }
 
+
+.owl-dots {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 6px; 
+}
+
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel
+.owl-nav button.owl-next, .owl-carousel button.owl-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 10em;
+    display: inline-block;
+    margin: 4px;
+    border: solid 1px #ccc;
+}
+
+.owl-carousel button.active {
+    background-color: #C62828;
+    width:  10px;
+    height: 10px;
+}
+
+
+
