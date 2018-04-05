@@ -282,15 +282,15 @@
 	<div class="container">
 		<div class="row">
 
-			<div class="slider">
+			<div class="news-slider">
 				<div class="owl-carousel owl-theme" id="slider">
 				    @foreach($posts as $post)
-						<div class="item">			
+						<div class="item item-news">			
 						    <img class="card-img-top" src="{{asset('img/thumbnail/news/'.$post->imageNews)}}" alt="Card image cap">
 						    <div class="card-body">
 							    <h5 class="card-title">{!! str_limit($post->title, 20)   !!}</h5>
 							    <p class="card-text">{!!   str_limit($post->body, 100)   !!}</p>
-							    <a href="#" class="btn btn-primary">подробнее</a>
+							    <a href="{{ '/posts/' . $post->id }}" class="btn btn-primary">подробнее</a>
 						    </div>					
 						</div>
 					@endforeach
@@ -301,7 +301,6 @@
 
 
 	<!-- / -->	
-
 @endsection
 
 
@@ -333,7 +332,6 @@
 
 		});
 	});
-
 
 </script>
 

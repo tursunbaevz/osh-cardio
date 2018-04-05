@@ -32,7 +32,9 @@
 
 
 	@yield('content')
+	
 	@yield('script')
+	@yield('mainSlider')
 
 
 	<!-- FOOTER -->

@@ -23,7 +23,7 @@
 
                 
  <div class="navbar-translate">
-        <a href="/" style="text-decoration: none;">
+        <a href="{{'/'}}" style="text-decoration: none;">
         <img src="/img/logo_text.svg" alt="logo" class="logo black-shadow" color-on-scroll="400"></a>
  
          <a class="navbar-brand" href="#" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom">
