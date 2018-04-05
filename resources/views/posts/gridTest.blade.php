@@ -23,7 +23,7 @@
 	    </div>
 
 		<a href="/posts/{{$post->id}}">
-	    <img class="card-img-right flex-auto d-none d-md-block" alt="Thumbnail [200x250]" src=" {{asset('img/thumbnail/' . $post->image)}} "></a>
+	    <img class="card-img-right flex-auto d-none d-md-block" alt="Thumbnail [200x250]" src=" {{asset('img/thumbnail/grid/' . $post->imageGrid)}} "></a>
 	    
 
 	  </div>

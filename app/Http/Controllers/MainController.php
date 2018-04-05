@@ -27,8 +27,8 @@ class MainController extends Controller
 	}
 
 	public function show($id){
-		$show = Post::find($id);
-		return view('posts.show', compact('show'));
+		$post = Post::find($id);
+		return view('posts.show', compact('post'));
 	}
 
 
