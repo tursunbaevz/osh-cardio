@@ -50,7 +50,7 @@ class Posts extends Controller
             $location_grid = public_path('img/thumbnail/grid/' . $filename_grid);
             $location_news = public_path('img/thumbnail/news/' . $filename_news);
  
-            Image::make($image_post)->fit(825, 350)->save($location_post);
+            Image::make($image_post)->fit(1920, 350)->save($location_post);
             Image::make($image_grid)->fit(200, 278)->save($location_grid);
             Image::make($image_news)->fit(286, 180)->save($location_news);
  
