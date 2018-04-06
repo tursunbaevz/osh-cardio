@@ -73,7 +73,7 @@ class Posts extends Controller
  
      }
 
-     /*------------- UPDATE -------------*/
+                            /*------------- UPDATE -------------*/
  
     public function update(Request $request, $id)
      {  

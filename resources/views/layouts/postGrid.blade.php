@@ -11,8 +11,10 @@
    <body>
 
       <div class="container" style="margin-top: 100px"> 
+         <div class="row">
          <!-- CONTENT -->
          @yield('content')
+         </div>
       </div>
 
 
