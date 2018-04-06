@@ -32,12 +32,5 @@ class MainController extends Controller
 	}
 
 
-
-	public function postgrid(){
-		$posts = Post::orderBy('created_at', 'DESC')->paginate(5);
-		return view('posts.gridTest', compact('posts'));
-	}
-
-
 }
 

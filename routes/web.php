@@ -8,7 +8,6 @@ Route::get('/test', 'MainController@test');
 Route::get('/', 'MainController@index');
 Route::get('/posts', 'MainController@postsList');
 Route::get('/posts/{id}', 'MainController@show');
-Route::get('/postgrid', 'MainController@postgrid');
 Auth::routes();
 
 
