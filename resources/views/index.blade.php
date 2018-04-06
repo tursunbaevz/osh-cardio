@@ -310,7 +310,7 @@
 	$(document).ready(function(){
 		owl = $('#slider').owlCarousel({
 			margin: 10,
-			items: 4,
+			items: 5,
 			autoplay:true,
 		    autoplayTimeout:3000,
 		    autoplayHoverPause:true,

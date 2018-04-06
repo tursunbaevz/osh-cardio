@@ -50,7 +50,6 @@
 <script src="/js/bootstrap-switch.js"></script>
 <script src="/js/bootstrap-tagsinput.js"></script>
 <script src="/js/bootstrap-selectpicker.js" type="text/javascript"></script>
-<script src="/js/nouislider.min.js" type="text/javascript"></script>
 <script src="/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
 <script src="/js/map-script.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVNZ20eXXPEUqeTmCFpmmZkoHeVwd9aWQ&callback=initMap"
