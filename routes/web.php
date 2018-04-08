@@ -30,6 +30,8 @@ Route::group(['middleware' => 'can:accessAdminpanel'], function() {
     Route::get('/adminpanel/dashboard/albums/create', 'Adminpanel\AlbumsController@create');
     Route::post('/adminpanel/dashboard/albums/store', 'Adminpanel\AlbumsController@store');
     Route::get('/adminpanel/dashboard/albums/{id}', 'Adminpanel\AlbumsController@show');
+    Route::delete('/adminpanel/dashboard/albums/', 'Adminpanel\AlbumsController@destroy');   
+
 
 
 
