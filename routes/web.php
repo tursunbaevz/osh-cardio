@@ -12,6 +12,7 @@ Auth::routes();
 
 
 Route::group(['middleware' => 'can:accessAdminpanel'], function() {
+	// POSTS
     Route::get('/adminpanel/dashboard/posts', 'Adminpanel\Posts@index');
     Route::get('/adminpanel/dashboard/posts/create', 'Adminpanel\Posts@create');
     Route::post('/adminpanel/dashboard/posts', 'Adminpanel\Posts@store');
@@ -20,6 +21,18 @@ Route::group(['middleware' => 'can:accessAdminpanel'], function() {
     Route::delete('/adminpanel/dashboard/posts/', 'Adminpanel\Posts@destroy')->name('post.delete');
     Route::post('/adminpanel/dashboard/posts/upload', 'Adminpanel\Posts@upload');
 
-    // future adminpanel routes also should belong to the group
+    // ALBUMS
+    Route::get('/adminpanel/dashboard/albums', 'Adminpanel\AlbumsController@index');
+    Route::get('/adminpanel/dashboard/albums/create', 'Adminpanel\AlbumsController@create');
+    Route::post('/adminpanel/dashboard/albums/store', 'Adminpanel\AlbumsController@store');
+    Route::get('/adminpanel/dashboard/albums/{id}', 'Adminpanel\AlbumsController@show');
+
+
+
+    //PHOTOS
+    Route::get('/adminpanel/dashboard/photos/create/{id}', 'Adminpanel\PhotosController@create');
+    Route::post('/adminpanel/dashboard/photos/store', 'Adminpanel\PhotosController@store');
+    Route::delete('/adminpanel/dashboard/albums/photo', 'Adminpanel\PhotosController@destroy');    
+    
 });
 

@@ -9,6 +9,14 @@
       <li class="nav-item active">
         <a class="nav-link" href="{{ '/' }}">Главная<span class="sr-only">(current)</span></a>
       </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ '/adminpanel/dashboard/albums' }}">Альбом<span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ '/adminpanel/dashboard/posts' }}">Новости<span class="sr-only">(current)</span></a>
+      </li>
     </ul>
     @guest
       @else

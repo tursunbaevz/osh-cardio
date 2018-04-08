@@ -17,28 +17,24 @@
 			<div class="col-10" style="margin: auto;"><br>
 
 				{{-- EACH POST --}}
-				<div class="row">
+		
 
 					 	@yield('content')
 
-				</div>
+
+	
 				{{--/--}}
 
 				</div>
 			</div>
 		</div>
 
-			<script src="{{ asset('js/app.js') }}"></script>
-
+		<script src="{{ asset('/js/app.js') }}"></script>
+	
 		@yield('script')
-</body>
+		@yield('ckeditor')
+		@yield('deletePhoto')
 
+</body>
 <script src="/js/bootstrap.min.js"></script>
-<script src="{{ asset('/js/ckeditor/ckeditor.js') }}"
-type="text/javascript" charset="utf-8" ></script>
-<script>
-        var editor = CKEDITOR.replace( 'editor1',{
-                 filebrowserBrowseUrl : '/elfinder/ckeditor' 
-        } );
-</script>
 </html>

@@ -57,7 +57,7 @@ hr {
   margin-bottom: 20px;
 }
 
-/* post style */
+/* admin/post */
 
 .btn-danger {
   color: #ffffff !important;
@@ -80,8 +80,58 @@ transform: translateY(-50%);
 }
 
 
-.post-wrapper {
-	
+/* --------- */
+
+
+/*     admin/album/show.blade.php   */
+  
+.photo-block {
+  position: relative;
+  width: 250px;
+  height: 200px;
 }
 
-/* --------- */
+div.photo-block a {
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  display: none;
+}
+
+#photo-image {
+  width: 250px;
+  height: 200px;
+}
+
+div.photo-block:hover a{
+  display: block;
+  color: #dc3545;
+}
+
+/*     admin/album/index.blade.php   */
+
+
+.album-block {
+  position: relative;
+  width: 250px;
+  height: 200px;
+}
+
+div.album-block:hover a{
+  display: block;
+  color: #dc3545;
+}
+
+div.album-block a {
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  display: none;
+}
+
+
+#album-preview {
+  width: 250px;
+  height: 200px;
+}
+

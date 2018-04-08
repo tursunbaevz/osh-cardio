@@ -20,8 +20,6 @@ class Posts extends Controller
       return view('admin/posts.create');
      }
  
- 
- 
                                 /*------------- STORE -------------*/
  
      public function store(Request $request){

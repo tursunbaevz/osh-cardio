@@ -59,10 +59,12 @@
             dataType: 'json',
             data: {id:postid,"_token": "{{ csrf_token() }}"},
 
-            success: function (data) {
+            success : function() {
+            	
             },
         });
         window.location.reload('/adminpanel/dashboard/posts');
+
     });
 
 	</script>
