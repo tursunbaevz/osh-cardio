@@ -117,16 +117,17 @@ div.photo-block:hover a{
   height: 200px;
 }
 
-div.album-block:hover a{
-  display: block;
-  color: #dc3545;
-}
 
-div.album-block a {
+div.album-block  a#trash-album {
   position: absolute;
   right: 5px;
   top: 0px;
   display: none;
+}
+
+div.album-block:hover a#trash-album  {
+  display: block;
+  color: #dc3545;
 }
 
 
