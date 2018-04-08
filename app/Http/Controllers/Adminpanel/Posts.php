@@ -143,7 +143,7 @@ class Posts extends Controller
                 $post->delete();
             }
 
-            $post->delete();
+             $post->delete();
         }
     
     }
