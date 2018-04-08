@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Main;
 use App\Post;
+use App\Service;
 use Carbon\Carbon;
 
 class MainController extends Controller
@@ -29,6 +30,16 @@ class MainController extends Controller
 	public function show($id){
 		$post = Post::find($id);
 		return view('posts.show', compact('post'));
+	}
+
+	public function servicesList(){
+		$services = Service::orderBy('created_at', 'DESC')->paginate(5);
+		return view('services.servicesList', compact('services'));
+	}
+
+	public function servicesShow($id){
+		$services = Service::find($id);
+		return view('services.servicesShow', compact('services'));
 	}
 
 
