@@ -3,8 +3,6 @@
 @section('content')
 	<h1 class="title">Новости</h1>
 
-
-
 		<table class="table table-hover table-style" id="post_table">
 		  <thead>
 		    <tr class="table-active">
