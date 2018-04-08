@@ -12,6 +12,8 @@ Auth::routes();
 
 
 Route::group(['middleware' => 'can:accessAdminpanel'], function() {
+
+								/*=====POSTS=====*/
     Route::get('/adminpanel/dashboard/posts', 'Adminpanel\Posts@index');
     Route::get('/adminpanel/dashboard/posts/create', 'Adminpanel\Posts@create');
     Route::post('/adminpanel/dashboard/posts', 'Adminpanel\Posts@store');
@@ -19,6 +21,14 @@ Route::group(['middleware' => 'can:accessAdminpanel'], function() {
     Route::get('/adminpanel/dashboard/posts/edit/{post}', 'Adminpanel\Posts@edit');
     Route::delete('/adminpanel/dashboard/posts/', 'Adminpanel\Posts@destroy')->name('post.delete');
     Route::post('/adminpanel/dashboard/posts/upload', 'Adminpanel\Posts@upload');
+
+    							/*====SERVICES====*/
+    Route::get('/adminpanel/dashboard/services','Adminpanel\ServicesController@index');
+    Route::get('/adminpanel/dashboard/services/create','Adminpanel\ServicesController@create');
+    Route::post('/adminpanel/dashboard/services','Adminpanel\ServicesController@store');
+    Route::delete('/adminpanel/dashboard/services/', 'Adminpanel\ServicesController@destroy')->name('service.delete');
+    Route::get('/adminpanel/dashboard/services/edit/{service}','Adminpanel\ServicesController@edit');
+    Route::post('/adminpanel/dashboard/services/update/{service}','Adminpanel\ServicesController@update');
 
     // future adminpanel routes also should belong to the group
 });
