@@ -4,7 +4,11 @@ namespace App\Http\Controllers\Adminpanel;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
 use App\Album;
+use App\Photo;
+use File;
+
 
 class AlbumsController extends Controller
 {
@@ -51,5 +55,25 @@ class AlbumsController extends Controller
 
     	return redirect('/adminpanel/dashboard/albums')->with('success', 'Album Created!');
     	
+    }
+
+
+
+    public function destroy(Request $request){
+ 
+        if(isset($request->id)){
+            $album = Album::findOrFail($request->id);
+  
+            if(File::exists('storage/albums_preview' . '/' . $album->preview))
+            {
+                foreach($album->photos as $photo){
+                    File::deleteDirectory('storage/photos' . $photo->album_id);
+                }
+
+                File::delete('storage/albums_preview' . '/' . $album->preview);
+                $album->delete();
+            }
+        }
+        
     }
 }
