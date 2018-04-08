@@ -15,8 +15,8 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="{{'/posts'}}">Новости</a>
                 <a class="dropdown-item" href="{{'/posts'}}">Новости</a>
-                <a class="dropdown-item" href="{{'/posts'}}">Новости</a>
-                <a class="dropdown-item" href="{{'/posts'}}">Новости</a>
+                <a class="dropdown-item" href="{{'/services'}}">Услуги</a>
+                <a class="dropdown-item" href="{{'/services'}}">Услуги</a>
             </div>
         </div>
 

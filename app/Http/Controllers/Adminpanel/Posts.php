@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Input;
 use App\Http\Controllers\Controller;
 use App\Post;
 use Image;
-use Storage;
+use File;
  
 class Posts extends Controller
 {   
@@ -100,15 +100,11 @@ class Posts extends Controller
             $location_grid = public_path('img/thumbnail/grid/' . $filename_grid);
             $location_news = public_path('img/thumbnail/news/' . $filename_news);
 
-             if(
-                    Storage::exists('img/thumbnail/' . $post->image)&&
-                    Storage::exists('img/thumbnail/grid/' . $post->imageGrid)&&
-                    Storage::exists('img/thumbnail/news/' . $post->imageNews))
-                {
+             if(File::exists('img/thumbnail/' . $post->image)){
  
-                    unlink(public_path('img/thumbnail/' . $post->image));
-                    unlink(public_path('img/thumbnail/grid/' . $post->imageGrid));
-                    unlink(public_path('img/thumbnail/news/' . $post->imageNews));
+                    File::delete('img/thumbnail/' . $post->image);
+                    File::delete('img/thumbnail/grid/' . $post->imageGrid);
+                    File::delete('img/thumbnail/news/' . $post->imageNews);
  
                 }else{
                     $post->image = $filename_post;
@@ -137,20 +133,19 @@ class Posts extends Controller
  
         if(isset($request->id)){
             $post = Post::findOrFail($request->id);
-            if(
-                Storage::exists('img/thumbnail/' . $post->image)&&
-                Storage::exists('img/thumbnail/grid/' . $post->imageGrid)&&
-                Storage::exists('img/thumbnail/news/' . $post->imageNews))
-            {
- 
-                unlink(public_path('img/thumbnail/' . $post->image));
-                unlink(public_path('img/thumbnail/grid/' . $post->imageGrid));
-                unlink(public_path('img/thumbnail/news/' . $post->imageNews));
-                
+
+            if(File::exists('img/thumbnail/' . $post->image)){
+
+                File::delete('img/thumbnail/' . $post->image);
+                File::delete('img/thumbnail/grid/' . $post->imageGrid);
+                File::delete('img/thumbnail/news/' . $post->imageNews);
+
                 $post->delete();
- 
-            }else{$post->delete();}
+            }
+
+            $post->delete();
         }
+    
     }
     
 }

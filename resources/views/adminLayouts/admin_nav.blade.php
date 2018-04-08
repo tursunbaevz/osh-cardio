@@ -17,6 +17,10 @@
       <li class="nav-item active">
         <a class="nav-link" href="{{ '/adminpanel/dashboard/posts' }}">Новости<span class="sr-only">(current)</span></a>
       </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ '/adminpanel/dashboard/services' }}">Услуги<span class="sr-only">(current)</span></a>
+      </li>
     </ul>
     @guest
       @else

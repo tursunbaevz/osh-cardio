@@ -32,7 +32,7 @@
 			      			<i class="fas fa-edit"></i>
 			      		</a> 
 
-						<a class="btn btn-danger deletebtn" data-post="{{ $post->id }}">
+						<a class="btn btn-danger deletebtn" href="javascript:void(0)" data-post="{{ $post->id }}">
 							<i class="fas fa-minus"></i>
 						</a>
 			      	</td>
@@ -48,7 +48,30 @@
 
 @section('script')
 
-	<script type="text/javascript">
+<script>
+	$(document).on('click', '.deletebtn', function(ev){
+	    var postid = $(this).attr("data-post");
+	    var clickedObj = $(this).parent().parent();
+	    if (confirm('Вы уверены?')) {	
+		    $.ajax({
+		        method: 'DELETE',
+		        url: '{{ url('/adminpanel/dashboard/posts')}}',
+		        dataType: 'text',
+		        headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') },
+		        data: {id:postid,"_token": "{{ csrf_token() }}"},
+
+		        success: function (data) {
+	  				$(clickedObj).fadeOut( "slow", function() {
+	    				// удалено
+	  				});
+		        }
+		    });  
+		} 
+	});
+
+</script>
+
+	{{-- <script type="text/javascript">
 	 $(document).on('click', '.deletebtn', function(ev){
         let postid = $(this).attr("data-post");
         $.ajax({
@@ -65,7 +88,7 @@
 
     });
 
-	</script>
+	</script> --}}
 
 @endsection
 

@@ -45,21 +45,6 @@ class ServicesController extends Controller
             if(isset($request->id)){
                 $service = Service::findOrFail($request->id);
                 $service->delete();
-
-
-                // if(
-                //     Storage::exists('img/thumbnail/' . $post->image)&&
-                //     Storage::exists('img/thumbnail/grid/' . $post->imageGrid)&&
-                //     Storage::exists('img/thumbnail/news/' . $post->imageNews))
-                // {
-     
-                //     unlink(public_path('img/thumbnail/' . $post->image));
-                //     unlink(public_path('img/thumbnail/grid/' . $post->imageGrid));
-                //     unlink(public_path('img/thumbnail/news/' . $post->imageNews));
-                    
-                //     $post->delete();
-     
-                // }else{$post->delete();}
             }
 
         }
@@ -84,14 +69,11 @@ class ServicesController extends Controller
 
         }
 
-         public function edit($id){
+
+        public function edit($id){
             $service = Service::find($id);
             return view('admin/service.edit', compact('service'));
-         }
-
-
-
-
+        }
 
 
 }
