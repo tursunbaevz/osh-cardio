@@ -35,3 +35,11 @@
 	</div>
 	
 @endsection
+
+
+@section('ckeditor')
+	<script src="{{ asset('/js/ckeditor/ckeditor.js') }}" type="text/javascript" charset="utf-8" ></script>
+	<script type="text/javascript" src="/js/ckeditor.js"></script>	
+@endsection
+
+

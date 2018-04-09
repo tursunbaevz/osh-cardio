@@ -35,7 +35,7 @@
 
 		    var albumid = $(this).attr("a-data");
 		    var clickedObj = $(this).parent().parent();
-		    if (confirm('Вы уверены?')) {	
+		    if (confirm('Все фотографии которые внутри альбома будут удалены!')) {	
 			    $.ajax({
 			        method: 'DELETE',
 			        url: '{{ url('/adminpanel/dashboard/albums/')}}',

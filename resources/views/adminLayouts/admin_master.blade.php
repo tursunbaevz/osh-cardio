@@ -16,10 +16,10 @@
 			
 			<div class="col-10" style="margin: auto;"><br>
 
-				{{-- EACH POST --}}
-		
+				{{-- EACH --}}
+						
 
-					 	@yield('content')
+					 @yield('content')
 
 
 	

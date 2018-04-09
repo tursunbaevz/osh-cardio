@@ -9,23 +9,10 @@
       <li class="nav-item active">
         <a class="nav-link" href="{{ '/' }}">Главная<span class="sr-only">(current)</span></a>
       </li>
-
-      <li class="nav-item active">
-        <a class="nav-link" href="{{ '/adminpanel/dashboard/albums' }}">Альбом<span class="sr-only">(current)</span></a>
-      </li>
-
-      <li class="nav-item active">
-        <a class="nav-link" href="{{ '/adminpanel/dashboard/posts' }}">Новости<span class="sr-only">(current)</span></a>
-      </li>
-
-      <li class="nav-item active">
-        <a class="nav-link" href="{{ '/adminpanel/dashboard/services' }}">Услуги<span class="sr-only">(current)</span></a>
-      </li>
     </ul>
     @guest
       @else
       <li class="nav-itemform-inline my-2 my-lg-0"s>
-      
             <a style="" href="{{ route('logout') }}"
                  onclick="event.preventDefault();
                                document.getElementById('logout-form').submit();">
@@ -39,6 +26,26 @@
     @endguest
   </div>
 </nav>
+
+<div class="block-items">
+  <div class="d-inline-block">
+    <a class="nav-link" href="{{ '/adminpanel/dashboard/albums' }}"><i class="fas fa-images"></i><br>Альбом</a>
+  </div>
+
+  <div class="d-inline-block"> 
+    <a class="nav-link" href="{{ '/adminpanel/dashboard/posts' }}"><i class="fas fa-newspaper"></i><br>Новости
+      
+    </a>
+  </div>
+
+  <div class="d-inline-block">
+    <a class="nav-link" href="{{ '/adminpanel/dashboard/services' }}"><i class="fas fa-stethoscope"></i><br>Услуги</a>
+  </div>
+
+  <div class="d-inline-block">
+    <a class="nav-link" href="#"><i class="fas fa-user-md"></i><br>Врачи</a>
+  </div>
+</div>
 
  
       

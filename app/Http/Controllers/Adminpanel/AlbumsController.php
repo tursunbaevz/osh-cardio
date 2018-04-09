@@ -62,6 +62,7 @@ class AlbumsController extends Controller
     public function destroy(Request $request){
  
         if(isset($request->id)){
+            
             $album = Album::findOrFail($request->id);
   
             if(File::exists('storage/albums_preview' . '/' . $album->preview))
