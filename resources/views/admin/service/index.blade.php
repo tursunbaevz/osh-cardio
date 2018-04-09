@@ -19,7 +19,7 @@
 		    </tr>
 		  </thead>
 
-		  <tbody>
+		  <tbody> 
 		    <?php $i = 1; ?>
 			 @foreach($services as $service)
 			    
@@ -31,13 +31,13 @@
 
 			    	<td style="width: 120px;">
 
-						<a class="btn btn-danger deletebtn" data-post="{{ $service->id }}">
-							<i class="fas fa-minus"></i>
-						</a>
-
 			  			<a href="{{action('Adminpanel\ServicesController@edit', $service->id)}}" class="btn btn-primary">
 			      			<i class="fas fa-edit"></i>
 			      		</a>
+
+						<a class="btn btn-danger deletebtn" data-post="{{ $service->id }}">
+							<i class="fas fa-minus"></i>
+						</a>
 
 			      	</td>
 
@@ -49,28 +49,30 @@
 		  </tbody>
 		</table>
 
-			{{-- <h4> {!! str_limit($service->title, 25) !!} </h4>
-			<p> {!! str_limit($service->body, 50) !!} </p> --}}
-
 @endsection
 
 @section('script')
 
-	<script type="text/javascript">
-	 $(document).on('click', '.deletebtn', function(ev){
-        let serviceid = $(this).attr("data-post");
-        $.ajax({
-            method: 'DELETE',
-            url: '{{ route('service.delete') }}',
-            dataType: 'json',
-            data: {id:serviceid,"_token": "{{ csrf_token() }}"},
-
-            success: function (data) {
-            },
-        });
-        window.location.reload('/adminpanel/dashboard/services');
-    });
-
-	</script>
-
+	<script> 
+	  $(document).on('click', '.deletebtn', function(ev){ 
+	      var postid = $(this).attr("data-post"); 
+	      var clickedObj = $(this).parent().parent(); 
+	      if (confirm('Вы уверены?')) {   
+	        $.ajax({ 
+	            method: 'DELETE', 
+	            url: '{{ url('/adminpanel/dashboard/services')}}', 
+	            dataType: 'text', 
+	            headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') }, 
+	            data: {id:postid,"_token": "{{ csrf_token() }}"}, 
+	 
+	            success: function (data) { 
+	            $(clickedObj).fadeOut( "slow", function() { 
+	              // удалено 
+	            }); 
+	            } 
+	        });   
+	    }  
+	  }); 
+	</script> 
+	
 @endsection

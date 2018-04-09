@@ -12,7 +12,9 @@
 	  </div>
 	
 	  <textarea  id="editor1" name="body" cols="30" rows="10" class="form-control"></textarea><br>
-
+	
+	  <label for="feautured_image">Картинка поста</label> <br>
+	  <input type="file" name="feautured_image" id="feautured_image"><br><br>
 	  <button type="submit" class="btn btn-primary">Создать</button>
 
 

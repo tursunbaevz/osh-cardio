@@ -5,23 +5,35 @@
 	@include('layouts.navForPosts')
 
 	<div class="container" style="margin-top: 80px">
+
+    <div class="row">
+	    <div class="col-md-6 ml-auto mr-auto text-center">
+	        <h2 class="title">Наши услуги</h2>
+	    </div>
+    </div>
+
+
 	 <div class="row">
 
 	   @foreach($services as $service)
-		
-		<div class="col-md-9" style="margin: auto;">
-		  <div class="card-1 flex-md-row mb-4 h-md-250 card-raised">
-		    <div class="card-body-1 d-flex flex-column-1 align-items-start">
-		      <strong class="d-inline-block mb-2 text-primary">World</strong>
-		      <h3 class="mb-0">
-		        <a class="text-dark" href="/services/{{$service->id}}">{!! str_limit($service->title, 50) !!}</a>
-		      </h3>
-		      <div class="mb-1 text-muted">{{ ($service->created_at)->diffForHumans() }}</div>
-		      <p class="card-text mb-auto">{!! str_limit($service->body, 180) !!}</p>
-		      <a href="/services/{{$service->id}}">Подробнее</a>
+
+		<div class="col-md-4">
+		    <div class="card card-pricing card-background card-raised" style="background-image: url({{asset('img/thumbnail/services/grid/' . $service->imageGrid)}});">
+
+		        <div class="card-body">    
+		            <div class="more-services" style="margin-top: 100px;">
+
+					      <h3 class="category text-info center-block-btn" style ="text-transform: uppercase;">
+					        {!! str_limit($service->title, 35) !!}
+					      </h3>
+
+					      <a class="btn icon-small btn-round m-style" href="/services/{{$service->id}}">
+		               		подробнее
+		            	</a>
+		            	
+		            </div>                   
+		        </div>
 		    </div>
-		    {{-- <img class="card-img-right flex-auto d-none d-md-block" src=" {{asset('img/thumbnail/grid/' . $post->imageGrid)}} "> --}}
-		  </div>
 		</div>
 
 	   @endforeach

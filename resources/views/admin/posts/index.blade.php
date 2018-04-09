@@ -17,7 +17,7 @@
 			    </th>
 		
 		    </tr>
-		  </thead>
+		  </thead>  
 
 		  <tbody>
 		    <?php $i = 1; ?>
@@ -48,47 +48,27 @@
 
 @section('script')
 
-<script>
-	$(document).on('click', '.deletebtn', function(ev){
-	    var postid = $(this).attr("data-post");
-	    var clickedObj = $(this).parent().parent();
-	    if (confirm('Вы уверены?')) {	
-		    $.ajax({
-		        method: 'DELETE',
-		        url: '{{ url('/adminpanel/dashboard/posts')}}',
-		        dataType: 'text',
-		        headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') },
-		        data: {id:postid,"_token": "{{ csrf_token() }}"},
-
-		        success: function (data) {
-	  				$(clickedObj).fadeOut( "slow", function() {
-	    				// удалено
-	  				});
-		        }
-		    });  
-		} 
-	});
-
-</script>
-
-	{{-- <script type="text/javascript">
-	 $(document).on('click', '.deletebtn', function(ev){
-        let postid = $(this).attr("data-post");
-        $.ajax({
-            method: 'DELETE',
-            url: '{{ route('post.delete') }}',
-            dataType: 'json',
-            data: {id:postid,"_token": "{{ csrf_token() }}"},
-
-            success : function() {
-            	
-            },
-        });
-        window.location.reload('/adminpanel/dashboard/posts');
-
-    });
-
-	</script> --}}
+<script> 
+  $(document).on('click', '.deletebtn', function(ev){ 
+      var postid = $(this).attr("data-post"); 
+      var clickedObj = $(this).parent().parent(); 
+      if (confirm('Вы уверены?')) {   
+        $.ajax({ 
+            method: 'DELETE', 
+            url: '{{ url('/adminpanel/dashboard/posts')}}', 
+            dataType: 'text', 
+            headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') }, 
+            data: {id:postid,"_token": "{{ csrf_token() }}"}, 
+ 
+            success: function (data) { 
+            $(clickedObj).fadeOut( "slow", function() { 
+              // удалено 
+            }); 
+            } 
+        });   
+    }  
+  }); 
+</script> 
 
 @endsection
 
