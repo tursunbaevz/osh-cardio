@@ -33,7 +33,7 @@ class MainController extends Controller
 	}
 
 	public function servicesList(){
-		$services = Service::orderBy('created_at', 'DESC')->paginate(5);
+		$services = Service::orderBy('created_at', 'DESC')->paginate(9);
 		return view('services.servicesList', compact('services'));
 	}
 

@@ -4,8 +4,8 @@
 @include ('layouts.navForPosts')
 
     <div class="page-header page-header-small" style="margin-top: 60px;">
-        {{-- <div class="page-header-image" data-parallax="true" style="background-image: url('{{asset('img/thumbnail/'.$post->image)}}');">
-        </div> --}}
+        <div class="page-header-image" data-parallax="true" style="background-image: url('{{asset('img/thumbnail/services/'.$services->image)}}');">
+        </div>
         <div class="container">
             <div class="content-center">
                 <h1 class="title">{{$services->title}}</h1>
