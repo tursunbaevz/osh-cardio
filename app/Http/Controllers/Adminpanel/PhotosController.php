@@ -1,14 +1,17 @@
 <?php
 
+// path to Adminpanel
 namespace App\Http\Controllers\Adminpanel;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
+// for calling photo model 
 use App\Photo;
 
 class PhotosController extends Controller
-{
+{	
+	// path for creating photo with album_id
     public function create($album_id){
     	return view('admin/photos.create')->with('album_id', $album_id);
     }
@@ -38,18 +41,22 @@ class PhotosController extends Controller
 		$photo->size = $request->file('image')->getClientSize();
 		$photo->save();
 
+		// redirect after creating
 		return redirect('/adminpanel/dashboard/albums/' . $request->input('album_id'))->with('success', 'Фотография успешно загружена!');
 	}
 
 
 
 
-
+	// удаление фото
     public function destroy(Request $request){
  
         if(isset($request->id)){
+        	// находит id фото
             $photo = Photo::findOrFail($request->id);
+            // проверка если удалил файл
     		if(Storage::delete('storage/photos' . $photo->album_id . '/' . $photo->image)){
+    			// тогда удали фото из базы
 	    		$photo->delete();
     		}
     	}

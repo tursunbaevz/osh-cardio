@@ -141,17 +141,27 @@ div.photo-block:hover a{
   margin: 5px 5px;
 }
 
+div.album-block a#edit-album {
+  position: absolute;
+  right: 33%;
+  top: 40%;
+  display: none;
+  color: #1ea8ff;
+  z-index: 50;
+}
 
 div.album-block  a#trash-album {
   position: absolute;
-  right: 5px;
-  top: 0px;
+  right: 53%;
+  top: 40%;
   display: none;
+  color: #dc3545;
+  z-index: 50;
 }
 
+div.album-block:hover a#edit-album,
 div.album-block:hover a#trash-album  {
   display: block;
-  color: #dc3545;
 }
 
 
@@ -169,19 +179,21 @@ div.album-block:hover a#trash-album  {
   bottom: 0px;
   text-align: center;
   width: 100%;
-  height: auto;
-  border-radius: 4px;
-}
-
-div.album-block:hover div#block-album-title  {
-  display: block;
-  color: #fff;
+  height: 100%;
+  border-radius: 5px;
   opacity: 0.6;
 }
 
-#btncreate-album {
-
+div.album-block:hover div#block-album-title {
+  display: block;
+  color: #fff;
 }
+
+div#block-album-title h5 {
+  margin-top: 45%;
+}
+
+
 
 
 

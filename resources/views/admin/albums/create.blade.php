@@ -5,24 +5,57 @@
 
 
 
-{{ Form::open(['action' => 'Adminpanel\AlbumsController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) }}
-<h3>Создание Альбома</h3>
-<div class="form-group">
-	{{ Form::text('name', '', ['placeholder' => 'Наименование Альбома']) }}
+<div class="col" style="margin: auto; margin-bottom: 50px;">
+
+	<form method="POST" action="{{action('Adminpanel\AlbumsController@store')}}" enctype="multipart/form-data">
+
+		{{csrf_field()}}
+
+	  	<div class="form-group">
+	    <br>
+	    	<input name="name" type="text" class="form-control" placeholder="Введите заголовок">
+	  	</div>
+		
+		  <textarea name="description"  cols="30" rows="10" class="form-control"></textarea><br>
+
+		<label for="feautured_image">Превью</label> <br>
+		<input  type="file"  name="preview" id="feautured_image" class="btn btn-success"><br><br>
+	    <button type="submit" class="btn btn-primary">создать</button>
+		
+		
+
+
+
+		@if(count($errors))
+			<div class="form-group" style="margin-top: 20px; max-width: 400px;">
+				<div class="alert alert-danger">	
+					<ul>
+						@foreach($errors->all() as $error)
+							<li style="list-style-type: disc;"> {{$error}} </li>
+						@endforeach
+					</ul>
+				</div>
+			</div>
+		@endif
+
+	</form>
 </div>
 
-<div class="form-group">
-	{{ Form::textarea('description', '', ['placeholder' => 'Описание Альбома'])}}
-</div>
-
-<div class="form-group">
-	{{ Form::file('preview', array('class' => 'btn btn-info')) }}
-</div>
-
-<div class="form-group">
-	{{ Form::submit('создать альбом', array('class' => 'btn btn-success')) }}
-</div>
-
-{!! Form::close() !!}
 
 @endsection
+@section('script')
+	<script>
+	if (!$('input[type=file]').change()) {
+		$('input[type=file]').change(function(e){
+		  $in=$(this);
+		  $in.next().html($in.val());
+		});
+		alert('не забудь');
+	}   
+		
+	</script>
+@endsection
+
+
+
+
