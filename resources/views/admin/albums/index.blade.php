@@ -6,10 +6,11 @@
 
 	<div id="albums">
 		<a id="btncreate-album" class="btn btn-info" href="/adminpanel/dashboard/albums/create/">Cоздать альбом</a>
-		<hr>
+		<h2 class="text-center"> Альбомы </h2>
 		<div class="row text-center">
+
 			@foreach($albums as $album)
-			<div class="col-xs-6">
+			<div class="col-xs-6 a-b">
 				<div class="album-block">
 					
 						<a id="edit-album" href="{{ action('Adminpanel\AlbumsController@edit', $album->id) }}"> <i class="fas fa-pencil-alt fa-2x"></i></a>
@@ -18,13 +19,14 @@
 
 						<div class="fileinput thumbnail">
 							<a href="/adminpanel/dashboard/albums/{{ $album->id }}">
-								<img id="album-preview" class="thumbnail" src="/storage/albums_preview/{{ $album->preview }}" alt="{{ $album->name }}">
-								<div id="block-album-title">
-									<h5>{{ $album->name }}</h5>	
+								<img class="thumbnail" src="/storage/albums_preview/{{ $album->preview }}" alt="{{ $album->name }}">
+								<div id="block-album-title"></div>
+								<div class="card-body">
+									<h5>{{ str_limit($album->name, 20) }}</h5>	
 								</div>
 							</a>	
 						</div>
-							
+
 						<br>
 				</div>
 			</div>		
