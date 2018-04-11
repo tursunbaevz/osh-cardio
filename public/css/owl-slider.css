@@ -43,6 +43,14 @@
     height: 10px;
 }
 
+@media screen and (max-width: 450px) {
+
+    .owl-carousel .owl-item img {
+        height: 400px;
+        
+    }
+
+}
 
 
 

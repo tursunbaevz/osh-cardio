@@ -10,6 +10,11 @@ Route::get('/posts', 'MainController@postsList');
 Route::get('/posts/{id}', 'MainController@show');
 Route::get('/services', 'MainController@servicesList');
 Route::get('/services/{id}', 'MainController@servicesShow');
+Route::get('/albums', 'AlbumsController@index');
+Route::get('/albums/{id}', 'AlbumsController@show');
+
+
+
 Auth::routes();
 
 
@@ -35,15 +40,11 @@ Route::group(['middleware' => 'can:accessAdminpanel'], function() {
     Route::get('/adminpanel/dashboard/albums/edit/{album}', 'Adminpanel\AlbumsController@edit');
 
 
-
-
-
     //PHOTOS
     Route::get('/adminpanel/dashboard/photos/create/{id}', 'Adminpanel\PhotosController@create');
     Route::post('/adminpanel/dashboard/photos/store', 'Adminpanel\PhotosController@store');
     Route::delete('/adminpanel/dashboard/albums/photo', 'Adminpanel\PhotosController@destroy');   
 
-     
     
     							/*====SERVICES====*/
     Route::get('/adminpanel/dashboard/services','Adminpanel\ServicesController@index');

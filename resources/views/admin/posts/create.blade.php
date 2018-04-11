@@ -31,13 +31,6 @@
 		@endif
 
 		</form>
-		
-		{{--
-		    {{!! Form::open(array('route' => 'post.store', 'data-parsley-validate' => 'files' => true)) !!}}
-		  	{{ Form::label('feautured_image', 'Upload Feautured Image:') }}
-		  	{{ Form::file('feautured_image') }}
-			{{!! Form::close() !!}} 
-		--}}
 
 		<br><br>
 

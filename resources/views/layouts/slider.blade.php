@@ -14,7 +14,7 @@
     owl = $('#main-slider').owlCarousel({
       singleItem:true,
       items:1,
-      autoplay:true
+      autoplay:true,
     });
   });
 </script>

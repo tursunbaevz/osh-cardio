@@ -14,12 +14,25 @@
 		  </div>
 		
 		  <textarea name="description"  cols="30" rows="10" class="form-control">{{ $album->description }}</textarea><br>
+		 <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+		    <div class="fileinput-new thumbnail img-raised">
+		        <img  src="/storage/albums_preview/{{ $album->preview }}" alt="...">
+			</div>
+			<div class="fileinput-preview fileinput-exists thumbnail img-raised"></div>
+		    <div>
+		        <span class="btn btn-raised btn-round btn-default btn-file">
+		            <span class="fileinput-new">выбрать картинку</span>
+		            <span class="fileinput-exists">изменить</span>
+		            <input type="file"   name="preview">
+		        </span>
 
-		  <label for="feautured_image">Превью</label> <br>
-		  <input type="file" value="{{$album->preview}}" name="preview" id="feautured_image" class="btn btn-success"><br><br>
-		  <img id="album-preview" class="thumbnail" src="/storage/albums_preview/{{ $album->preview }}" alt="{{ $album->name }}"><br><br>
-		  <button type="submit" class="btn btn-primary">Редактировать</button>
-
+		        <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="now-ui-icons ui-1_simple-remove"></i> удалить</a>
+		    </div>
+		</div> 
+		<br>
+		<div class="text-center">
+	    	<button type="submit" class="btn btn-success btn-lg">Редактировать Альбом</button>
+	    </div>
 
 	</form>
 </div>
