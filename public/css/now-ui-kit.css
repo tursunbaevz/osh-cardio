@@ -5348,7 +5348,9 @@ Created using IcoMoon - icomoon.io
 .card-background {
   background-position: center center;
   background-size: cover;
-  text-align: center; }
+  text-align: center; 
+  transition: all 0.5s;}
+
 .card-background .card-body {
   position: relative;
   z-index: 2;
@@ -5371,6 +5373,9 @@ Created using IcoMoon - icomoon.io
 .card-background .card-title {
   color: #FFFFFF;
   margin-top: 130px; }
+
+.card-background:hover {transform: scale(1.05);}
+
 .card-background:not(.card-pricing) .btn {
   margin-bottom: 0; }
 .card-background:after {

@@ -3,14 +3,14 @@
 @section('content')
 
 	@include('layouts.navForPosts')
+	<div class="page-header  page-header-small">
+		<div class="page-header-image" style="background-image: url('img/photo.jpg');"></div>
+        <div class="content-center">
+            <h1 class="title">Наши услуги</h1>
+        </div>
+	</div>
 
 	<div class="container" style="margin-top: 80px">
-
-    <div class="row">
-	    <div class="col-md-6 ml-auto mr-auto text-center">
-	        <h2 class="title">Наши услуги</h2>
-	    </div>
-    </div>
 
 
 	 <div class="row">
@@ -25,9 +25,9 @@
 
 					      <h3 class="category text-info center-block-btn" style ="text-transform: uppercase;">
 					        {!! str_limit($service->title, 35) !!}
-					      </h3>
+					      </h3><br><br>
 
-					      <a class="btn icon-small btn-round m-style" href="/services/{{$service->id}}">
+					      <a class="btn icon-small btn-round m-style" href="/services/{{$service->id}}">	
 		               		подробнее
 		            	</a>
 		            	
