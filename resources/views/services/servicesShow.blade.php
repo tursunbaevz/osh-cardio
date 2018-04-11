@@ -9,9 +9,6 @@
         <div class="container">
             <div class="content-center">
                 <h1 class="title">{{$services->title}}</h1>
-                <div class="text-center">
-                  
-                </div>
             </div>
         </div>
     </div>
