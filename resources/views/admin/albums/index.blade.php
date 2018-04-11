@@ -16,12 +16,15 @@
 
 						<a id="trash-album" class="deletebtn" href="javascript:void(0)" a-data="{{$album->id}}"><i class="fas fa-trash-alt fa-2x"></i></a>
 
-						<a href="/adminpanel/dashboard/albums/{{ $album->id }}">
-							<img id="album-preview" class="thumbnail" src="/storage/albums_preview/{{ $album->preview }}" alt="{{ $album->name }}">
-							<div id="block-album-title">
-								<h5>{{ $album->name }}</h5>	
-							</div>
-						</a>		
+						<div class="fileinput thumbnail">
+							<a href="/adminpanel/dashboard/albums/{{ $album->id }}">
+								<img id="album-preview" class="thumbnail" src="/storage/albums_preview/{{ $album->preview }}" alt="{{ $album->name }}">
+								<div id="block-album-title">
+									<h5>{{ $album->name }}</h5>	
+								</div>
+							</a>	
+						</div>
+							
 						<br>
 				</div>
 			</div>		
