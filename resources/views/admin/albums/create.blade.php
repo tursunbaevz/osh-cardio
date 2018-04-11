@@ -16,14 +16,30 @@
 	    	<input name="name" type="text" class="form-control" placeholder="Введите заголовок">
 	  	</div>
 		
-		  <textarea name="description"  cols="30" rows="10" class="form-control"></textarea><br>
+		<textarea name="description"  cols="30" rows="10" class="form-control"></textarea><br>
 
-		<label for="feautured_image">Превью</label> <br>
-		<input  type="file"  name="preview" id="feautured_image" class="btn btn-success"><br><br>
-	    <button type="submit" class="btn btn-primary">создать</button>
 		
-		
+		<div class="fileinput fileinput-new text-center" data-provides="fileinput">
+		    <div class="fileinput-new thumbnail img-raised">
+		        <img  src="/img/image_placeholder.jpg" alt="...">
+			</div>
+			<div class="fileinput-preview fileinput-exists thumbnail img-raised"></div>
+		    <div>
+		        <span class="btn btn-raised btn-round btn-default btn-file">
+		            <span class="fileinput-new">выбрать картинку</span>
+		            <span class="fileinput-exists">изменить</span>
+		            <input type="file"  name="preview">
+		        </span>
 
+		        <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="now-ui-icons ui-1_simple-remove"></i> удалить</a>
+		    </div>
+		</div> 
+		<br>
+		<div class="text-center">
+	    	<button type="submit" class="btn btn-success btn-lg">Создать Альбом</button>
+	    </div>
+
+		
 
 
 		@if(count($errors))
@@ -45,14 +61,7 @@
 @endsection
 @section('script')
 	<script>
-	if (!$('input[type=file]').change()) {
-		$('input[type=file]').change(function(e){
-		  $in=$(this);
-		  $in.next().html($in.val());
-		});
-		alert('не забудь');
-	}   
-		
+		 	
 	</script>
 @endsection
 

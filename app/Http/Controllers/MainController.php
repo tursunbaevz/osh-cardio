@@ -19,7 +19,6 @@ class MainController extends Controller
 	public function index(){
 		$posts = Post::orderBy('id', 'desc')->take(8)->get();
 		return view('index', compact('posts'));
-
 	}
 
 	public function postsList(){
