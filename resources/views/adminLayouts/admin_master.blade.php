@@ -34,6 +34,7 @@
 		@yield('ckeditor')
 		@yield('deletePhoto')
 		@yield('deleteAlbum')
+		@yield('deleteDoctor')
 
 </body>
 <script src="/js/bootstrap.min.js"></script>

@@ -6,16 +6,16 @@
 
 	<div id="albums">
 		<a id="btncreate-album" class="btn btn-info" href="/adminpanel/dashboard/albums/create/">Cоздать альбом</a>
-		<h2 class="text-center"> Альбомы </h2>
+		<h1 class="title text-center">Альбомы</h1>
 		<div class="row text-center">
 
 			@foreach($albums as $album)
 			<div class="col-xs-6 a-b">
 				<div class="album-block">
 					
-						<a id="edit-album" href="{{ action('Adminpanel\AlbumsController@edit', $album->id) }}"> <i class="fas fa-pencil-alt fa-2x"></i></a>
+						<a id="edit-album" href="{{ action('Adminpanel\AlbumsController@edit', $album->id) }}"> <i class="fas fa-pencil-alt fa-lg"></i></a>
 
-						<a id="trash-album" class="deletebtn" href="javascript:void(0)" a-data="{{$album->id}}"><i class="fas fa-trash-alt fa-2x"></i></a>
+						<a id="trash-album" class="deletebtn" href="javascript:void(0)" a-data="{{$album->id}}"><i class="fas fa-trash-alt fa-lg"></i></a>
 
 						<div class="fileinput thumbnail">
 							<a href="/adminpanel/dashboard/albums/{{ $album->id }}">

@@ -6,6 +6,7 @@
 	
 	<div class="container" style="margin-top: 80px">
 	<div class="row">
+
 	@foreach($albums as $album)
 
 	<a href="albums/{{ $album->id }}">
@@ -20,6 +21,8 @@
 		</div>
 	</div>
 	</a>
+
+
 
 	@endforeach	
 	</div>

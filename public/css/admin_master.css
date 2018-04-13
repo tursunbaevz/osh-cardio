@@ -33,6 +33,17 @@ ul li a {
   color: #fff;
 }
 
+
+.card-body h5 {
+  color: #636363;
+}
+
+.fileinput a:hover {
+  text-decoration: none;
+  color: #353333;
+}
+
+
 .navbar a:hover,
 li a:hover,
 .nav a:hover,
@@ -45,6 +56,7 @@ ul li a:hover {
 .title {
   padding-left: 2%; /* use this class for all title  */
   color: #34495E; 
+  margin-bottom: 30px;
 }
 
 hr {
@@ -101,7 +113,7 @@ transform: translateY(-50%);
 /* --------- */
 
 
-/*     admin/album/show.blade.php   */
+/*     admin/album/Show.blade.php   */
   
 .photo-block {
   position: relative;
@@ -131,7 +143,7 @@ div.photo-block:hover a{
   color: #dc3545;
 }
 
-/*    admin/album/index.blade.php   */
+/*    admin/album/doctorsList.blade.php   */
 
 
 .a-b {

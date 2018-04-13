@@ -12,6 +12,10 @@ Route::get('/services', 'MainController@servicesList');
 Route::get('/services/{id}', 'MainController@servicesShow');
 Route::get('/albums', 'AlbumsController@index');
 Route::get('/albums/{id}', 'AlbumsController@show');
+Route::get('/doctors', 'MainController@doctorsList');
+Route::get('/doctor/{id}', 'MainController@doctorsShow');
+
+
 
 
 
@@ -53,6 +57,22 @@ Route::group(['middleware' => 'can:accessAdminpanel'], function() {
     Route::delete('/adminpanel/dashboard/services/', 'Adminpanel\ServicesController@destroy')->name('service.delete');
     Route::get('/adminpanel/dashboard/services/edit/{service}','Adminpanel\ServicesController@edit');
     Route::post('/adminpanel/dashboard/services/update/{service}','Adminpanel\ServicesController@update');
+
+
+
+    // DOCTORS
+
+
+    Route::get('/adminpanel/dashboard/doctors/', 'Adminpanel\DoctorsController@index');
+    Route::get('/adminpanel/dashboard/doctors/create', 'Adminpanel\DoctorsController@create');
+    Route::post('/adminpanel/dashboard/doctors/store', 'Adminpanel\DoctorsController@store');
+    Route::post('/adminpanel/dashboard/doctors/update/{doctor}', 'Adminpanel\DoctorsController@update');
+    Route::get('/adminpanel/dashboard/doctors/edit/{doctor}', 'Adminpanel\DoctorsController@edit');
+    Route::delete('/adminpanel/dashboard/doctors/', 'Adminpanel\DoctorsController@destroy');
+
+    
+
+
 
     // future adminpanel routes also should belong to the group
 

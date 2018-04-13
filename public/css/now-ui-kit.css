@@ -468,7 +468,18 @@ margin: auto;
 .flex-column-1{-webkit-box-orient:vertical!important;-webkit-box-direction:normal!important;-ms-flex-direction:column!important;flex-direction:column!important}
 
 
+/* ================== Doctors =================*/
 
+div a:hover  {
+  text-decoration: none;
+}
+
+.card a:not(.btn):not(.dropdown-item) i {
+  color: #C62828;
+}
+
+
+/* ==================== end ===================== */
 /* ============= Our media ============= */
 
 
@@ -3765,6 +3776,9 @@ body {
   vertical-align: middle; }
 .navbar a:not(.btn):not(.dropdown-item) {
   color: #FFFFFF; }
+
+
+
 .navbar p {
   display: inline-block;
   margin: 0;
@@ -3796,7 +3810,7 @@ body {
   line-height: 1.625rem; }
 .navbar .navbar-nav .nav-link:not(.btn) i.fa + p, .navbar .navbar-nav .nav-link:not(.btn) i.now-ui-icons + p {
   margin-left: 3px; }
-.navbar .navbar-nav .nav-link:not(.btn) i.fa, .navbar .navbar-nav .nav-link:not(.btn) i.now-ui-icons {
+.card:not(.btn) i.fa, .navbar .navbar-nav .nav-link:not(.btn) i.now-ui-icons {
   font-size: 18px;
   position: relative;
   top: 3px;
