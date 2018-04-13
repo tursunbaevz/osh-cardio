@@ -43,7 +43,7 @@
   </div>
 
   <div class="d-inline-block">
-    <a class="nav-link" href="#"><i class="fas fa-user-md"></i><br>Врачи</a>
+    <a class="nav-link" href="{{ '/adminpanel/dashboard/doctors' }}"><i class="fas fa-user-md"></i><br>Врачи</a>
   </div>
 </div>
 

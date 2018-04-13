@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Main;
 use App\Post;
 use App\Service;
+use App\Doctor;
 use Carbon\Carbon;
 
 class MainController extends Controller
@@ -40,6 +41,17 @@ class MainController extends Controller
 		$services = Service::find($id);
 		return view('services.servicesShow', compact('services'));
 	}
+
+    public function doctorsShow($id){
+        $doctor = Doctor::find($id);
+        return view('doctors.doctorsShow', compact('doctor'));
+    }
+
+
+    public function doctorsList(){
+        $doctors = Doctor::orderBy('created_at', 'DESC')->paginate(9);;
+        return view('doctors.doctorsList', compact('doctors'));
+    }
 
 
 }

@@ -95,7 +95,7 @@
 				<!-- кнопка все услуги -->
 				<div class="block-service-center">
 					<div class="justify-content-center">
-		                <a href="#" class="btn btn-primary btn-block btn-lg btn-round ">
+		                <a href="{{ '/services' }}" class="btn btn-primary btn-block btn-lg btn-round ">
 		              	  	ВСЕ УСЛУГИ
 		                </a>
 	        	    </div>	
@@ -142,7 +142,7 @@
 	                        <i class="fa fa-quote-right"></i>
 	                    </div>
 	                    <div class="card-footer">
-	                        <h4 class="card-title">Алиев Алмазбек <br> Маматович</h4>
+	                        <h4 class="card-title">Алиев Алмазбек Маматович</h4>
 	                        <p class="category">@link</p>
 	                    </div>
 	                </div>

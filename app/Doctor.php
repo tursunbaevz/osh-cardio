@@ -2,14 +2,11 @@
 
 namespace App;
 
-
 use Illuminate\Database\Eloquent\Model;
 
-
-
-class Post extends Model
+class Doctor extends Model
 {
      protected $fillable = [
-         'title', 'body',
-     ];
+    'title', 'body',
+];
 }

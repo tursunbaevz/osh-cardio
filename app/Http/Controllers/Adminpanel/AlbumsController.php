@@ -81,27 +81,36 @@ class AlbumsController extends Controller
             'preview' => 'image|max:1999'
         ]);
 
-        //get file name  with extention
-        $filenameWithExt = $request->file('preview')->getClientOriginalName();
-        // get just the filename
-        $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-        // get extension 
-        $extension = $request->file('preview')->getClientOriginalExtension();
-        //create new filename
-        $filenameToStore = $filename.'_'.time().'.'.$extension;
-        // upload image
-        $path = $request->file('preview')->storeAs('storage/albums_preview', $filenameToStore);
 
-            // проверка на существование 
-        if ( File::exists('storage/albums_preview/' .  $album->preview)) {
-            // удаляет фото в файле
-            File::delete('storage/albums_preview/' .  $album->preview);
+
+        if($request->hasFile('preview')) {
+            //get file name  with extention
+            $filenameWithExt = $request->file('preview')->getClientOriginalName();
+            // get just the filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            // get extension
+            $extension = $request->file('preview')->getClientOriginalExtension();
+            //create new filename
+            $filenameToStore = $filename . '_' . time() . '.' . $extension;
+            // upload image
+            $path = $request->file('preview')->storeAs('storage/albums_preview', $filenameToStore);
+
+            // проверка на существование
+            if (File::exists('storage/albums_preview/' . $album->preview)) {
+                // удаляет фото в файле
+                File::delete('storage/albums_preview/' . $album->preview);
+            } else {
+                $album->preview = $filenameToStore;
+            }
+
+
+            // update album
+            // заменяет фото в базе
+            $album->preview = $filenameToStore;
+
+
         }
-            
 
-        // update album
-        // заменяет фото в базе
-        $album->preview = $filenameToStore; 
         $album->save();
 
         return redirect('/adminpanel/dashboard/albums/')->with('success', 'Вы успешно обновили альбом!');
