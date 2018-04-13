@@ -272,10 +272,19 @@
 	<!-- / -->
 
 	<!-- GoogleMap -->
-	<div id="map">
+	<div id="map" style="width: 100%; height: 400px;"></div>
+	        <script>
+            DG.then(function() {
+                DG.map('map', {
+                    center: [54.98, 82.89],
+                    zoom: 13
+                });
+            });
+        </script>
+{{-- 	<div id="map">
 		<div class="test" style="width: 300px; height: 300px; background-color: #000; z-index: 2222; position: absolute;">	
 		</div>
-	</div>
+	</div> --}}
 	<!-- / -->	
 		
 	   

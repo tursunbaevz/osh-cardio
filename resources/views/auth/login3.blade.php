@@ -2,8 +2,6 @@
 
 @section('content')
 
-
-
  <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
         <div class="container">
@@ -65,16 +63,13 @@
         </div>
     </nav>
     <!-- End Navbar -->
-
     <div class="page-header" filter-color="orange">
         <div class="page-header-image" style="background-image:url(/img/login.jpg)"></div>
         <div class="container">
             <div class="col-md-4 content-center">
                 <div class="card card-login card-plain">
-
-                    <form method="POST" action="{{ route('login') }}">
+                        <form method="POST" action="{{ route('login') }}" class="form">
                         @csrf
-
                         <div class="header header-primary text-center">
                             <div class="logo-container">
                                 <img src="/img/logo.svg">
@@ -82,30 +77,52 @@
                         </div>
                         <div class="content">
 
+
+
+
                             <div class="input-group form-group-no-border input-lg">
+
                                 <span class="input-group-addon">
                                     <i class="now-ui-icons ui-1_email-85"></i>
                                 </span>
-                                <input id="email" type="email" class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" placeholder="Email" value="{{ old('email') }}" required>
+
+
+                                <input id="email" type="email" class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" placeholder="Email" required>
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback">
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
                                 @endif
+
+
                             </div>
 
+
+
+
                             <div class="input-group form-group-no-border input-lg">
+
                                 <span class="input-group-addon">
                                     <i class="now-ui-icons objects_key-25"></i>
                                 </span>
-                                <input id="password" type="password" placeholder="••••••••••••••" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required/>
+
+                                <input id="password" type="password" placeholder="••••••••••••••" class="form-control {{ $errors->has('password') ? ' is-invalid' : '' }}" required/>
+
                                 @if ($errors->has('password'))
                                     <span class="invalid-feedback">
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
                                 @endif
+
                             </div>
         
+
+
+
+
+
+
+
                         </div>
 
 
@@ -164,21 +181,26 @@
         </footer>
     </div>
 
-{{-- <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
+    {{-- <div class="page-header" filter-color="orange">
+        <div class="page-header-image" style="background-image:url(../assets/img/login.jpg)"></div>
+        <div class="container">
+            <div class="col-md-4 content-center">
+                <div class="card card-login card-plain">
+                    <form method="POST" action="{{ route('login') }}" class="form">
                         @csrf
+                        <div class="header header-primary text-center">
+                            <div class="logo-container">
+                                <img src="/img/logo.svg">
+                            </div>
+                        </div>
 
-                        <div class="form-group row">
-                            <label for="email" class="col-sm-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                        <div class="content">
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons users_circle-08"></i>
+                                </span>
+                                <input type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
 
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback">
@@ -186,13 +208,15 @@
                                     </span>
                                 @endif
                             </div>
-                        </div>
 
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons text_caps-small"></i>
+                                </span>
+
+                                <input type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
                                 @if ($errors->has('password'))
                                     <span class="invalid-feedback">
@@ -200,33 +224,25 @@
                                     </span>
                                 @endif
                             </div>
+
                         </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
+                        <div class="footer text-center">
+                            <a href="#pablo" class="btn btn-primary btn-round btn-lg btn-block">Get Started</a>
                         </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
-
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
-                                </a>
-                            </div>
+                        <div class="pull-left">
+                            <h6>
+                                <a href="#pablo" class="link">Create Account</a>
+                            </h6>
+                        </div>
+                        <div class="pull-right">
+                            <h6>
+                                <a href="#pablo" class="link">Need Help?</a>
+                            </h6>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-    </div>
-</div> --}}
+    </div> --}}
+
 @endsection
