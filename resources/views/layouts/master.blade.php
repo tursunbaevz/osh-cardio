@@ -30,16 +30,21 @@
 
 
 <body class="landing-page" >
+	{{-- navbar  --}}
+		@include ('layouts.nav')
+	{{--  --}}
 
 
+	{{-- content --}}
 	@yield('content')
-	
+	{{--  --}}
+
 	@yield('script')
 	@yield('mainSlider')
 
 
 	<!-- FOOTER -->
-		@include('layouts.footer')
+	@include('layouts.footer')
 	<!-- / -->
 
 

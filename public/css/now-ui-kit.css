@@ -404,14 +404,16 @@ margin: auto;
 }
 
   /* Gallery - the only code needed to build the gallery */
-    .gallery-test {
+    .gallery-photos{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: auto;
+    margin-bottom: 80px;
+    margin-top: 100px;
     }
 
-      .gallery-test .gallery-item {
+      .gallery-photos .gallery-item {
       height: inherit;
       max-width: 100%;
       background: gray;
@@ -420,11 +422,11 @@ margin: auto;
       background-position: center top;
       }
 
-      .gallery-test .gallery-item {
+      .gallery-photos .gallery-item {
       flex: 1 auto;
       }
 
-      .gallery-test .gallery-item img {
+      .gallery-photos .gallery-item img {
       height: auto;
       width: 100%;
       max-height: 300px;

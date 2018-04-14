@@ -2,10 +2,17 @@
 
 @section('content')
 	
-	@include ('layouts.navForPosts')
+@include ('layouts.nav')
+
+	<div class="page-header  page-header-small">
+		<div class="page-header-image" style="background-image: url('img/photo.jpg');"></div>
+        <div class="content-center">
+            <h1 class="title">Галерея</h1>
+        </div>
+	</div>
 	
 	<div class="container" style="margin-top: 80px">
-	<div class="row">
+	<div class="row" style="margin-bottom: 80px">
 
 	@foreach($albums as $album)
 
