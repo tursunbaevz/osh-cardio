@@ -30,7 +30,21 @@
  * Copyright 2012-2013 Mattia Larentis
  * http://www.apache.org/licenses/LICENSE-2.0
  */
+.logo{
+    max-height: 45px;
+    margin: 15px 0 0 50px;
+}
 
+  .black-shadow {
+      /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
+      -webkit-filter: drop-shadow( 3px 3px 5px #000 ); 
+              filter: drop-shadow( 3px 3px 5px #000 );
+  }
+  .white-shadow {
+      /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
+      -webkit-filter: drop-shadow( 0px -2px 4px #fff ); 
+              filter: drop-shadow( 0px -2px 4px #fff );
+  }
 .bootstrap-switch {
     display: inline-block;
     direction: ltr;
@@ -1591,7 +1605,7 @@ fieldset[disabled] .navbar .navbar-nav>a.btn.active {
 }
 
 .btn-primary {
-    background-color: #f96332;
+    background-color: #C62828;
     color: #FFFFFF;
 }
 
@@ -3292,6 +3306,7 @@ body {
     font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    overflow: hidden;
 }
 
 .main {

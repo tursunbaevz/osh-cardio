@@ -271,16 +271,11 @@
 	</div>
 	<!-- / -->
 
-	<!-- GoogleMap -->
+	<!-- 2GIS -->
 	<div class="gis">
 		<a class="dg-widget-link" href="http://2gis.kg/osh/firm/70000001031160528/center/72.79355406761171,40.52625311508752/zoom/18?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Оша</a><div class="dg-widget-link"><a href="http://2gis.kg/osh/firm/70000001031160528/photos/70000001031160528/center/72.79355406761171,40.52625311508752/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.kg/osh/center/72.793655,40.525973/zoom/18/routeTab/rsType/bus/to/72.793655,40.525973╎Кардиологический центр им. М. Алиева?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Кардиологический центр им. М. Алиева</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":1000,"height":500,"borderColor":"#a3a3a3","pos":{"lat":40.526237,"lon":72.795646,"zoom":17},"opt":{"city":"osh"},"org":[{"id":"70000001031160528"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
 	</div>
-{{-- 	<div id="map">
-		<div class="test" style="width: 300px; height: 300px; background-color: #000; z-index: 2222; position: absolute;">	
-		</div>
-	</div> --}}
-	<!-- / -->	
-		
+	<!--////-->
 	   
 	<div class="container">
 		<div class="row">
