@@ -11,6 +11,12 @@ body {
   min-height: 100%;
 }
 
+.gis > iframe {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
 /*--------logo--------*/
 .logo{
     max-height: 45px;
@@ -379,17 +385,6 @@ anchors are inline so you need ot make them block to go full width
   width:100%;
 }
 
-/* ---- */
-
-
-/* map */
-#map {
-  height:330px;
-  width:100%;
-  position:absolute;
-  position:relative;
-  overflow:hidden;
-}
 /*-------/-------*/
 
 .pagination > ul {

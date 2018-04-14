@@ -23,9 +23,6 @@
 	<link rel="stylesheet" type="text/css" href="/css/owl-slider.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="/js/owl.carousel.js"></script>
-	<script src="https://maps.api.2gis.ru/2.0/loader.js"></script>
-	
-	
  </head>
 
 
@@ -52,10 +49,6 @@
 <script src="/js/bootstrap-tagsinput.js"></script>
 <script src="/js/bootstrap-selectpicker.js" type="text/javascript"></script>
 <script src="/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
-
-{{-- <script src="/js/map-script.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVNZ20eXXPEUqeTmCFpmmZkoHeVwd9aWQ&callback=initMap"
-async defer></script> --}}
     </body>
 
 
