@@ -28,7 +28,7 @@
 			<tr>
 				<th scope="row">{{ $i }} </th>
 				<td>{!! str_limit($doctor->name, 25) !!}</td>
-				<td>{!! str_limit($doctor->body, 50) !!}</td>
+				<td>{!! str_limit(strip_tags($post->body), 50) !!}</td>
 				<td>{{ ($doctor->created_at)->diffForHumans() }}</td>
 				<td style="width: 120px;"><a href="{{action('Adminpanel\DoctorsController@edit', $doctor->id)}}"	class="btn btn-primary">
 						<i class="fas fa-edit"></i>

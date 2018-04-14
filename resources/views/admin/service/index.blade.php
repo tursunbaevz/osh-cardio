@@ -26,7 +26,7 @@
 			    <tr>
 			      	<th scope="row">{{ $i }} </th>
 			      	<td>{!! str_limit($service->title, 25) !!}</td>
-			      	<td>{!! str_limit($service->body, 50) !!}</td>
+			      	<td>{!! str_limit(strip_tags($service->body), 50) !!}</td>
 			      	<td>{{ ($service->created_at)->diffForHumans() }}</td>
 
 			    	<td style="width: 120px;">

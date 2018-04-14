@@ -16,7 +16,7 @@
 		        <a class="text-dark" href="/posts/{{$post->id}}">{!! str_limit($post->title, 50) !!}</a>
 		      </h3>
 		      <div class="mb-1 text-muted">{{ ($post->created_at)->diffForHumans() }}</div>
-		      <p class="card-text mb-auto">{!! str_limit($post->body, 180) !!}</p>
+		      <p class="card-text mb-auto">{!! str_limit(strip_tags($post->body), 180) !!}</p>
 		      <a href="/posts/{{$post->id}}">Читать дальше</a>
 		    </div>
 		    <img class="card-img-right flex-auto d-none d-md-block" src=" {{asset('img/thumbnail/grid/' . $post->imageGrid)}} ">
