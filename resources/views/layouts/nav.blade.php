@@ -16,6 +16,7 @@
                 <a class="dropdown-item" href="{{'/posts'}}">Новости</a>
                 <a class="dropdown-item" href="{{'/services'}}">Услуги</a>
                 <a class="dropdown-item" href="{{'/albums'}}">Галерея</a>
+                <a class="dropdown-item" href="{{'/doctors'}}">Врачи</a>
             </div>
         </div>
 

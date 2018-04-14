@@ -1,8 +1,10 @@
 @extends('layouts.master')
 
 @section('content')
+	@include ('layouts.nav')
 
-	@include('layouts.navForPosts')
+   
+	
 	<div class="page-header  page-header-small">
 		<div class="page-header-image" style="background-image: url('img/photo.jpg');"></div>
         <div class="content-center">
@@ -29,7 +31,7 @@
 
 					      <a class="btn icon-small btn-round m-style" href="/services/{{$service->id}}">	
 		               		подробнее
-		            	</a>
+		            	  </a>
 		            	
 		            </div>                   
 		        </div>

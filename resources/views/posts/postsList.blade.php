@@ -1,7 +1,14 @@
 @extends('layouts.master')
 
 @section('content')
-@include ('layouts.navForPosts')
+	@include ('layouts.nav')
+	
+	<div class="page-header  page-header-small">
+		<div class="page-header-image" style="background-image: url('img/photo.jpg');"></div>
+        <div class="content-center">
+            <h1 class="title">Новости</h1>
+        </div>
+	</div>
 
 	<div class="container" style="margin-top: 80px">
 	 <div class="row">

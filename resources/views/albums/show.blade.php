@@ -1,8 +1,9 @@
 @extends('layouts.master')
 
 @section('content')
+@include ('layouts.navForPosts')
 	<div id="wrapper-1">
-	<div class="gallery-test">
+	<div class="gallery-photos">
 	
 		@foreach($photos->photos as $photo)
 
