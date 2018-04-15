@@ -7,7 +7,6 @@
 <div class="carousel-relative">
 	@include('layouts.slider')
 </div>
-<!-- конец слайда -->
 
 <!-- наши услуги -->
 <div class="pricing-2 ">
