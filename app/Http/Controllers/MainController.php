@@ -53,6 +53,10 @@ class MainController extends Controller
         return view('doctors.doctorsList', compact('doctors'));
     }
 
+    public function contacts(){
+    	return view('contacts');
+    }
+
 
 }
 

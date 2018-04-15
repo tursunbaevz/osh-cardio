@@ -10,12 +10,40 @@
 
 <!-- наши услуги -->
 <div class="pricing-2 ">
-	<div class="main-div center text-style-div" style="margin-top: -10px;">
-		<div class="num-div">
-			<img src="/icons/doctor.svg">
-			<br> Лучшие<br>специалисты
-		</div>	
+<div class="container">
+	<div class="row">
+	    <div class="col-md-4">
+	        <div class="info info-hover">
+	            <div class="icon icon-success icon-circle">
+	                <i class="now-ui-icons objects_globe"></i>
+	            </div>
+	            <h4 class="info-title">Asset Management</h4>
+	            <p class="description">Cross-account dashboards provide sophisticated reporting for enterprise.</p>
+	        </div>
+	    </div>
 
+	    <div class="col-md-4">
+	        <div class="info info-hover">
+	            <div class="icon icon-info icon-circle">
+	                <i class="now-ui-icons education_atom"></i>
+	            </div>
+	            <h4 class="info-title">Resource Utilization</h4>
+	            <p class="description">CloudCheckr provides summary and detailed usage statistics for resources.</p>
+	        </div>
+	    </div>
+
+	    <div class="col-md-4">
+	        <div class="info info-hover">
+	            <div class="icon icon-primary icon-circle">
+	                <i class="now-ui-icons tech_watch-time"></i>
+	            </div>
+	            <h4 class="info-title">Self-Healing</h4>
+	            <p class="description">CloudCheckr enables users to save money, time, and effort.</p>
+	        </div>
+	    </div>
+	</div>
+</div>
+{{-- 	<div class="main-div center text-style-div" style="margin-top: -10px;">
 		<div class="num-div">
 			<img src="/icons/online-shop.svg">
 			<br> Современное<br>оборудование
@@ -29,7 +57,7 @@
 			<img  src="/icons/ambulance.svg">
 			<br> Выездная<br>кардиобригада
 		</div> 
-	</div>
+	</div> --}}
 
 	<div class="container">
 		<div class="row">
@@ -95,7 +123,7 @@
 <!-- / -->
 
 <!-- блок краткая инфа -->
-<div class="testimonials-1 section-image parallax">
+<div class="testimonials-1 parallax" style="background-color: rgba(208, 208, 208, 0.46);">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 ml-auto mr-auto text-center">
