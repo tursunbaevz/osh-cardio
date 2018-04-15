@@ -161,7 +161,7 @@ div.photo-block:hover a{
 
 div.album-block a#edit-album {
   position: absolute;
-  left: 39%;
+  left: 33%;
   top: 0px;
   color: #1ea8ff;
   z-index: 50;
@@ -215,7 +215,7 @@ div#block-album-title h5 {
     overflow: hidden;
     text-align: center;
     vertical-align: middle;
-    max-width: 300px;
+    width: 300px;
     height: 210px;
     margin-top: 50px;
 }

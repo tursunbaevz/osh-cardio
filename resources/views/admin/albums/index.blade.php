@@ -25,7 +25,7 @@
 								<img class="thumbnail" src="/storage/albums_preview/{{ $album->preview }}" alt="{{ $album->name }}">
 								<div id="block-album-title"></div>
 								<div class="card-body">
-									<h5>{{ str_limit($album->name, 30) }}</h5>	
+									<h5>{{ str_limit($album->name, 20) }}</h5>	
 								</div>
 							</a>	
 						</div>
