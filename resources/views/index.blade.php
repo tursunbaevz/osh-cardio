@@ -95,7 +95,7 @@
 				<!-- кнопка все услуги -->
 				<div class="block-service-center">
 					<div class="justify-content-center">
-		                <a href="#" class="btn btn-primary btn-block btn-lg btn-round ">
+		                <a href="{{ '/services' }}" class="btn btn-primary btn-block btn-lg btn-round ">
 		              	  	ВСЕ УСЛУГИ
 		                </a>
 	        	    </div>	
@@ -287,7 +287,7 @@
 						    <img class="card-img-top" src="{{asset('img/thumbnail/news/'.$post->imageNews)}}" alt="Card image cap">
 						    <div class="card-body">
 							    <h5 class="card-title">{!! str_limit($post->title, 20)   !!}</h5>
-							    <p class="card-text">{!! str_limit(strip_tags($post->body), 180) !!}</p>
+							    <p class="card-text">{!! str_limit(strip_tags($post->body), 100) !!}</p>
 							    <a href="{{ '/posts/' . $post->id }}" class="btn btn-primary">подробнее</a>
 						    </div>					
 						</div>
