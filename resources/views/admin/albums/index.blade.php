@@ -4,7 +4,7 @@
 @section('content')
 	
 
-	<a id="btncreate-album" class="btn btn-info" href="/adminpanel/dashboard/albums/create/"><i class="fas fa-plus"></i> Новый Альбом</a>
+	<a id="btncreate-album" class="btn btn-info" href="/adminpanel/dashboard/albums/create/"><i class="fas fa-plus"></i>&nbsp;&nbsp;Новый Альбом</a>
 		<h1 class="title">Галерея</h1>
 	<div id="albums" class="text-center">
 
@@ -13,7 +13,7 @@
 		<div class="row">
 
 			@foreach($albums as $album)
-			<div class="col-md-6">
+			<div class="col-md-4">
 				<div class="album-block">
 					
 						<a id="edit-album" href="{{ action('Adminpanel\AlbumsController@edit', $album->id) }}"><i class="fas fa-edit btn btn-success"></i></a>
