@@ -5,7 +5,7 @@
 
 		<table class="table table-hover table-style" id="post_table">
 		  <thead>
-		    <tr class="table-primary">
+		    <tr class="p-3 mb-2 bg-info text-white">
 		     	<th scope="col">#</th>
 		     	<th scope="col">Наименование</th>
 		     	<th scope="col">Текст</th>

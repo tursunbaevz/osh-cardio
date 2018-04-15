@@ -25,7 +25,7 @@
 		</div>
 	</form>
 
-	<div class="text-center" id="message"></div>
+	<div class="text-center" id="messageafter"></div>
 
 @endsection
 
@@ -40,12 +40,17 @@
 			e.preventDefault();
 			var formData = new FormData(form);
 			request.open('post', '/adminpanel/dashboard/photos/store');
-			// request.addEventListener("load", transferComplete);
+			request.addEventListener("load", transferComplete);
 			request.send(formData);
 		});
 
+		function transferComplete(data) {
+			var responsee = JSON.parse(data.cuurentTarget.response);
+			if (responsee.success) {
+				document.getElementById('messageafter').innerHTML = "Фотографии успешно загрузилсь!";
+			}
+		}
 
-	
 
 	</script>
 

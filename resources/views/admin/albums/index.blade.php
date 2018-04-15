@@ -16,16 +16,19 @@
 			<div class="col-md-4">
 				<div class="album-block">
 					
-						<a id="edit-album" href="{{ action('Adminpanel\AlbumsController@edit', $album->id) }}"><i class="fas fa-edit btn btn-success"></i></a>
-
-						<a id="trash-album" class="deletebtn" href="javascript:void(0)" a-data="{{$album->id}}"><i class="fas fa-trash-alt fa-lg btn btn-danger"></i></a>
-
+				
 						<div class="fileinput thumbnail">
 							<a href="/adminpanel/dashboard/albums/{{ $album->id }}">
 								<img class="thumbnail" src="/storage/albums_preview/{{ $album->preview }}" alt="{{ $album->name }}">
 								<div id="block-album-title"></div>
 								<div class="card-body">
 									<h5>{{ str_limit($album->name, 20) }}</h5>	
+									
+
+								<a id="edit-album" href="{{ action('Adminpanel\AlbumsController@edit', $album->id) }}"><i class="fas fa-edit fa-lg"></i></a>
+
+								<a id="trash-album" class="deletebtn" href="javascript:void(0)" a-data="{{$album->id}}"><i class="fas fa-trash-alt fa-lg"></i></a>
+
 								</div>
 							</a>	
 						</div>

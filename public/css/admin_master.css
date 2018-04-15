@@ -68,6 +68,12 @@ hr {
   height: 100%;
 }
 
+.float-btn {
+  position: absolute;
+  top: 99px;
+  right: 75px;
+}
+
 .float-btn:after {
   content: '';
   display: block;
@@ -160,25 +166,15 @@ div.photo-block:hover a{
 }
 
 div.album-block a#edit-album {
-  position: absolute;
-  left: 33%;
-  top: 0px;
-  color: #1ea8ff;
-  z-index: 50;
+  color: #34495e;
 }
 
 div.album-block  a#trash-album {
-  position: absolute;
-  left: 52%;
-  top: 0px;
-  color: #dc3545;
-  z-index: 50;
+  color: #ca0f21;
+  margin-left: 10px;
 }
 
-div.album-block:hover a#edit-album,
-div.album-block:hover a#trash-album  {
-  display: block;
-}
+
 
 
 
