@@ -5,10 +5,7 @@
   <div class="item"><img src="/img/slide1-2.jpg"></div>
 </div>
 
-
-
 @section('mainSlider')
-
 <script type="text/javascript">
   $(document).ready(function(){
     owl = $('#main-slider').owlCarousel({
@@ -18,5 +15,4 @@
     });
   });
 </script>
-
 @endsection

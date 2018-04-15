@@ -20,7 +20,6 @@ body {
 /*--------logo--------*/
 .logo{
     max-height: 45px;
-    margin-left: 50px;
 }
 
   .black-shadow {
@@ -35,30 +34,7 @@ body {
   }
 
 
-
-  @media screen and (max-width: 1366px) {
-    .logo{
-      max-height: 45px;
-      margin-left: 50px;
-    }
-
-  }  
-
-
-
-  @media screen and (max-width: 600px) {
-    .logo{
-      max-height: 45px;
-      margin-left: 0px;
-    }
-
-  }  
-
   @media screen and (max-width: 450px) {
-    .logo{
-      max-height: 40px;
-      margin-left: 0px;
-    }
     .title, .description{
       font-size: 1.9em;
     }
