@@ -35,6 +35,7 @@
 		@yield('deletePhoto')
 		@yield('deleteAlbum')
 		@yield('deleteDoctor')
+		@yield('upload_image')
 
 </body>
 <script src="/js/bootstrap.min.js"></script>
