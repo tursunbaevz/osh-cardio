@@ -27,9 +27,7 @@
 
 
 <body class="landing-page" >
-	{{-- navbar  --}}
-		@include ('layouts.nav')
-	{{--  --}}
+
 
 
 	{{-- content --}}
