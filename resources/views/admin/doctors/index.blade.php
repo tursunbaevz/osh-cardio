@@ -7,7 +7,7 @@
 
 	<table class="table table-hover table-style" id="post_table">
 		<thead>
-		<tr class="table-active">
+		<tr class="p-3 mb-2 bg-warning text-dark">
 			<th scope="col">#</th>
 			<th scope="col">Наименование</th>
 			<th scope="col">Текст</th>

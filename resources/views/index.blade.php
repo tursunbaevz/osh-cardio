@@ -9,7 +9,6 @@
 </div>
 
 <!-- наши услуги -->
-<div class="pricing-2 ">
 <div class="container">
 	<div class="row">
 	    <div class="col-md-4">
@@ -43,7 +42,7 @@
 	    </div>
 	</div>
 </div>
-{{-- 	<div class="main-div center text-style-div" style="margin-top: -10px;">
+	{{-- 	<div class="main-div center text-style-div" style="margin-top: -10px;">
 		<div class="num-div">
 			<img src="/icons/online-shop.svg">
 			<br> Современное<br>оборудование

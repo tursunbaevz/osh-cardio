@@ -28,7 +28,8 @@ class PhotosController extends Controller
 			    $fileName = str_random(5)."-".date('his')."-".str_random(3).".".$extension;
 			    $folderpath  = 'storage/photos' . $request->input('album_id');
 			    $file->move($folderpath , $fileName);
-
+				
+				// upload photos to data base
 			    $file = new Photo;
 				$file->album_id = $request->input('album_id');
 				$file->image = $fileName;
@@ -37,10 +38,11 @@ class PhotosController extends Controller
 		}
 		
 
-		// upload photos to data base
+	
 
 		// success message
 
+		
 
 		
 	}
