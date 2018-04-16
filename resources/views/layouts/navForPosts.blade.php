@@ -23,7 +23,7 @@
                             <i class="now-ui-icons travel_info"></i>
                             О нас
                         </a>
-                        <a class="dropdown-item" href="https://creativetimofficial.github.io/now-ui-kit-pro/#/components?ref=nuk-pro-doc">
+                        <a class="dropdown-item" href="{{'/contacts'}}">
                             <i class="now-ui-icons tech_mobile"></i>
                             Контакты
                         </a>
