@@ -50,8 +50,6 @@
 				document.getElementById('messageafter').innerHTML = "Фотографии успешно загрузилсь!";
 			}
 		}
-
-
 	</script>
 
 @endsection
