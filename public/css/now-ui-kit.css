@@ -42,10 +42,21 @@ body {
     .title, .description{
       font-size: 1.9em;
     }
+    .mobile-img-height {
+
+      height: 400px !important;
+    }
   }
 
 
 /*news slider*/
+
+
+.image-slide-size {
+  height: 700px !important;
+  max-width: 1920px;
+  margin: auto; 
+}
 
 .card-centered {
   text-align: center;
