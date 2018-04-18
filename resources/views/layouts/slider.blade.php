@@ -3,8 +3,8 @@
   {{-- <div class="item"><img src="/img/slide2.jpg"></div> --}}
   {{-- <div class="item"><img src="/img/slide1-2.jpg"></div> --}}
 	<div class="item">
-		<div class="image-slide-size page-header">
-			<div class="page-header-image" style="background-image: url('/img/slide1920-700.jpg');"></div>
+		<div class=" page-header">
+			<div class="page-header-image" style="background-image: url('/img/');"></div>
 		</div>
 	</div>
 {{-- 	<div class="item">
