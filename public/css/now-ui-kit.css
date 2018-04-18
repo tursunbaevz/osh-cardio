@@ -4747,7 +4747,7 @@ Created using IcoMoon - icomoon.io
   -ms-transform: translate3d(0, -0.5rem, 0);
   transform: translate3d(0, -0.5rem, 0); }
 .info.info-hover:hover .icon.icon-primary.icon-circle {
-  box-shadow: 0px 15px 30px 0px rgba(249, 99, 50, 0.35); }
+  box-shadow: 0px 15px 30px 0px #c6282863; }
 .info.info-hover:hover .icon.icon-info.icon-circle {
   box-shadow: 0px 15px 35px 0px rgba(44, 168, 255, 0.35); }
 .info.info-hover:hover .icon.icon-success.icon-circle {
@@ -4763,7 +4763,7 @@ Created using IcoMoon - icomoon.io
 .info.info-hover:hover .icon.icon-danger + .info-title {
   color: #FF3636; }
 .info.info-hover:hover .icon.icon-primary + .info-title {
-  color: #f96332; }
+  color: #c62828; }
 .info.info-hover:hover .icon.icon-success + .info-title {
   color: #18ce0f; }
 .info .icon {
@@ -4815,7 +4815,7 @@ Created using IcoMoon - icomoon.io
  }
 
 .icon.icon-primary {
-  color: #f96332; }
+  color: #ff3636; }
 .icon.icon-primary.icon-circle {
   box-shadow: 0px 9px 30px -6px rgba(249, 99, 50, 0.3); }
 .icon.icon-info {

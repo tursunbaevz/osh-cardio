@@ -14,30 +14,30 @@
 	    <div class="col-md-4">
 	        <div class="info info-hover">
 	            <div class="icon icon-success icon-circle">
-	                <i class="now-ui-icons objects_globe"></i>
+	                <i class="now-ui-icons health_ambulance"></i>
 	            </div>
-	            <h4 class="info-title">Asset Management</h4>
-	            <p class="description">Cross-account dashboards provide sophisticated reporting for enterprise.</p>
-	        </div>
-	    </div>
-
-	    <div class="col-md-4">
-	        <div class="info info-hover">
-	            <div class="icon icon-info icon-circle">
-	                <i class="now-ui-icons education_atom"></i>
-	            </div>
-	            <h4 class="info-title">Resource Utilization</h4>
-	            <p class="description">CloudCheckr provides summary and detailed usage statistics for resources.</p>
+	            <h4 class="info-title">Выездная кардиобригада</h4>
+	            <p class="description">описание</p>
 	        </div>
 	    </div>
 
 	    <div class="col-md-4">
 	        <div class="info info-hover">
 	            <div class="icon icon-primary icon-circle">
-	                <i class="now-ui-icons tech_watch-time"></i>
+	                <i class="now-ui-icons  ui-2_favourite-28"></i>
 	            </div>
-	            <h4 class="info-title">Self-Healing</h4>
-	            <p class="description">CloudCheckr enables users to save money, time, and effort.</p>
+	            <h4 class="info-title">Отличный сервис</h4>
+	            <p class="description">описание</p>
+	        </div>
+	    </div>
+
+	    <div class="col-md-4">
+	        <div class="info info-hover">
+	            <div class="icon icon-info icon-circle">
+	                <i class="now-ui-icons tech_tv"></i>
+	            </div>
+	            <h4 class="info-title">Современное оборудование</h4>
+	            <p class="description">описание</p>
 	        </div>
 	    </div>
 	</div>
@@ -45,7 +45,7 @@
 	{{-- 	<div class="main-div center text-style-div" style="margin-top: -10px;">
 		<div class="num-div">
 			<img src="/icons/online-shop.svg">
-			<br> Современное<br>оборудование
+			<br> Современное оборудование
 		</div>
 
 		<div class="num-div">
