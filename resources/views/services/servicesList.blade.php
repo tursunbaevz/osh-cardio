@@ -3,7 +3,7 @@
 @section('content')
 @include ('layouts.nav')
 
-<div class="page-header  page-header-small">
+<div class="page-header">
 	<div class="page-header-image" style="background-image: url('img/photo.jpg');"></div>
 	<div class="content-center">
 		<h1 class="title">Наши услуги</h1>
