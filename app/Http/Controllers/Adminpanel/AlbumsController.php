@@ -56,6 +56,7 @@ class AlbumsController extends Controller
     	$album->description = $request->input('description');
     	$album->preview = $filenameToStore; 
     	$album->save();
+        session()->flash('notifcreate', 'Альбом успешно добвлен!');
 
     	return redirect('/adminpanel/dashboard/albums')->with('success', 'Album Created!');
     	
@@ -112,6 +113,7 @@ class AlbumsController extends Controller
         }
 
         $album->save();
+        session()->flash('notifupdate', 'Альбом успешно обновлен!');
 
         return redirect('/adminpanel/dashboard/albums/')->with('success', 'Вы успешно обновили альбом!');
         
@@ -135,6 +137,7 @@ class AlbumsController extends Controller
                 File::delete('storage/albums_preview' . '/' . $album->preview);
                 // удаляет альбом с базы и привязанные фотки
                 $album->delete();
+
             }
         }
         

@@ -8,11 +8,19 @@
 		<h1 class="title">Галерея</h1>
 	<div id="albums" class="text-center">
 
-		
+		{{--  уведомление  --}}
+
+	<div class="text-center alert-notice-style">
+		<div class="alert alert-danger" id="fadein-alert" style="display: none;">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<strong>Галерея удалена!</strong>				
+		</div>
+	</div>
 
 		<div class="row">
 
 			@foreach($albums as $album)
+
 			<div class="col-md-4">
 				<div class="album-block">
 					
@@ -49,7 +57,7 @@
 		$(document).on('click', '.deletebtn', function(ev){
 
 		    var albumid = $(this).attr("a-data");
-		    var clickedObj = $(this).parent().parent();
+		    var clickedObj = $(this).parent().parent().parent().parent();
 		    if (confirm('Все фотографии которые внутри альбома будут удалены!')) {	
 			    $.ajax({
 			        method: 'DELETE',
@@ -60,7 +68,11 @@
 
 			        success: function (data) {
 		  				$(clickedObj).fadeOut( "slow", function() {
-		    				// удалено
+		    				$('#fadein-alert').fadeIn('slow', function() {
+		    					$(this).fadeOut(4000, function() {
+		    						//операция завершена
+		    					});
+	    					});
 		  				});
 			        }
 			    });  

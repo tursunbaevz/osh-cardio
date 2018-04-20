@@ -58,6 +58,9 @@ class Posts extends Controller
         }
  
         $post->save();
+
+        session()->flash('notifcreate', 'Статья создана успешно!');
+
  
       return redirect('/adminpanel/dashboard/posts');
      }
@@ -121,7 +124,8 @@ class Posts extends Controller
         }
 
         $post->save();
-        return redirect('/adminpanel/dashboard/posts')->with('success','Post has been updated');
+        session()->flash('notifupdate', 'Статья обновлнена успешно!');
+        return redirect('/adminpanel/dashboard/posts');
  
      }
  
