@@ -19,7 +19,7 @@
                         <p>О компании</p>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="./index.html">
+                        <a class="dropdown-item" href=" {{'/about-us'}} ">
                             <i class="now-ui-icons travel_info"></i>
                             О нас
                         </a>

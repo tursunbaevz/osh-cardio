@@ -1,7 +1,7 @@
 @extends('layouts.master')
-@include ('layouts.nav')
 
 @section('content')
+@include ('layouts.nav')
 <div class="wrapper">
     <div class="page-header page-header-small">
         <div class="page-header-image" data-parallax="true" style="background-image: url(img/photo.jpg);"></div>

@@ -15,6 +15,7 @@ Route::get('/albums/{id}', 'AlbumsController@show');
 Route::get('/doctors', 'MainController@doctorsList');
 Route::get('/doctor/{id}', 'MainController@doctorsShow');
 Route::get('/contacts', 'MainController@contacts');
+Route::get('/about-us', 'MainController@aboutUs');
 
 
 
