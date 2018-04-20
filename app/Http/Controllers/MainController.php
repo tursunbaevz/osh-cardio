@@ -13,10 +13,6 @@ use Carbon\Carbon;
 class MainController extends Controller
 {
 
-	public function test(){
-		return view('test');
-	}
-
 	public function index(){
 		$posts = Post::orderBy('id', 'desc')->take(8)->get();
 		return view('index', compact('posts'));

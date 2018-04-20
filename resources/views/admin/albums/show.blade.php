@@ -8,7 +8,12 @@
 	<a class="btn btn-info" href="/adminpanel/dashboard/photos/create/{{ $album->id }}">создать фото для альбома</a>
 	<p style="margin-top: 10px;">{{ $album->description }}</p>
 	<hr>
-	<div class="row text-center">	
+	
+
+		
+
+
+	<div class="row text-center">						
 		@foreach($album->photos as $photo )
 			<div class="col-xs-6">
 				<div class="photo-block">
@@ -18,6 +23,7 @@
 			</div>		
 		@endforeach
 	</div>
+
 
 	
 
@@ -40,7 +46,11 @@
 
 		        success: function (data) {
 	  				$(clickedObj).fadeOut( "slow", function() {
-	    				// удалено
+	    				$('#fadein-alert').fadeIn('slow', function() {
+	    					$(this).fadeOut(4000, function() {
+	    						//операция завершена
+	    					});
+	    				});
 	  				});
 		        }
 		    });  

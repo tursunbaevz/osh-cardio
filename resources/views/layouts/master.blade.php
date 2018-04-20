@@ -19,6 +19,7 @@
 
 <body class="landing-page" >
 
+
 		<!-- CONTENT -->
 		@yield('content')
 

@@ -38,8 +38,9 @@ class PhotosController extends Controller
 		}
 		
 
-	
+			session()->flash('notifcreate', 'Фотография успешно добавлена!');
 
+		
 		// success message
 
 		
